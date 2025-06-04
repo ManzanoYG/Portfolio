@@ -1,0 +1,12 @@
+.header {
+  background-color: #14c6e2;
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5rem;
+}
