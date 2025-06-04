@@ -1,0 +1,26 @@
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  min-height: 0;
+}
+
+.content {
+  flex: 1;
+  background-color: #f95858;
+  font-size: 20px;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.content > * {
+  align-self: center;
+}
