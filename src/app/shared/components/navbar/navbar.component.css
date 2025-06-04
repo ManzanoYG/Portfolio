@@ -1,0 +1,68 @@
+.sidebar {
+  background-color: #c0fa63;
+  min-width: 60px;
+  max-width: 250px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  padding-top: 10px;
+  height: 100%; /* important */
+}
+
+.sidebar.expanded {
+  width: 250px;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar i {
+  margin-right: 10px;
+}
+
+.sidebar .text,
+.sidebar hr,
+.sidebar img,
+.sidebar .email-label {
+  display: none;
+}
+
+.sidebar.expanded .text,
+.sidebar.expanded hr,
+.sidebar.expanded img,
+.sidebar.expanded .email-label {
+  display: block;
+}
+
+img {
+  width: 100px;
+  margin: 10px auto;
+  display: block;
+}
+
+.email-label {
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    height: 100vh;
+    z-index: 1000;
+    left: -250px;
+  }
+
+  .sidebar.expanded {
+    left: 0;
+    position: absolute;
+  }
+}
