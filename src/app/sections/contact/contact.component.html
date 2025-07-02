@@ -1,0 +1,50 @@
+<form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="container my-5 p-4 shadow rounded bg-white" novalidate>
+  <div class="row g-4">
+    <div class="col-md-6 d-flex flex-column gap-4">
+      <div class="form-floating">
+        <input type="text" id="name" name="name" ngModel class="form-control" placeholder="Name" required #name="ngModel"/>
+        <label for="name">Name</label>
+        <div *ngIf="name.invalid && name.touched" class="text-danger small mt-1">
+          Name is required.
+        </div>
+      </div>
+
+      <div class="form-floating">
+        <input type="email" id="email" name="email" ngModel class="form-control" placeholder="Email" required #email="ngModel" email/>
+        <label for="email">Email</label>
+        <div *ngIf="email.invalid && email.touched" class="text-danger small mt-1">
+          Invalid or required email.
+        </div>
+      </div>
+
+      <div class="form-floating">
+        <input type="text" id="subject" name="subject" ngModel class="form-control" placeholder="Subject" required #subject="ngModel" />
+        <label for="subject">Subject</label>
+        <div *ngIf="subject.invalid && subject.touched" class="text-danger small mt-1">
+          Subject is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-floating h-100">
+        <textarea id="message" name="message" ngModel class="form-control" placeholder="Votre message" rows="7" required #message="ngModel"></textarea>
+        <label for="message">Your message</label>
+        <div *ngIf="message.invalid && message.touched" class="text-danger small mt-1">
+          Message is required.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-5">
+    <button type="submit" class="btn btn-gradient px-5 py-2 fw-semibold" [disabled]="!contactForm.form.valid || isSubmitting">
+      <span *ngIf="!isSubmitting">Send</span>
+      <span *ngIf="isSubmitting" class="spinner-border spinner-border-sm"></span>
+    </button>
+  </div>
+
+  <div *ngIf="successMessage" class="alert alert-success mt-4 text-center" role="alert">
+    {{ successMessage }}
+  </div>
+</form>

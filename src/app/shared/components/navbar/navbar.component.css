@@ -5,7 +5,7 @@
   transition: width 0.3s ease;
   overflow: hidden;
   padding-top: 10px;
-  height: 100%; /* important */
+  height: 100%;
 }
 
 .sidebar.expanded {
@@ -56,7 +56,7 @@ img {
 @media (max-width: 768px) {
   .sidebar {
     position: absolute;
-    height: 100vh;
+    height: 91.7vh;
     z-index: 1000;
     left: -250px;
   }
