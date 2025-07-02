@@ -32,3 +32,9 @@ form.container {
 .spinner-border {
   vertical-align: middle;
 }
+
+#message {
+  height: 100%;
+  min-height: 220px;
+  max-height: 350px;
+}

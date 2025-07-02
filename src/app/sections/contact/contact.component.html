@@ -2,10 +2,10 @@
   <div class="row g-4">
     <div class="col-md-6 d-flex flex-column gap-4">
       <div class="form-floating">
-        <input type="text" id="name" name="name" ngModel class="form-control" placeholder="Nom" required #name="ngModel"/>
-        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" ngModel class="form-control" placeholder="Name" required #name="ngModel"/>
+        <label for="name">Name</label>
         <div *ngIf="name.invalid && name.touched" class="text-danger small mt-1">
-          Le nom est requis.
+          Name is required.
         </div>
       </div>
 
@@ -13,25 +13,25 @@
         <input type="email" id="email" name="email" ngModel class="form-control" placeholder="Email" required #email="ngModel" email/>
         <label for="email">Email</label>
         <div *ngIf="email.invalid && email.touched" class="text-danger small mt-1">
-          Email invalide ou requis.
+          Invalid or required email.
         </div>
       </div>
 
       <div class="form-floating">
-        <input type="tel" id="phone" name="phone" ngModel class="form-control" placeholder="Téléphone" #phone="ngModel" pattern="^\\+?[0-9\\s\\-]{7,15}$"/>
-        <label for="phone">Téléphone</label>
-        <div *ngIf="phone.invalid && phone.touched" class="text-danger small mt-1">
-          Téléphone invalide.
+        <input type="text" id="subject" name="subject" ngModel class="form-control" placeholder="Subject" required #subject="ngModel" />
+        <label for="subject">Subject</label>
+        <div *ngIf="subject.invalid && subject.touched" class="text-danger small mt-1">
+          Subject is required.
         </div>
       </div>
     </div>
 
     <div class="col-md-6">
       <div class="form-floating h-100">
-        <textarea id="message" name="message" ngModel class="form-control" placeholder="Votre message" rows="7" required #message="ngModel" style="height: 100%; min-height: 180px;"></textarea>
-        <label for="message">Votre message</label>
+        <textarea id="message" name="message" ngModel class="form-control" placeholder="Votre message" rows="7" required #message="ngModel"></textarea>
+        <label for="message">Your message</label>
         <div *ngIf="message.invalid && message.touched" class="text-danger small mt-1">
-          Le message est requis.
+          Message is required.
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
 
   <div class="text-center mt-5">
     <button type="submit" class="btn btn-gradient px-5 py-2 fw-semibold" [disabled]="!contactForm.form.valid || isSubmitting">
-      <span *ngIf="!isSubmitting">Envoyer</span>
+      <span *ngIf="!isSubmitting">Send</span>
       <span *ngIf="isSubmitting" class="spinner-border spinner-border-sm"></span>
     </button>
   </div>
