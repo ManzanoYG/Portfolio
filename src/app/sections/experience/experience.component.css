@@ -1,0 +1,27 @@
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  border-left: 4px solid #325ba7;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -29px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #325ba7;
+  border-radius: 50%;
+  border: 3px solid white;
+  z-index: 1;
+}
+
+.timeline-content {
+  margin-left: 10px;
+}
