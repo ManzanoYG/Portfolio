@@ -31,14 +31,16 @@
 .sidebar .text,
 .sidebar hr,
 .sidebar img,
-.sidebar .email-label {
+.sidebar .email-label,
+.sidebar .language-switcher {
   display: none;
 }
 
 .sidebar.expanded .text,
 .sidebar.expanded hr,
 .sidebar.expanded img,
-.sidebar.expanded .email-label {
+.sidebar.expanded .email-label,
+.sidebar.expanded .language-switcher {
   display: block;
 }
 
