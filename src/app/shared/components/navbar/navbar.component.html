@@ -1,9 +1,16 @@
 <div class="sidebar" [ngClass]="{ 'collapsed': !isExpanded, 'expanded': isExpanded }" id="sidebar">
-  <a href="#"><i class="fas fa-home"></i><span class="text">Home</span></a>
-  <a href="#" (click)="scrollTo('experience')"><i class="fa-solid fa-timeline"></i><span class="text">Experience</span></a>
-  <a href="#" (click)="scrollTo('contact-form')" ><i class="fa-solid fa-envelope"></i><span class="text">Contact</span></a>
+  <a href="#"><i class="fas fa-home"></i><span class="text">{{ 'NAV.HOME' | translate }}</span></a>
+  <a href="#" (click)="scrollTo('experience')"><i class="fa-solid fa-timeline"></i><span class="text">{{ 'NAV.EXPERIENCE' | translate }}</span></a>
+  <a href="#" (click)="scrollTo('contact-form')" ><i class="fa-solid fa-envelope"></i><span class="text">{{ 'NAV.CONTACT' | translate }}</span></a>
   <hr>
   <img src="https://placehold.co/1000x1600/png" alt="email" />
   <div class="email-label">email</div>
-</div>
+  <hr>
+  <div class="language-switcher ms-3">
+    <select [value]="currentLang" (change)="switchLang($event)" class="form-select form-select-sm w-auto">
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+    </select>
+  </div>
 
+</div>
