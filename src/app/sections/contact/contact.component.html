@@ -3,7 +3,7 @@
     <div class="col-md-6 d-flex flex-column gap-4">
       <div class="form-floating">
         <input type="text" id="name" name="name" ngModel class="form-control" placeholder="Name" required #name="ngModel"/>
-        <label for="name">Name</label>
+        <label for="name">{{ 'CONTACT.NAME' | translate }}</label>
         <div *ngIf="name.invalid && name.touched" class="text-danger small mt-1">
           Name is required.
         </div>
@@ -11,7 +11,7 @@
 
       <div class="form-floating">
         <input type="email" id="email" name="email" ngModel class="form-control" placeholder="Email" required #email="ngModel" email/>
-        <label for="email">Email</label>
+        <label for="email">{{ 'CONTACT.EMAIL' | translate }}</label>
         <div *ngIf="email.invalid && email.touched" class="text-danger small mt-1">
           Invalid or required email.
         </div>
@@ -19,7 +19,7 @@
 
       <div class="form-floating">
         <input type="text" id="subject" name="subject" ngModel class="form-control" placeholder="Subject" required #subject="ngModel" />
-        <label for="subject">Subject</label>
+        <label for="subject">{{ 'CONTACT.SUBJECT' | translate }}</label>
         <div *ngIf="subject.invalid && subject.touched" class="text-danger small mt-1">
           Subject is required.
         </div>
@@ -29,7 +29,7 @@
     <div class="col-md-6">
       <div class="form-floating h-100">
         <textarea id="message" name="message" ngModel class="form-control" placeholder="Votre message" rows="7" required #message="ngModel"></textarea>
-        <label for="message">Your message</label>
+        <label for="message">{{ 'CONTACT.MESSAGE' | translate }}</label>
         <div *ngIf="message.invalid && message.touched" class="text-danger small mt-1">
           Message is required.
         </div>

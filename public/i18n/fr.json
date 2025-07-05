@@ -6,5 +6,11 @@
     "EXPERIENCE": "Experience",
     "CONTACT": "Contact"
   },
-  "WELCOME": "Bienvenue sur mon portfolio !"
+  "WELCOME": "Bienvenue sur mon portfolio !",
+  "CONTACT" : {
+   "NAME": "Nom",
+    "EMAIL": "Email",
+    "SUBJECT": "Sujet",
+    "MESSAGE": "Votre message"
+  }
 }
