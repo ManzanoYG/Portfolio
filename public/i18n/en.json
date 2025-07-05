@@ -1,0 +1,10 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "PROJECTS": "Projects",
+    "EXPERIENCE": "Experience",
+    "CONTACT": "Contact"
+  },
+  "WELCOME": "Welcome to my portfolio!"
+}
