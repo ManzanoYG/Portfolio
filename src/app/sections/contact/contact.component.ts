@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
@@ -21,5 +22,11 @@ export class ContactComponent {
       this.isSubmitting = false;
       this.successMessage = "Merci pour votre message, nous vous répondrons bientôt !";
     }, 2000);
+  }
+
+  currentLang = 'en';
+
+  constructor(private translate: TranslateService) {
+    this.currentLang = this.translate.currentLang || this.translate.getDefaultLang() || 'en';
   }
 }

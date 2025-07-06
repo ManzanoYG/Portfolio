@@ -1,0 +1,55 @@
+{
+  "NAV": {
+    "HOME": "Accueil",
+    "ABOUT": "À propos",
+    "PROJECTS": "Projets",
+    "EXPERIENCE": "Expérience",
+    "CONTACT": "Contact"
+  },
+  "WELCOME": "Bienvenue sur mon portfolio !",
+  "CONTACT" : {
+   "NAME": "Nom",
+    "EMAIL": "Email",
+    "SUBJECT": "Sujet",
+    "MESSAGE": "Votre message"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Expérience",
+    "EDUCATION": "Formation",
+    "PROFESSIONAL": "Expérience Professionnelle"
+  },
+  "education" : [
+    {
+      "title": "Bachelier en Informatique - Développement d'Applications",
+      "date": "2020 - 2025",
+      "institution": "Haute École Louvain en Hainaut Mons",
+      "description": "Études en informatique axées sur le développement d'applications, l'ingénierie logicielle et les pratiques de développement modernes."
+    },
+    {
+      "title": "Certificat d'Enseignement Secondaire Supérieur - Technicien en Informatique",
+      "date": "2017 - 2020",
+      "institution": "Institut Provincial d'Enseignement Secondaire d'Ath",
+      "description": "Formation technique en systèmes informatiques, matériel et concepts de programmation de base."
+    }
+  ],
+  "experience" : [
+    {
+      "title": "Stage de Développeur chez BNP Paribas Fortis",
+      "date": "2025 - 2025",
+      "company": "BNP Paribas Fortis, Bruxelles",
+      "description": "Développement d'une application web pour la gestion des opérations liées aux dépôts à taux variable ou fixe, avec suivi de réévaluation mensuelle. Technologies utilisées : C#, ASP.NET, HTML, CSS, JavaScript, SQL Server, IIS, Microsoft Azure, jQuery, Ajax."
+    },
+    {
+      "title": "Freelance",
+      "date": "2021 - 2023",
+      "company": "Loginfo, Ath",
+      "description": "Développement de sites web en HTML, CSS et PHP, gestion de projets informatiques et configuration réseau. Interaction avec les clients pour comprendre leurs besoins et fournir un support technique. Optimisation des performances système et maintien de la sécurité."
+    },
+    {
+      "title": "Stage de Technicien Informatique chez CDY",
+      "date": "2020",
+      "company": "CDY, Bouvignies",
+      "description": "Participation au développement de projets web et mobiles, ainsi qu'aux tests et au débogage."
+    }
+  ]
+}

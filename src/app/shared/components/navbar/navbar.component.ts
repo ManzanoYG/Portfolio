@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {ViewportScroller} from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -14,5 +14,17 @@ export class NavbarComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  currentLang = 'en';
+
+  constructor(private translate: TranslateService) {
+    this.currentLang = this.translate.currentLang || this.translate.getDefaultLang() || 'en';
+  }
+
+  switchLang(event: Event) {
+    const lang = (event.target as HTMLSelectElement).value;
+    this.currentLang = lang;
+    this.translate.use(lang);
   }
 }

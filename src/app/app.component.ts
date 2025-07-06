@@ -1,4 +1,5 @@
 import {Component, HostListener} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,11 @@ import {Component, HostListener} from '@angular/core';
 })
 export class AppComponent {
   isExpanded = false;
+
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
 
   toggleSidebar() {
     this.isExpanded = !this.isExpanded;
