@@ -1,5 +1,6 @@
 <div class="sidebar" [ngClass]="{ 'collapsed': !isExpanded, 'expanded': isExpanded }" id="sidebar">
   <a href="#"><i class="fas fa-home"></i><span class="text">{{ 'NAV.HOME' | translate }}</span></a>
+  <a href="#" (click)="scrollTo('about')"><i class="fa-solid fa-user"></i><span class="text">{{ 'NAV.ABOUT' | translate }}</span></a>
   <a href="#" (click)="scrollTo('experience')"><i class="fa-solid fa-timeline"></i><span class="text">{{ 'NAV.EXPERIENCE' | translate }}</span></a>
   <a href="#" (click)="scrollTo('contact-form')" ><i class="fa-solid fa-envelope"></i><span class="text">{{ 'NAV.CONTACT' | translate }}</span></a>
   <hr>
