@@ -13,6 +13,7 @@ import { ExperienceComponent } from './sections/experience/experience.component'
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { AboutComponent } from './sections/about/about.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'i18n/', '.json');
@@ -25,7 +26,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
