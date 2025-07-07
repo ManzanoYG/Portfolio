@@ -1,0 +1,40 @@
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="fw-bold mb-3">About</h2>
+        <div style="border-bottom: 2px dotted #000; width: 80px; margin-bottom: 20px;"></div>
+        <p class="text-justify">
+          {{ 'ABOUT.DESCRIPTION' | translate }}
+        </p>
+      </div>
+    </div>
+    <div class="row mt-4 align-items-start">
+      <div class="col-md-5 text-center mb-3">
+        <img src="assets/img/profile.jpg" alt="Profile" class="img-fluid rounded" style="max-height: 400px;" />
+      </div>
+      <div class="col-md-7">
+        <div class="row g-2">
+          <div class="col-12 col-sm-6">
+            ► <strong>{{ 'ABOUT.BIRTHDAY_TITLE' | translate }}:</strong> {{ 'ABOUT.BIRTHDAY' | translate }}
+          </div>
+          <div class="col-12 col-sm-6">
+            ► <strong>{{ 'ABOUT.AGE_TITLE' | translate }}:</strong> {{ calculatedAge }}
+          </div>
+          <div class="col-12 col-sm-6">
+            ► <strong>{{ 'ABOUT.EMAIL_TITLE' | translate }}:</strong> {{ 'ABOUT.EMAIL' | translate }}
+          </div>
+          <div class="col-12 col-sm-6">
+            ► <strong>{{ 'ABOUT.DEGREE_TITLE' | translate }}:</strong> {{ 'ABOUT.DEGREE' | translate }}
+          </div>
+          <div class="col-12 col-sm-6">
+            ► <strong>{{ 'ABOUT.COUNTRY_TITLE' | translate }}:</strong> {{ 'ABOUT.COUNTRY' | translate }}
+          </div>
+          <div class="col-12 col-sm-6">
+            ► <strong>{{ 'ABOUT.CURRENTLY_TITLE' | translate }}:</strong> {{ 'ABOUT.CURRENTLY' | translate }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
