@@ -4,6 +4,7 @@
     "ABOUT": "À propos",
     "PROJECTS": "Projets",
     "EXPERIENCE": "Expérience",
+    "SKILLS": "Compétences",
     "CONTACT": "Contact"
   },
   "WELCOME": "Bienvenue sur mon portfolio !",
@@ -31,6 +32,16 @@
     "TITLE": "Expérience",
     "EDUCATION": "Formation",
     "PROFESSIONAL": "Expérience Professionnelle"
+  },
+  "SKILLS": {
+    "TITLE": "Compétences",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "TOOLS": "Outils",
+    "ENVIRONMENTS": "Environnements",
+    "SEE_ALL": "Voir Tout",
+    "CLOSE": "Fermer",
+    "ALL_SKILLS_IN": "Toutes les compétences en"
   },
   "education" : [
     {

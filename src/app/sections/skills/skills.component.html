@@ -1,0 +1,68 @@
+<section class="skills-section">
+  <div class="container">
+    <h2 class="section-title">{{ 'SKILLS.TITLE' | translate }}</h2>
+    
+    <div class="skills-grid">
+      <div class="skill-category" *ngFor="let category of skillCategories">
+        <div class="category-header">
+          <h3>{{ 'SKILLS.' + category.title | translate }}</h3>
+        </div>
+        
+        <div class="skills-carousel">
+          <button class="carousel-btn prev-btn" (click)="prevSlide(category.title)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          
+          <div class="skills-container" [class.transitioning]="isTransitioning[category.title]">
+            <div class="skill-item" *ngFor="let skill of getVisibleSkills(category.title)">
+              <div class="skill-icon">
+                <i [class]="skill.icon"></i>
+              </div>
+              <span class="skill-name">{{ skill.name }}</span>
+            </div>
+          </div>
+          
+          <button class="carousel-btn next-btn" (click)="nextSlide(category.title)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        
+        <div class="carousel-dots">
+          <span 
+            class="dot" 
+            *ngFor="let dot of [].constructor(getDotCount(category.title)); let i = index"
+            [class.active]="currentSlide[category.title] === i"
+            (click)="goToSlide(category.title, i)">
+          </span>
+        </div>
+        
+        <button class="see-all-btn" (click)="openAllSkills(category.title)">{{ 'SKILLS.SEE_ALL' | translate }}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for "See All" skills -->
+<div class="skills-modal" *ngIf="showAllSkills" (click)="onModalBackdropClick($event)">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>{{ 'SKILLS.ALL_SKILLS_IN' | translate }} {{ 'SKILLS.' + selectedCategory?.title | translate }}</h3>
+      <button class="close-btn" (click)="closeAllSkills()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="all-skills-grid">
+        <div class="skill-item-modal" *ngFor="let skill of selectedCategory?.skills">
+          <div class="skill-icon">
+            <i [class]="skill.icon"></i>
+          </div>
+          <span class="skill-name">{{ skill.name }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="close-modal-btn" (click)="closeAllSkills()">{{ 'SKILLS.CLOSE' | translate }}</button>
+    </div>
+  </div>
+</div>
