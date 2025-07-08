@@ -1,50 +1,173 @@
-<form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="container my-5 p-4 shadow rounded bg-white" novalidate>
-  <div class="row g-4">
-    <div class="col-md-6 d-flex flex-column gap-4">
-      <div class="form-floating">
-        <input type="text" id="name" name="name" ngModel class="form-control" placeholder="Name" required #name="ngModel"/>
-        <label for="name">{{ 'CONTACT.NAME' | translate }}</label>
-        <div *ngIf="name.invalid && name.touched" class="text-danger small mt-1">
-          Name is required.
-        </div>
-      </div>
+<section class="contact-section">
+  <!-- Background grid -->
+  <div class="bg-grid"></div>
 
-      <div class="form-floating">
-        <input type="email" id="email" name="email" ngModel class="form-control" placeholder="Email" required #email="ngModel" email/>
-        <label for="email">{{ 'CONTACT.EMAIL' | translate }}</label>
-        <div *ngIf="email.invalid && email.touched" class="text-danger small mt-1">
-          Invalid or required email.
-        </div>
-      </div>
+  <!-- Decorative background elements -->
+  <div class="decorative-elements">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-circle circle-1"></div>
+    <div class="floating-circle circle-2"></div>
+  </div>
 
-      <div class="form-floating">
-        <input type="text" id="subject" name="subject" ngModel class="form-control" placeholder="Subject" required #subject="ngModel" />
-        <label for="subject">{{ 'CONTACT.SUBJECT' | translate }}</label>
-        <div *ngIf="subject.invalid && subject.touched" class="text-danger small mt-1">
-          Subject is required.
-        </div>
-      </div>
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ 'NAV.CONTACT' | translate }}</h1>
+      <p class="section-description">{{ 'CONTACT.DESCRIPTION' | translate }}</p>
     </div>
 
-    <div class="col-md-6">
-      <div class="form-floating h-100">
-        <textarea id="message" name="message" ngModel class="form-control" placeholder="Votre message" rows="7" required #message="ngModel"></textarea>
-        <label for="message">{{ 'CONTACT.MESSAGE' | translate }}</label>
-        <div *ngIf="message.invalid && message.touched" class="text-danger small mt-1">
-          Message is required.
+    <div class="contact-content">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="card-header">
+            <div class="icon-container">
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <h3>{{ 'CONTACT.LETS_CONNECT' | translate }}</h3>
+          </div>
+
+          <div class="contact-methods">
+            <div class="method">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="method-details">
+                <h4>{{ 'CONTACT.EMAIL_TITLE' | translate }}</h4>
+                <p>mathiasmanzano37gmail.com</p>
+              </div>
+            </div>
+
+            <div class="method">
+              <div class="method-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="method-details">
+                <h4>{{ 'CONTACT.LOCATION_TITLE' | translate }}</h4>
+                <p>{{ 'CONTACT.LOCATION' | translate }}</p>
+              </div>
+            </div>
+
+            <div class="method">
+              <div class="method-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="method-details">
+                <h4>{{ 'CONTACT.PHONE_TITLE' | translate }}</h4>
+                <p>{{ 'CONTACT.PHONE' | translate }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/mathias-manzano/" target="_blank" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/MathiasManzano" target="_blank" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
         </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-container">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <div class="input-container" [class.error]="name.invalid && name.touched">
+              <span class="input-icon"><i class="fas fa-user"></i></span>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                ngModel
+                required
+                #name="ngModel"
+                placeholder="{{ 'CONTACT.NAME' | translate }}"
+              />
+              <span class="focus-border"></span>
+              <div *ngIf="name.invalid && name.touched" class="error-message">
+                {{ 'CONTACT.NAME_REQUIRED' | translate }}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container" [class.error]="email.invalid && email.touched">
+              <span class="input-icon"><i class="fas fa-envelope"></i></span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                ngModel
+                required
+                email
+                #email="ngModel"
+                placeholder="{{ 'CONTACT.EMAIL' | translate }}"
+              />
+              <span class="focus-border"></span>
+              <div *ngIf="email.invalid && email.touched" class="error-message">
+                {{ 'CONTACT.EMAIL_INVALID' | translate }}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container" [class.error]="subject.invalid && subject.touched">
+              <span class="input-icon"><i class="fas fa-pencil-alt"></i></span>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                ngModel
+                required
+                #subject="ngModel"
+                placeholder="{{ 'CONTACT.SUBJECT' | translate }}"
+              />
+              <span class="focus-border"></span>
+              <div *ngIf="subject.invalid && subject.touched" class="error-message">
+                {{ 'CONTACT.SUBJECT_REQUIRED' | translate }}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="textarea-container" [class.error]="message.invalid && message.touched">
+              <span class="input-icon"><i class="fas fa-comment-alt"></i></span>
+              <textarea
+                id="message"
+                name="message"
+                ngModel
+                required
+                #message="ngModel"
+                placeholder="{{ 'CONTACT.MESSAGE' | translate }}"
+                rows="5"
+              ></textarea>
+              <span class="focus-border"></span>
+              <div *ngIf="message.invalid && message.touched" class="error-message">
+                {{ 'CONTACT.MESSAGE_REQUIRED' | translate }}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-action">
+            <button type="submit" class="submit-btn" [disabled]="!contactForm.form.valid || isSubmitting">
+              <span *ngIf="!isSubmitting">
+                <i class="fas fa-paper-plane"></i> {{ 'CONTACT.SEND' | translate }}
+              </span>
+              <span *ngIf="isSubmitting" class="loading-spinner"></span>
+            </button>
+          </div>
+
+          <div *ngIf="successMessage" class="success-message">
+            <i class="fas fa-check-circle"></i> {{ successMessage }}
+          </div>
+        </form>
       </div>
     </div>
   </div>
-
-  <div class="text-center mt-5">
-    <button type="submit" class="btn btn-gradient px-5 py-2 fw-semibold" [disabled]="!contactForm.form.valid || isSubmitting">
-      <span *ngIf="!isSubmitting">Send</span>
-      <span *ngIf="isSubmitting" class="spinner-border spinner-border-sm"></span>
-    </button>
-  </div>
-
-  <div *ngIf="successMessage" class="alert alert-success mt-4 text-center" role="alert">
-    {{ successMessage }}
-  </div>
-</form>
+</section>

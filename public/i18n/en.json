@@ -19,7 +19,19 @@
     "NAME": "Name",
     "EMAIL": "Email",
     "SUBJECT": "Subject",
-    "MESSAGE": "Your message"
+    "MESSAGE": "Your message",
+    "DESCRIPTION": "Send me a message and I'll get back to you as soon as possible",
+    "LETS_CONNECT": "Let's Connect",
+    "EMAIL_TITLE": "Email",
+    "LOCATION_TITLE": "Location",
+    "LOCATION": "Belgium",
+    "PHONE_TITLE": "Phone",
+    "PHONE": "On request",
+    "SEND": "Send",
+    "NAME_REQUIRED": "Name is required",
+    "EMAIL_INVALID": "Invalid or required email",
+    "SUBJECT_REQUIRED": "Subject is required",
+    "MESSAGE_REQUIRED": "Message is required"
   },
   "ABOUT" : {
     "TITLE": "About",
