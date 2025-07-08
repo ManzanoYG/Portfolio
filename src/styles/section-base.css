@@ -1,0 +1,341 @@
+/* Global section styles - to be imported in each section component */
+
+/* Base section styling */
+.section-base {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+/* Grid pattern overlay */
+.section-base::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+/* Container styling */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Section titles */
+.section-title-modern {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #ffffff 0%, #e1e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  position: relative;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-title-modern::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(135deg, #4c6ef5 0%, #5c7cfa 100%);
+  border-radius: 2px;
+}
+
+/* Section descriptions */
+.section-description-modern {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  color: #d1d9e6;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Modern card styling */
+.card-modern {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #4c6ef5 0%, #5c7cfa 100%);
+}
+
+.card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(92, 124, 250, 0.3);
+}
+
+/* Modern buttons */
+.btn-modern {
+  background: linear-gradient(135deg, #4c6ef5 0%, #5c7cfa 100%);
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 110, 245, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(76, 110, 245, 0.4);
+  background: linear-gradient(135deg, #5c7cfa 0%, #4c6ef5 100%);
+}
+
+/* Decorative elements */
+.decorative-circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.decorative-circles::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(92, 124, 250, 0.2);
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+}
+
+.decorative-circles::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, rgba(76, 110, 245, 0.1), rgba(92, 124, 250, 0.1));
+  border-radius: 20px;
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+/* Animations */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  33% { transform: translateY(-15px) translateX(10px); }
+  66% { transform: translateY(5px) translateX(-5px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Variations subtiles de background pour différentes sections */
+.section-base.home-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 45%, #0f3460 90%, #1a1a2e 100%);
+}
+
+.section-base.about-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 35%, #16213e 75%, #1a1a2e 100%);
+}
+
+.section-base.experience-section {
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 40%, #0f3460 85%, #16213e 100%);
+}
+
+.section-base.skills-section {
+  background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 35%, #16213e 80%, #0f3460 100%);
+}
+
+.section-base.portfolio-section {
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 40%, #1a1a2e 85%, #16213e 100%);
+}
+
+.section-base.contact-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 85%, #1a1a2e 100%);
+}
+
+/* Variations de grille décorative pour chaque section */
+.section-base.home-section::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid-home" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(92,124,250,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid-home)"/></svg>');
+  opacity: 0.4;
+}
+
+.section-base.about-section::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid-about" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid-about)"/></svg>');
+  opacity: 0.25;
+}
+
+.section-base.experience-section::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid-exp" width="45" height="45" patternUnits="userSpaceOnUse"><path d="M 45 0 L 0 0 0 45" fill="none" stroke="rgba(76,110,245,0.04)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid-exp)"/></svg>');
+  opacity: 0.3;
+}
+
+.section-base.skills-section::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid-skills" width="55" height="55" patternUnits="userSpaceOnUse"><path d="M 55 0 L 0 0 0 55" fill="none" stroke="rgba(92,124,250,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid-skills)"/></svg>');
+  opacity: 0.2;
+}
+
+.section-base.portfolio-section::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid-portfolio" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid-portfolio)"/></svg>');
+  opacity: 0.35;
+}
+
+.section-base.contact-section::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid-contact" width="65" height="65" patternUnits="userSpaceOnUse"><path d="M 65 0 L 0 0 0 65" fill="none" stroke="rgba(76,110,245,0.02)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid-contact)"/></svg>');
+  opacity: 0.25;
+}
+
+/* Éléments de transition entre sections */
+.section-base::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(92, 124, 250, 0.3) 50%, transparent 100%);
+  z-index: 2;
+}
+
+/* Amélioration de la lisibilité du texte */
+.section-base * {
+  position: relative;
+  z-index: 3;
+}
+
+.section-base .card-modern {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.section-base .card-modern * {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Classes utilitaires pour améliorer la lisibilité */
+.text-high-contrast {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.text-medium-contrast {
+  color: #e1e8f0 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.text-low-contrast {
+  color: #d1d9e6 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Amélioration des backgrounds sombres pour tous les éléments de texte */
+.section-base h1,
+.section-base h2,
+.section-base h3,
+.section-base h4,
+.section-base h5,
+.section-base h6 {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.section-base p,
+.section-base span,
+.section-base div {
+  color: #e1e8f0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.section-base .card-modern h1,
+.section-base .card-modern h2,
+.section-base .card-modern h3,
+.section-base .card-modern h4,
+.section-base .card-modern h5,
+.section-base .card-modern h6,
+.section-base .card-modern p,
+.section-base .card-modern span,
+.section-base .card-modern div {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .section-base {
+    padding: 60px 0;
+  }
+  
+  .section-container {
+    padding: 0 15px;
+  }
+  
+  .section-title-modern {
+    font-size: 2.5rem;
+  }
+  
+  .section-description-modern {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .card-modern {
+    padding: 20px;
+  }
+}

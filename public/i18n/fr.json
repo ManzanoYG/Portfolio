@@ -15,6 +15,7 @@
     "CTA_BUTTON": "Mes Projets",
     "STATUS": "Disponible pour des projets"
   },
+  
   "CONTACT" : {
    "NAME": "Nom",
     "EMAIL": "Email",
@@ -22,10 +23,12 @@
     "MESSAGE": "Votre message"
   },
   "ABOUT" : {
+    "TITLE": "A propos",
     "DESCRIPTION" : "Étudiant en développement d’applications informatiques, actuellement en dernière année de bachelier. Passionné par les nouvelles technologies et la création de solutions innovantes. Grâce à ma formation et mes expériences professionnelles, j'ai acquis des compétences en développement web, gestion de projets et support technique. Autonome, motivé et curieux, je suis à la recherche de mon premier emploi pour appliquer mes compétences et enrichir mon expertise dans le domaine.",
     "BIRTHDAY_TITLE" : "Date de naissance",
     "BIRTHDAY" : "21 avril 2000",
     "AGE_TITLE" : "Age",
+    "YEARS_OLD" : "ans",
     "EMAIL_TITLE" : "Email",
     "EMAIL" : "mathiasmanzano37gmail.com",
     "DEGREE_TITLE" : "Diplôme",
@@ -33,7 +36,8 @@
     "COUNTRY_TITLE" : "Pays",
     "COUNTRY" : "Belgique",
     "CURRENTLY_TITLE" : "Actuellement",
-    "CURRENTLY" : "Étudiant"
+    "CURRENTLY" : "Étudiant",
+    "DOWNLOAD_CV" : "Télécharger CV"
   },
   "EXPERIENCE": {
     "TITLE": "Expérience",

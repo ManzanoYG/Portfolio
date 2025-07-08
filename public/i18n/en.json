@@ -22,18 +22,21 @@
     "MESSAGE": "Your message"
   },
   "ABOUT" : {
+    "TITLE": "About",
     "DESCRIPTION" : "Computer application development student, currently in my final year of a bachelor's degree. Passionate about new technologies and creating innovative solutions. Thanks to my training and professional experience, I have acquired skills in web development, project management and technical support. Independent, motivated and curious, I am looking for my first job to apply my skills and enrich my expertise in the field.",
     "BIRTHDAY_TITLE" : "Birthday",
     "BIRTHDAY" : "21 April 2000",
     "AGE_TITLE" : "AGE",
+    "YEARS_OLD" : "years old",
     "EMAIL_TITLE" : "Email",
     "EMAIL" : "mathiasmanzano37gmail.com",
     "DEGREE_TITLE" : "Degree",
-    "DEGREE" : "Bachlor",
+    "DEGREE" : "Bachelor",
     "COUNTRY_TITLE" : "Country",
     "COUNTRY" : "Belgium",
     "CURRENTLY_TITLE" : "Currently",
-    "CURRENTLY" : "Student"
+    "CURRENTLY" : "Student",
+    "DOWNLOAD_CV" : "Download CV"
   },
   "EXPERIENCE": {
     "TITLE": "Experience",
