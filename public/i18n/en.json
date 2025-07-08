@@ -9,6 +9,12 @@
     "CONTACT": "Contact"
   },
   "WELCOME": "Welcome to my portfolio!",
+  "HOME": {
+    "GREETING": "Hey, I'm Mathias.",
+    "DESCRIPTION": "A web designer and developer from Southampton in Belgium. I create bespoke websites to help people go further online.",
+    "CTA_BUTTON": "My Projects",
+    "STATUS": "Available for projects"
+  },
   "CONTACT" : {
     "NAME": "Name",
     "EMAIL": "Email",
