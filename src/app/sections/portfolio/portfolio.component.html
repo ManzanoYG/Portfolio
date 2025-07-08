@@ -1,0 +1,197 @@
+<section class="portfolio-section">
+  <div class="container">
+    <h2 class="section-title">{{ 'PORTFOLIO.TITLE' | translate }}</h2>
+    
+    <div class="portfolio-description">
+      <p>{{ 'PORTFOLIO.DESCRIPTION' | translate }}</p>
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="filter-buttons">
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'all'"
+        (click)="setFilter('all')">
+        {{ 'PORTFOLIO.ALL' | translate }}
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'game'"
+        (click)="setFilter('game')">
+        {{ 'PORTFOLIO.GAME' | translate }}
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'web'"
+        (click)="setFilter('web')">
+        {{ 'PORTFOLIO.WEB' | translate }}
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="selectedFilter === 'other'"
+        (click)="setFilter('other')">
+        {{ 'PORTFOLIO.OTHER' | translate }}
+      </button>
+    </div>
+
+    <!-- Portfolio carousel -->
+    <div class="portfolio-carousel" *ngIf="filteredProjects.length > 0">
+      <button class="carousel-btn prev-btn" (click)="prevSlide()" [disabled]="currentSlide === 0">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="projects-container">
+        <div class="projects-grid">
+          <div class="project-card" *ngFor="let project of visibleProjects" (click)="openProjectModal(project)">
+            <div class="project-image">
+              <img [src]="project.image" [alt]="project.titleKey | translate" />
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a *ngIf="project.link" [href]="project.link" target="_blank" class="action-btn" (click)="$event.stopPropagation()">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a *ngIf="project.github" [href]="project.github" target="_blank" class="action-btn" (click)="$event.stopPropagation()">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">{{ project.titleKey | translate }}</h3>
+              <p class="project-description">{{ project.descriptionKey | translate }}</p>
+              <div class="project-technologies">
+                <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button class="carousel-btn next-btn" (click)="nextSlide()" [disabled]="currentSlide >= totalSlides - 1">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- No results message -->
+    <div class="no-results" *ngIf="filteredProjects.length === 0">
+      <div class="no-results-content">
+        <i class="fas fa-search no-results-icon"></i>
+        <h3 class="no-results-title">{{ 'PORTFOLIO.NO_PROJECTS_FOUND' | translate }}</h3>
+        <p class="no-results-message">{{ 'PORTFOLIO.NO_PROJECTS_MESSAGE' | translate }}</p>
+        <button class="btn btn-primary" (click)="setFilter('all')">
+          <i class="fas fa-refresh"></i>
+          Réinitialiser les filtres
+        </button>
+      </div>
+    </div>
+
+    <!-- Carousel dots -->
+    <div class="carousel-dots" *ngIf="totalSlides > 1 && filteredProjects.length > 0">
+      <span 
+        class="dot" 
+        *ngFor="let dot of getDotArray(); let i = index"
+        [class.active]="currentSlide === i"
+        (click)="goToSlide(i)">
+      </span>
+    </div>
+
+    <!-- See All button -->
+    <div class="see-all-container" *ngIf="filteredProjects.length > 0">
+      <button class="see-all-btn" (click)="openAllProjectsModal()">{{ 'PORTFOLIO.SEE_ALL' | translate }}</button>
+    </div>
+  </div>
+</section>
+
+<!-- Project Detail Modal -->
+<div class="project-modal" *ngIf="showProjectModal && selectedProject" (click)="onModalBackdropClick($event)">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>{{ 'PORTFOLIO.PROJECT_DETAILS' | translate }}</h3>
+      <button class="close-btn" (click)="closeProjectModal()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="project-modal-image">
+        <img [src]="selectedProject.image" [alt]="selectedProject.titleKey | translate" />
+      </div>
+      
+      <div class="project-modal-info">
+        <h2 class="project-modal-title">{{ selectedProject.titleKey | translate }}</h2>
+        
+        <div class="project-modal-description">
+          <p>{{ selectedProject.fullDescriptionKey | translate }}</p>
+        </div>
+        
+        <div class="project-modal-technologies">
+          <h4>{{ 'PORTFOLIO.TECHNOLOGIES_USED' | translate }}</h4>
+          <div class="tech-tags-container">
+            <span class="tech-tag-modal" *ngFor="let tech of selectedProject.technologies">{{ tech }}</span>
+          </div>
+        </div>
+        
+        <div class="project-modal-links" *ngIf="selectedProject.link || selectedProject.github">
+          <h4>{{ 'PORTFOLIO.PROJECT_LINKS' | translate }}</h4>
+          <div class="links-container">
+            <a *ngIf="selectedProject.link" [href]="selectedProject.link" target="_blank" class="project-link-btn">
+              <i class="fas fa-external-link-alt"></i>
+              {{ 'PORTFOLIO.VIEW_PROJECT' | translate }}
+            </a>
+            <a *ngIf="selectedProject.github" [href]="selectedProject.github" target="_blank" class="project-link-btn github-btn">
+              <i class="fab fa-github"></i>
+              {{ 'PORTFOLIO.VIEW_CODE' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal-footer">
+      <button class="close-modal-btn" (click)="closeProjectModal()">{{ 'PORTFOLIO.CLOSE' | translate }}</button>
+    </div>
+  </div>
+</div>
+
+<!-- See All Projects Modal -->
+<div class="all-projects-modal" *ngIf="showAllProjectsModal" (click)="onAllProjectsModalBackdropClick($event)">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>{{ getCategoryTitle() | translate }}</h3>
+      <button class="close-btn" (click)="closeAllProjectsModal()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="all-projects-grid">
+        <div class="project-card-modal" *ngFor="let project of filteredProjects" (click)="openProjectFromAllModal(project)">
+          <div class="project-image-modal">
+            <img [src]="project.image" [alt]="project.titleKey | translate" />
+            <div class="project-overlay-modal">
+              <div class="project-actions-modal">
+                <a *ngIf="project.link" [href]="project.link" target="_blank" class="action-btn-modal" (click)="$event.stopPropagation()">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a *ngIf="project.github" [href]="project.github" target="_blank" class="action-btn-modal" (click)="$event.stopPropagation()">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info-modal">
+            <h4 class="project-title-modal">{{ project.titleKey | translate }}</h4>
+            <p class="project-description-modal">{{ project.descriptionKey | translate }}</p>
+            <div class="project-technologies-modal">
+              <span class="tech-tag-small" *ngFor="let tech of project.technologies">{{ tech }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal-footer">
+      <button class="close-modal-btn" (click)="closeAllProjectsModal()">{{ 'PORTFOLIO.CLOSE' | translate }}</button>
+    </div>
+  </div>
+</div>
