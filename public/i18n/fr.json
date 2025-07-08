@@ -9,6 +9,12 @@
     "CONTACT": "Contact"
   },
   "WELCOME": "Bienvenue sur mon portfolio !",
+  "FOOTER": {
+    "RIGHTS": "Tous droits réservés.",
+    "NAVIGATION": "Navigation",
+    "CONTACT": "Contact",
+    "SOCIAL": "Réseaux sociaux"
+  },
   "HOME": {
     "GREETING": "Salut, je suis Mathias.",
     "DESCRIPTION": "Un développeur web et étudiant de Southampton en Belgique. Je crée des sites web sur mesure pour aider les gens à aller plus loin en ligne.",
