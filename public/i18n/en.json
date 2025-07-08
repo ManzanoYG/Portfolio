@@ -5,9 +5,16 @@
     "PROJECTS": "Projects",
     "EXPERIENCE": "Experience",
     "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
     "CONTACT": "Contact"
   },
   "WELCOME": "Welcome to my portfolio!",
+  "HOME": {
+    "GREETING": "Hey, I'm Mathias.",
+    "DESCRIPTION": "A web designer and developer from Southampton in Belgium. I create bespoke websites to help people go further online.",
+    "CTA_BUTTON": "My Projects",
+    "STATUS": "Available for projects"
+  },
   "CONTACT" : {
     "NAME": "Name",
     "EMAIL": "Email",
@@ -42,6 +49,72 @@
     "SEE_ALL": "See All",
     "CLOSE": "Close",
     "ALL_SKILLS_IN": "All skills in"
+  },
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "DESCRIPTION": "Lorem ipsum odor amet, consectetuer adipiscing elit. Fermentum bibendum quisque ante nullam ac. Vehicula dictum vel parturient elementum torquent elit fusce. Neque ac netus dictum tempor, magna senectus posuere",
+    "ALL": "ALL",
+    "GAME": "GAME",
+    "WEB": "WEB",
+    "OTHER": "OTHER",
+    "SEARCH_PLACEHOLDER": "Search projects, technologies...",
+    "CLEAR_SEARCH": "Clear search",
+    "NO_PROJECTS_FOUND": "No projects found",
+    "NO_PROJECTS_MESSAGE": "No projects match your search criteria. Try modifying your filters or search query.",
+    "SEE_ALL": "See All",
+    "CLOSE": "Close",
+    "VIEW_PROJECT": "View Project",
+    "VIEW_CODE": "View Code",
+    "PROJECT_DETAILS": "Project Details",
+    "TECHNOLOGIES_USED": "Technologies Used",
+    "PROJECT_LINKS": "Project Links",
+    "ALL_PROJECTS": "All Projects",
+    "ALL_PROJECTS_IN": "All projects",
+    "GAME_PROJECTS": "Game Projects",
+    "WEB_PROJECTS": "Web Projects",
+    "OTHER_PROJECTS": "Other Projects"
+  },
+  "PROJECTS": {
+    "ECOMMERCE": {
+      "TITLE": "E-commerce Website",
+      "DESCRIPTION": "A modern e-commerce platform built with Angular and Node.js",
+      "FULL_DESCRIPTION": "This project is a complete e-commerce application with user management, shopping cart, integrated payment system and admin interface. The application uses a modern architecture with Angular for the frontend and Node.js with Express for the backend."
+    },
+    "MOBILE_GAME": {
+      "TITLE": "Mobile Game",
+      "DESCRIPTION": "An exciting mobile game developed with Unity",
+      "FULL_DESCRIPTION": "Mobile game developed with Unity and C#, available on Android and iOS. The game offers innovative mechanics, attractive graphics and an engaging progression system for players."
+    },
+    "TASK_MANAGER": {
+      "TITLE": "Task Management App",
+      "DESCRIPTION": "A productivity app for managing daily tasks",
+      "FULL_DESCRIPTION": "Task management web application with intuitive interface, reminder system, team collaboration and multi-device synchronization. Built with React and Firebase for an optimal user experience."
+    },
+    "DESKTOP_APP": {
+      "TITLE": "Desktop Application",
+      "DESCRIPTION": "A desktop application for data analysis",
+      "FULL_DESCRIPTION": "Desktop application developed with Electron for data analysis and visualization. The application allows CSV file import, creation of interactive charts and report export."
+    },
+    "PORTFOLIO_WEBSITE": {
+      "TITLE": "Portfolio Website",
+      "DESCRIPTION": "This very portfolio website you are viewing",
+      "FULL_DESCRIPTION": "Personal portfolio website developed with Angular, TypeScript and Bootstrap. The site showcases my skills, projects and experiences with a modern and responsive design. It includes a multilingual translation system and smooth animations."
+    },
+    "PUZZLE_GAME": {
+      "TITLE": "Puzzle Game",
+      "DESCRIPTION": "A challenging puzzle game for web browsers",
+      "FULL_DESCRIPTION": "Puzzle game developed in native JavaScript with HTML5 Canvas. The game offers different difficulty levels, a scoring system and original game mechanics."
+    },
+    "REST_API": {
+      "TITLE": "REST API",
+      "DESCRIPTION": "A RESTful API for managing user data",
+      "FULL_DESCRIPTION": "Complete REST API developed with Node.js and Express, including JWT authentication, data validation, Swagger documentation and automated tests. The API manages users, sessions and business data."
+    },
+    "CHAT_APP": {
+      "TITLE": "Chat Application",
+      "DESCRIPTION": "Real-time chat application with Socket.io",
+      "FULL_DESCRIPTION": "Real-time chat application developed with Vue.js and Socket.io. The application allows private and group conversations, file sharing and push notifications."
+    }
   },
   "education" : [
     {

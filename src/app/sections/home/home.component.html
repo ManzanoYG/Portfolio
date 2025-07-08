@@ -1,0 +1,50 @@
+<section class="home-section">
+  <!-- Decorative background elements -->
+  <div class="decorative-circles"></div>
+  
+  <div class="container">
+    <div class="home-content">
+      <div class="home-text">
+        <h1 class="home-greeting">{{ 'HOME.GREETING' | translate }}</h1>
+        <p class="home-description">{{ 'HOME.DESCRIPTION' | translate }}</p>
+        <button class="cta-button" (click)="scrollToProjects()">
+          {{ 'HOME.CTA_BUTTON' | translate }}
+        </button>
+        
+        <!-- Status indicator -->
+        <div class="status-indicator">
+          <div class="status-dot"></div>
+          <span class="status-text">{{ 'HOME.STATUS' | translate }}</span>
+        </div>
+      </div>
+      
+      <div class="home-image">
+        <div class="image-container">
+          <img src="assets/img/profile.jpg" alt="Profile" class="profile-image">
+          <div class="image-overlay"></div>
+          
+          <!-- Modern UI elements around image -->
+          <div class="ui-element ui-element-1">
+            <div class="ui-dot"></div>
+            <span>Frontend</span>
+          </div>
+          <div class="ui-element ui-element-2">
+            <div class="ui-dot"></div>
+            <span>Backend</span>
+          </div>
+          <div class="ui-element ui-element-3">
+            <i class="fas fa-code"></i>
+            <span>Angular</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator" (click)="scrollToNext()">
+    <div class="scroll-arrow">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+</section>

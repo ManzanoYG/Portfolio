@@ -5,9 +5,16 @@
     "PROJECTS": "Projets",
     "EXPERIENCE": "Expérience",
     "SKILLS": "Compétences",
+    "PORTFOLIO": "Portfolio",
     "CONTACT": "Contact"
   },
   "WELCOME": "Bienvenue sur mon portfolio !",
+  "HOME": {
+    "GREETING": "Salut, je suis Mathias.",
+    "DESCRIPTION": "Un développeur web et étudiant de Southampton en Belgique. Je crée des sites web sur mesure pour aider les gens à aller plus loin en ligne.",
+    "CTA_BUTTON": "Mes Projets",
+    "STATUS": "Disponible pour des projets"
+  },
   "CONTACT" : {
    "NAME": "Nom",
     "EMAIL": "Email",
@@ -42,6 +49,72 @@
     "SEE_ALL": "Voir Tout",
     "CLOSE": "Fermer",
     "ALL_SKILLS_IN": "Toutes les compétences en"
+  },
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "DESCRIPTION": "Lorem ipsum odor amet, consectetuer adipiscing elit. Fermentum bibendum quisque ante nullam ac. Vehicula dictum vel parturient elementum torquent elit fusce. Neque ac netus dictum tempor, magna senectus posuere",
+    "ALL": "TOUT",
+    "GAME": "JEU",
+    "WEB": "WEB",
+    "OTHER": "AUTRE",
+    "SEARCH_PLACEHOLDER": "Rechercher des projets, technologies...",
+    "CLEAR_SEARCH": "Effacer la recherche",
+    "NO_PROJECTS_FOUND": "Aucun projet trouvé",
+    "NO_PROJECTS_MESSAGE": "Aucun projet ne correspond à vos critères de recherche. Essayez de modifier vos filtres ou votre recherche.",
+    "SEE_ALL": "Voir Tout",
+    "CLOSE": "Fermer",
+    "VIEW_PROJECT": "Voir le Projet",
+    "VIEW_CODE": "Voir le Code",
+    "PROJECT_DETAILS": "Détails du Projet",
+    "TECHNOLOGIES_USED": "Technologies utilisées",
+    "PROJECT_LINKS": "Liens du Projet",
+    "ALL_PROJECTS": "Tous les Projets",
+    "ALL_PROJECTS_IN": "Tous les projets",
+    "GAME_PROJECTS": "Projets de Jeux",
+    "WEB_PROJECTS": "Projets Web",
+    "OTHER_PROJECTS": "Autres Projets"
+  },
+  "PROJECTS": {
+    "ECOMMERCE": {
+      "TITLE": "Site E-commerce",
+      "DESCRIPTION": "Une plateforme e-commerce moderne construite avec Angular et Node.js",
+      "FULL_DESCRIPTION": "Ce projet est une application e-commerce complète avec gestion des utilisateurs, panier d'achat, système de paiement intégré et interface d'administration. L'application utilise une architecture moderne avec Angular pour le frontend et Node.js avec Express pour le backend."
+    },
+    "MOBILE_GAME": {
+      "TITLE": "Jeu Mobile",
+      "DESCRIPTION": "Un jeu mobile passionnant développé avec Unity",
+      "FULL_DESCRIPTION": "Jeu mobile développé avec Unity et C#, disponible sur Android et iOS. Le jeu propose des mécaniques innovantes, des graphismes attrayants et un système de progression engageant pour les joueurs."
+    },
+    "TASK_MANAGER": {
+      "TITLE": "App Gestion de Tâches",
+      "DESCRIPTION": "Une application de productivité pour gérer les tâches quotidiennes",
+      "FULL_DESCRIPTION": "Application web de gestion de tâches avec interface intuitive, système de rappels, collaboration d'équipe et synchronisation multi-appareils. Construite avec React et Firebase pour une expérience utilisateur optimale."
+    },
+    "DESKTOP_APP": {
+      "TITLE": "Application Desktop",
+      "DESCRIPTION": "Une application desktop pour l'analyse de données",
+      "FULL_DESCRIPTION": "Application desktop développée avec Electron pour l'analyse et la visualisation de données. L'application permet l'import de fichiers CSV, la création de graphiques interactifs et l'export de rapports."
+    },
+    "PORTFOLIO_WEBSITE": {
+      "TITLE": "Site Portfolio",
+      "DESCRIPTION": "Ce site portfolio que vous consultez actuellement",
+      "FULL_DESCRIPTION": "Site portfolio personnel développé avec Angular, TypeScript et Bootstrap. Le site présente mes compétences, projets et expériences avec un design moderne et responsive. Il inclut un système de traduction multilingue et des animations fluides."
+    },
+    "PUZZLE_GAME": {
+      "TITLE": "Jeu de Puzzle",
+      "DESCRIPTION": "Un jeu de puzzle challenging pour navigateurs web",
+      "FULL_DESCRIPTION": "Jeu de puzzle développé en JavaScript natif avec HTML5 Canvas. Le jeu propose différents niveaux de difficulté, un système de score et des mécaniques de jeu originales."
+    },
+    "REST_API": {
+      "TITLE": "API REST",
+      "DESCRIPTION": "Une API RESTful pour la gestion des données utilisateur",
+      "FULL_DESCRIPTION": "API REST complète développée avec Node.js et Express, incluant authentification JWT, validation des données, documentation Swagger et tests automatisés. L'API gère les utilisateurs, les sessions et les données métier."
+    },
+    "CHAT_APP": {
+      "TITLE": "Application de Chat",
+      "DESCRIPTION": "Application de chat en temps réel avec Socket.io",
+      "FULL_DESCRIPTION": "Application de chat en temps réel développée avec Vue.js et Socket.io. L'application permet les conversations privées et de groupe, le partage de fichiers et les notifications push."
+    }
   },
   "education" : [
     {
