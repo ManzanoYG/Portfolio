@@ -1,35 +1,64 @@
-<div class="container my-5">
-  <h2 class="fw-bold">{{ 'EXPERIENCE.TITLE' | translate }}</h2>
-  <hr class="border border-2 opacity-100" style="width: 120px;">
-
-  <div class="row mt-5">
-    <div class="col-md-6">
-      <h5 class="fw-bold mb-4">{{ 'EXPERIENCE.EDUCATION' | translate }}</h5>
-      <div class="timeline">
-        <div class="timeline-item" *ngFor="let edu of education">
-          <div class="timeline-icon"></div>
-          <div class="timeline-content">
-            <h6 class="fw-bold text-uppercase">{{ edu.title }}</h6>
-            <p class="fw-bold">{{ edu.date }}</p>
-            <p class="mb-1">{{ edu.institution }}</p>
-            <p class="text-muted small">{{ edu.description }}</p>
+<section class="experience-section">
+  <!-- Decorative background elements -->
+  <div class="decorative-shapes"></div>
+  
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">{{ 'EXPERIENCE.TITLE' | translate }}</h1>
+    </div>
+    
+    <div class="experience-content">
+      <!-- Education Section -->
+      <div class="experience-column">
+        <div class="column-header">
+          <div class="header-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h2 class="column-title">{{ 'EXPERIENCE.EDUCATION' | translate }}</h2>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let edu of education; index as i" [style.animation-delay]="i * 200 + 'ms'">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-header">
+                <div class="date">{{ edu.date }}</div>
+                <h3 class="title">{{ edu.title }}</h3>
+                <div class="institution">{{ edu.institution }}</div>
+              </div>
+              <div class="card-body">
+                <p class="description">{{ edu.description }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <h5 class="fw-bold mb-4">{{ 'EXPERIENCE.PROFESSIONAL' | translate }}</h5>
-      <div class="timeline">
-        <div class="timeline-item" *ngFor="let exp of experience">
-          <div class="timeline-icon"></div>
-          <div class="timeline-content">
-            <h6 class="fw-bold text-uppercase">{{ exp.title }}</h6>
-            <p class="fw-bold">{{ exp.date }}</p>
-            <p class="mb-1">{{ exp.company }}</p>
-            <p class="text-muted small">{{ exp.description }}</p>
+      
+      <!-- Professional Experience Section -->
+      <div class="experience-column">
+        <div class="column-header">
+          <div class="header-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h2 class="column-title">{{ 'EXPERIENCE.PROFESSIONAL' | translate }}</h2>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let exp of experience; index as i" [style.animation-delay]="i * 200 + 'ms'">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-header">
+                <div class="date">{{ exp.date }}</div>
+                <h3 class="title">{{ exp.title }}</h3>
+                <div class="company">{{ exp.company }}</div>
+              </div>
+              <div class="card-body">
+                <p class="description">{{ exp.description }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
