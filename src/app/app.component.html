@@ -1,7 +1,7 @@
 <div class="container-flex">
   <app-header (toggle)="toggleSidebar()"></app-header>
   <div class="main">
-    <app-navbar [isExpanded]="isExpanded"></app-navbar>
+    <app-navbar [isExpanded]="isExpanded" (closeSidebar)="closeSidebar()"></app-navbar>
     <div class="content">
       <app-home id="home" style="width: 100%"></app-home>
       <app-about id="about" style="width: 100%"></app-about>

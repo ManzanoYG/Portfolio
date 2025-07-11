@@ -18,6 +18,10 @@ export class AppComponent {
     this.isExpanded = !this.isExpanded;
   }
 
+  closeSidebar() {
+    this.isExpanded = false;
+  }
+
   @HostListener('document:click', ['$event'])
   onClick(event: MouseEvent) {
     const target = event.target as HTMLElement;

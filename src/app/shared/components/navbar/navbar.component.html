@@ -5,31 +5,39 @@
       <i class="fa-solid fa-home"></i>
       <span class="text">{{ 'NAV.HOME' | translate }}</span>
     </a>
-    
+
     <a href="#" (click)="scrollTo('about')" class="nav-link" [class.active]="isActive('about')">
       <i class="fa-solid fa-user"></i>
       <span class="text">{{ 'NAV.ABOUT' | translate }}</span>
     </a>
-    
+
     <a href="#" (click)="scrollTo('experience')" class="nav-link" [class.active]="isActive('experience')">
       <i class="fa-solid fa-timeline"></i>
       <span class="text">{{ 'NAV.EXPERIENCE' | translate }}</span>
     </a>
-    
+
     <a href="#" (click)="scrollTo('skills')" class="nav-link" [class.active]="isActive('skills')">
       <i class="fa-solid fa-user-gear"></i>
       <span class="text">{{ 'NAV.SKILLS' | translate }}</span>
     </a>
-    
+
     <a href="#" (click)="scrollTo('portfolio')" class="nav-link" [class.active]="isActive('portfolio')">
       <i class="fa-regular fa-folder-open"></i>
       <span class="text">{{ 'NAV.PORTFOLIO' | translate }}</span>
     </a>
-    
+
     <a href="#" (click)="scrollTo('contact-form')" class="nav-link" [class.active]="isActive('contact-form')">
       <i class="fa-solid fa-envelope"></i>
       <span class="text">{{ 'NAV.CONTACT' | translate }}</span>
     </a>
+  </div>
+
+  <!-- Language Switcher - repositioned for better mobile visibility -->
+  <div class="language-switcher">
+    <select [value]="currentLang" (change)="switchLang($event)" class="form-select">
+      <option value="en">🇺🇸 English</option>
+      <option value="fr">🇫🇷 Français</option>
+    </select>
   </div>
 
   <hr>
@@ -38,16 +46,6 @@
   <div class="profile-section">
     <img src="assets/img/profile.jpg" alt="Profile" />
     <div class="email-label">mathias.devemail.com</div>
-  </div>
-
-  <hr>
-
-  <!-- Language Switcher -->
-  <div class="language-switcher">
-    <select [value]="currentLang" (change)="switchLang($event)" class="form-select">
-      <option value="en">🇺🇸 English</option>
-      <option value="fr">🇫🇷 Français</option>
-    </select>
   </div>
 
 </div>

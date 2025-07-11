@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   @Input() isExpanded = false;
+  @Output() closeSidebar = new EventEmitter<void>();
   
   activeSection = 'home';
   currentLang = 'en';
@@ -47,6 +48,13 @@ export class NavbarComponent implements OnInit, OnDestroy {
       element.scrollIntoView({ behavior: 'smooth' });
       // Mise à jour immédiate de la section active
       this.activeSection = elementId;
+      
+      // Fermer la sidebar sur mobile après le clic
+      if (window.innerWidth <= 768) {
+        setTimeout(() => {
+          this.closeSidebar.emit();
+        }, 300); // Délai pour permettre l'animation de scroll
+      }
     }
   }
 
