@@ -9,6 +9,12 @@
     "CONTACT": "Contact"
   },
   "WELCOME": "Welcome to my portfolio!",
+  "FOOTER": {
+    "RIGHTS": "All rights reserved.",
+    "NAVIGATION": "Navigation",
+    "CONTACT": "Contact",
+    "SOCIAL": "Social"
+  },
   "HOME": {
     "GREETING": "Hey, I'm Mathias.",
     "DESCRIPTION": "A web designer and developer from Southampton in Belgium. I create bespoke websites to help people go further online.",
@@ -19,21 +25,36 @@
     "NAME": "Name",
     "EMAIL": "Email",
     "SUBJECT": "Subject",
-    "MESSAGE": "Your message"
+    "MESSAGE": "Your message",
+    "DESCRIPTION": "Send me a message and I'll get back to you as soon as possible",
+    "LETS_CONNECT": "Let's Connect",
+    "EMAIL_TITLE": "Email",
+    "LOCATION_TITLE": "Location",
+    "LOCATION": "Belgium",
+    "PHONE_TITLE": "Phone",
+    "PHONE": "On request",
+    "SEND": "Send",
+    "NAME_REQUIRED": "Name is required",
+    "EMAIL_INVALID": "Invalid or required email",
+    "SUBJECT_REQUIRED": "Subject is required",
+    "MESSAGE_REQUIRED": "Message is required"
   },
   "ABOUT" : {
+    "TITLE": "About",
     "DESCRIPTION" : "Computer application development student, currently in my final year of a bachelor's degree. Passionate about new technologies and creating innovative solutions. Thanks to my training and professional experience, I have acquired skills in web development, project management and technical support. Independent, motivated and curious, I am looking for my first job to apply my skills and enrich my expertise in the field.",
     "BIRTHDAY_TITLE" : "Birthday",
     "BIRTHDAY" : "21 April 2000",
     "AGE_TITLE" : "AGE",
+    "YEARS_OLD" : "years old",
     "EMAIL_TITLE" : "Email",
     "EMAIL" : "mathiasmanzano37gmail.com",
     "DEGREE_TITLE" : "Degree",
-    "DEGREE" : "Bachlor",
+    "DEGREE" : "Bachelor",
     "COUNTRY_TITLE" : "Country",
     "COUNTRY" : "Belgium",
     "CURRENTLY_TITLE" : "Currently",
-    "CURRENTLY" : "Student"
+    "CURRENTLY" : "Student",
+    "DOWNLOAD_CV" : "Download CV"
   },
   "EXPERIENCE": {
     "TITLE": "Experience",

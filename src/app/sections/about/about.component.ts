@@ -29,4 +29,10 @@ export class AboutComponent implements OnInit {
     }
     this.calculatedAge = age;
   }
+
+  downloadCV() {
+    // Pour l'instant, ouvrir le CV dans un nouvel onglet
+    // Plus tard, vous pourrez ajouter le lien vers votre CV
+    window.open('assets/cv/CV_Mathis_Langlois.pdf', '_blank');
+  }
 }

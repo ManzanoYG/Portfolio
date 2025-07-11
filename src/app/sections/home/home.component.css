@@ -284,11 +284,11 @@
     gap: 40px;
     text-align: center;
   }
-  
+
   .home-greeting {
     font-size: 3rem;
   }
-  
+
   .image-container {
     width: 350px;
     height: 350px;
@@ -299,95 +299,94 @@
   .home-section {
     min-height: 90vh;
   }
-  
+
   .container {
     padding: 0 16px;
   }
-  
+
   .home-content {
     gap: 30px;
     min-height: 60vh;
   }
-  
+
   .home-greeting {
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
-  
+
   .home-description {
     font-size: 1.1rem;
     margin-bottom: 28px;
   }
-  
+
   .cta-button {
     padding: 14px 28px;
     font-size: 0.95rem;
   }
-  
+
   .image-container {
     width: 300px;
     height: 300px;
   }
-  
+
   .ui-element {
     font-size: 0.8rem;
     padding: 6px 10px;
   }
-  
+
   .ui-element-1,
   .ui-element-2 {
     left: -10%;
   }
-  
+
   .ui-element-3 {
     right: -10%;
   }
-  
+
   .status-indicator {
     margin-top: 20px;
     padding: 10px 16px;
   }
-}
 }
 
 @media (max-width: 480px) {
   .home-greeting {
     font-size: 2rem;
   }
-  
+
   .home-description {
     font-size: 1rem;
   }
-  
+
   .cta-button {
     padding: 12px 24px;
     font-size: 0.9rem;
   }
-  
+
   .image-container {
     width: 250px;
     height: 250px;
   }
-  
+
   .ui-element {
     display: none; /* Hide UI elements on very small screens */
   }
-  
+
   .status-indicator {
     margin-top: 16px;
     padding: 8px 14px;
     font-size: 0.85rem;
   }
-  
+
   .scroll-indicator {
     bottom: 20px;
   }
-  
+
   .scroll-arrow {
     width: 40px;
     height: 40px;
   }
-  
+
   .scroll-arrow i {
     font-size: 1rem;
   }
@@ -476,7 +475,7 @@
   height: 8px;
   background: #5c7cfa;
   border-radius: 50%;
-  box-shadow: 
+  box-shadow:
     40px 30px 0 rgba(92, 124, 250, 0.6),
     80px 60px 0 rgba(76, 110, 245, 0.4),
     120px 20px 0 rgba(92, 124, 250, 0.3),
@@ -492,7 +491,7 @@
   left: -50px;
   right: -50px;
   bottom: -50px;
-  background-image: 
+  background-image:
     linear-gradient(rgba(92, 124, 250, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(92, 124, 250, 0.1) 1px, transparent 1px);
   background-size: 30px 30px;

@@ -9,23 +9,44 @@
     "CONTACT": "Contact"
   },
   "WELCOME": "Bienvenue sur mon portfolio !",
+  "FOOTER": {
+    "RIGHTS": "Tous droits réservés.",
+    "NAVIGATION": "Navigation",
+    "CONTACT": "Contact",
+    "SOCIAL": "Réseaux sociaux"
+  },
   "HOME": {
     "GREETING": "Salut, je suis Mathias.",
     "DESCRIPTION": "Un développeur web et étudiant de Southampton en Belgique. Je crée des sites web sur mesure pour aider les gens à aller plus loin en ligne.",
     "CTA_BUTTON": "Mes Projets",
     "STATUS": "Disponible pour des projets"
   },
+  
   "CONTACT" : {
    "NAME": "Nom",
     "EMAIL": "Email",
     "SUBJECT": "Sujet",
-    "MESSAGE": "Votre message"
+    "MESSAGE": "Votre message",
+    "DESCRIPTION": "Envoyez-moi un message et je vous répondrai dès que possible",
+    "LETS_CONNECT": "Restons en contact",
+    "EMAIL_TITLE": "Email",
+    "LOCATION_TITLE": "Localisation",
+    "LOCATION": "Belgique",
+    "PHONE_TITLE": "Téléphone",
+    "PHONE": "Sur demande",
+    "SEND": "Envoyer",
+    "NAME_REQUIRED": "Le nom est requis",
+    "EMAIL_INVALID": "Email invalide ou requis",
+    "SUBJECT_REQUIRED": "Le sujet est requis",
+    "MESSAGE_REQUIRED": "Le message est requis"
   },
   "ABOUT" : {
+    "TITLE": "A propos",
     "DESCRIPTION" : "Étudiant en développement d’applications informatiques, actuellement en dernière année de bachelier. Passionné par les nouvelles technologies et la création de solutions innovantes. Grâce à ma formation et mes expériences professionnelles, j'ai acquis des compétences en développement web, gestion de projets et support technique. Autonome, motivé et curieux, je suis à la recherche de mon premier emploi pour appliquer mes compétences et enrichir mon expertise dans le domaine.",
     "BIRTHDAY_TITLE" : "Date de naissance",
     "BIRTHDAY" : "21 avril 2000",
     "AGE_TITLE" : "Age",
+    "YEARS_OLD" : "ans",
     "EMAIL_TITLE" : "Email",
     "EMAIL" : "mathiasmanzano37gmail.com",
     "DEGREE_TITLE" : "Diplôme",
@@ -33,7 +54,8 @@
     "COUNTRY_TITLE" : "Pays",
     "COUNTRY" : "Belgique",
     "CURRENTLY_TITLE" : "Actuellement",
-    "CURRENTLY" : "Étudiant"
+    "CURRENTLY" : "Étudiant",
+    "DOWNLOAD_CV" : "Télécharger CV"
   },
   "EXPERIENCE": {
     "TITLE": "Expérience",
