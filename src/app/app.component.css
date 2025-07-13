@@ -12,19 +12,85 @@
 
 .content {
   flex: 1;
-  background-color: #f95858;
+  background: linear-gradient(180deg, #0f3460 0%, #1a1a2e 50%, #16213e 100%);
   font-size: 20px;
   height: 100%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
 }
 
 .content > * {
   align-self: center;
   max-width: 100%;
   margin-bottom: 0px;
+  position: relative;
+}
+
+/* Seamless section transitions */
+.content::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, 
+    rgba(15, 52, 96, 0.95) 0%, 
+    rgba(26, 26, 46, 0.95) 25%,
+    rgba(22, 33, 62, 0.95) 50%,
+    rgba(15, 52, 96, 0.95) 75%,
+    rgba(26, 26, 46, 0.95) 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Section transition effects */
+app-home,
+app-about,
+app-experience, 
+app-skills,
+app-portfolio,
+app-contact {
+  position: relative;
+  z-index: 1;
+}
+
+/* Gradient overlays for smooth transitions */
+app-home::after,
+app-about::after,
+app-experience::after,
+app-skills::after,
+app-portfolio::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(15, 52, 96, 0.8) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+app-about::before,
+app-experience::before,
+app-skills::before,
+app-portfolio::before,
+app-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, transparent 0%, rgba(15, 52, 96, 0.8) 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* Global section styles for consistent sizing */

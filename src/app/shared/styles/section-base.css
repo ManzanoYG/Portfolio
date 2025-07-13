@@ -1,0 +1,169 @@
+/* Shared Section Styles - Harmonized Design */
+
+/* Base section styling */
+.section-base {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+  transition: all 0.3s ease;
+}
+
+/* Unified gradient background */
+.section-gradient {
+  background: linear-gradient(135deg, 
+    var(--bg-primary) 0%, 
+    var(--bg-secondary) 30%, 
+    var(--bg-tertiary) 70%, 
+    var(--bg-primary) 100%
+  );
+}
+
+/* Consistent background pattern for all sections */
+.section-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="unifiedGrid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(76,110,245,0.03)" stroke-width="1"/><circle cx="25" cy="25" r="0.5" fill="rgba(76,110,245,0.06)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23unifiedGrid)"/></svg>');
+  opacity: 0.4;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Floating decorative elements - consistent across sections */
+.section-decoration::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  animation: float 20s ease-in-out infinite;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+/* Container for section content */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section titles - unified styling */
+.section-title-unified {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  z-index: 1;
+}
+
+/* Smooth section transitions */
+.section-transition-in {
+  position: relative;
+}
+
+.section-transition-in::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, 
+    transparent 0%, 
+    var(--bg-primary) 50%,
+    var(--bg-primary) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section-transition-out {
+  position: relative;
+}
+
+.section-transition-out::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, 
+    transparent 0%, 
+    var(--bg-primary) 50%,
+    var(--bg-primary) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(20px) rotate(270deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-base {
+    padding: 60px 0;
+  }
+  
+  .section-title-unified {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .section-container {
+    padding: 0 15px;
+  }
+  
+  .section-decoration::after {
+    width: 120px;
+    height: 120px;
+    top: 5%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-base {
+    padding: 40px 0;
+  }
+  
+  .section-title-unified {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-container {
+    padding: 0 10px;
+  }
+}
