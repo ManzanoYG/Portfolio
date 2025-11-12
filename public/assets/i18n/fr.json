@@ -1,0 +1,11 @@
+{
+  "HOME": {
+    "TITLE": "Bienvenue sur mon portfolio",
+    "DESCRIPTION": "Je suis un développeur passionné par Angular."
+  },
+  "NAVBAR": {
+    "HOME": "Accueil",
+    "ABOUT": "À propos",
+    "CONTACT": "Contact"
+  }
+}

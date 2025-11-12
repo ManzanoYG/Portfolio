@@ -1,0 +1,11 @@
+{
+  "HOME": {
+    "TITLE": "Welcome to my portfolio",
+    "DESCRIPTION": "I am a developer passionate about Angular."
+  },
+  "NAVBAR": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "CONTACT": "Contact"
+  }
+}
