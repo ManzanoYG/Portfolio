@@ -22,11 +22,12 @@
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
       }
-      <span>Mathias Manzano Y Gonzalez</span>
+      <span class="app-title">Mathias Manzano Y Gonzalez</span>
+      <app-language-switcher></app-language-switcher>
     </mat-toolbar>
-    <app-language-switcher></app-language-switcher>
     <h1>{{ 'HOME.TITLE' | translate }}</h1>
-<p>{{ 'HOME.DESCRIPTION' | translate }}</p>
+    <p>{{ 'HOME.DESCRIPTION' | translate }}</p>
+    <p>{{ 'NAVBAR.CONTACT' | translate }}</p>
     <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>
