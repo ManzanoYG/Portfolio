@@ -21,3 +21,15 @@
 .hidden{
   display:none;
 }
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 450px) {
+  .app-title {
+    font-size: 4.5vw;
+  }
+}
