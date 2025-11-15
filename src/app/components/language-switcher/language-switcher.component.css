@@ -1,6 +1,8 @@
 .language-switcher {
-  position: relative;
+  position: absolute;
   z-index: 2;
+  right: 10px;
+  top: 1rem;
 
   .current-language {
     font-size: 1.5rem;
@@ -13,7 +15,7 @@
     display: none;
     position: absolute;
     top: 2rem;
-    left: 0;
+    right: 0;
     list-style: none;
     background: #ffffff;
     border: 1px solid #ddd;
