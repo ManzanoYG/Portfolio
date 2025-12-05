@@ -1,12 +1,56 @@
 <div class="card">
     <div class="row g-0">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <img  class="img-fluid rounded-start" src="../assets/img/mathias.jpg" alt="Profile Picture">
         </div>
-        <div class="col-md-9">
+        <div class="col-md-8">
             <div class="card-body">
                 <h3 class="card-title">{{ 'PROFILE.TITLE' | translate }}</h3>
                 <p class="card-text">{{ 'PROFILE.BIO' | translate }}</p>
+                <br>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <ul>
+                            <li>Mathias Manzano Y Gonzalez</li>
+                            <li><a href="mailto:mathiasmanzano37@gmail.com">mathiasmanzano37&#64;gmail.com</a></li>
+                            <li>21/04/2000 | {{ getAge() }} {{ 'PROFILE.AGE' | translate }}</li>
+                            <li><a href="https://maps.app.goo.gl/HbgnDy7JnvrUAVmR9" target="_blank">7800 ATH <br>{{ 'PROFILE.COUNTRY' | translate }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row align-items-center">
+                    <div class="col social-btns d-flex justify-content-center">
+                    <div class="button-wrapper" 
+                         (mouseenter)="showLinkedInText = true" 
+                         (mouseleave)="showLinkedInText = false">
+                        <button class="rounded-button" href="#">
+                            <i class="fa-brands fa-linkedin fa-xl button"></i>
+                        </button>
+                        <span class="button-text" [class.visible]="showLinkedInText">LinkedIn</span>
+                    </div>
+                </div>
+                <div class="col social-btns d-flex justify-content-center">
+                    <div class="button-wrapper" 
+                         (mouseenter)="showGitHubText = true" 
+                         (mouseleave)="showGitHubText = false">
+                        <button class="rounded-button" href="#">
+                            <i class="fa-brands fa-github fa-xl button"></i>
+                        </button>
+                        <span class="button-text" [class.visible]="showGitHubText">GitHub</span>
+                    </div>
+                </div>
+                <div class="col social-btns d-flex justify-content-center">
+                    <div class="button-wrapper" 
+                         (mouseenter)="showDownloadText = true" 
+                         (mouseleave)="showDownloadText = false">
+                        <button class="rounded-button" href="#">
+                            <i class="fa fa-download fa-xl button"></i>
+                        </button>
+                        <span class="button-text" [class.visible]="showDownloadText">Download CV</span>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,44 @@
+.rounded-button {
+    width: 60px;
+    height: 60px;
+    background: #051D33;
+    color : white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.rounded-button:hover {
+    background-color: #0e3457;
+}
+
+.button-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button-text {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    white-space: nowrap;
+    background: #051D33;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.button-text.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
