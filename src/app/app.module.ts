@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
 import { StoreModule } from '@ngrx/store';
+import { ProfileComponent } from './sections/profile/profile.component';
 
 // Factory loader pour charger les fichiers JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,7 +30,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     NavbarComponent,
-    LanguageSwitcherComponent
+    LanguageSwitcherComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

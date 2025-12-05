@@ -7,5 +7,12 @@
     "HOME": "Home",
     "ABOUT": "About",
     "CONTACT": "Contact en"
+  },
+  "PROFILE": {
+    "TITLE": "Profile",
+    "BIO": "Student in computer application development, currently in the final year of bachelor's degree. Passionate about new technologies and creating innovative solutions. Through my education and professional experiences, I have acquired skills in web development, project management, and technical support. Autonomous, motivated, and curious, I am looking for my first job to apply my skills and enrich my expertise in the field.",
+    "AGE" : "years old",
+    "COUNTRY": "Belgium",
+    "CV": "Download CV"
   }
 }
