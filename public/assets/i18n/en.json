@@ -14,5 +14,18 @@
     "AGE" : "years old",
     "COUNTRY": "Belgium",
     "CV": "Download CV"
+  },
+  "EDUCATION": {
+    "TITLE": "Education",
+    "BACHELOR":{
+      "INSTITUTION" : "High School Louvain in Hainaut",
+      "DIPLOMA": "Bachelor of Computer Science - Application Development",
+      "DESCRIPTION" : "Computer science studies focused on the development of web and software applications, with a solid background in programming, databases and project management."
+    },
+    "SECONDARY" : {
+      "INSTITUTION" : "Ath Provincial Institute of Secondary Education",
+      "DIPLOMA": "Higher Secondary Education Certificate - Computer Technician",
+      "DESCRIPTION" : "A versatile IT training course covering the fundamentals of hardware, networks, technical support and an introduction to development."
+    }
   }
 }
