@@ -24,9 +24,9 @@
                     <div class="button-wrapper" 
                          (mouseenter)="showLinkedInText = true" 
                          (mouseleave)="showLinkedInText = false">
-                        <button class="rounded-button" href="#">
+                        <a class="rounded-button" href="https://www.linkedin.com/in/mathias-manzano-y-gonzalez-b2464b20b/" target="_blank">
                             <i class="fa-brands fa-linkedin fa-xl button"></i>
-                        </button>
+                        </a>
                         <span class="button-text" [class.visible]="showLinkedInText">LinkedIn</span>
                     </div>
                 </div>
@@ -34,9 +34,9 @@
                     <div class="button-wrapper" 
                          (mouseenter)="showGitHubText = true" 
                          (mouseleave)="showGitHubText = false">
-                        <button class="rounded-button" href="#">
+                        <a class="rounded-button" href="https://github.com/ManzanoYG" target="_blank">
                             <i class="fa-brands fa-github fa-xl button"></i>
-                        </button>
+                        </a>
                         <span class="button-text" [class.visible]="showGitHubText">GitHub</span>
                     </div>
                 </div>
@@ -44,10 +44,10 @@
                     <div class="button-wrapper" 
                          (mouseenter)="showDownloadText = true" 
                          (mouseleave)="showDownloadText = false">
-                        <button class="rounded-button" href="#">
+                        <button class="rounded-button" (click)="downloadCV()">
                             <i class="fa fa-download fa-xl button"></i>
                         </button>
-                        <span class="button-text" [class.visible]="showDownloadText">Download CV</span>
+                        <span class="button-text" [class.visible]="showDownloadText">{{ 'PROFILE.CV' | translate }}</span>
                     </div>
                 </div>
                 </div>

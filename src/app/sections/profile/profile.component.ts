@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile',
@@ -11,6 +12,8 @@ export class ProfileComponent {
   showGitHubText = false;
   showDownloadText = false;
 
+  constructor(private translate: TranslateService) {}
+
   public getAge(): any {
     const today = new Date();
     let age = today.getFullYear() - this.birthDate.getFullYear();
@@ -19,5 +22,20 @@ export class ProfileComponent {
       age--;
     }
     return age;
+  }
+
+  public downloadCV(): void {
+    const currentLang = this.translate.currentLang || 'en';
+    const cvFiles: { [key: string]: string } = {
+      'en': 'assets/cv/Curriculum Vitæ Manzano Y Gonzalez Mathias_EN.pdf',
+      'fr': 'assets/cv/Curriculum Vitæ Manzano Y Gonzalez Mathias_FR.pdf'
+    };
+    
+    const cvPath = cvFiles[currentLang] || cvFiles['en'];
+    
+    const link = document.createElement('a');
+    link.href = cvPath;
+    link.download = `CV_Mathias_Manzano_${currentLang.toUpperCase()}.pdf`;
+    link.click();
   }
 }
