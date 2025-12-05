@@ -21,6 +21,7 @@ import { LanguageSwitcherComponent } from './components/language-switcher/langua
 import { StoreModule } from '@ngrx/store';
 import { ProfileComponent } from './sections/profile/profile.component';
 import { EducationComponent } from './sections/education/education.component';
+import { ExperienceComponent } from './sections/experience/experience.component';
 
 // Factory loader pour charger les fichiers JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -33,7 +34,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     LanguageSwitcherComponent,
     ProfileComponent,
-    EducationComponent
+    EducationComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
