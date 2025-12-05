@@ -17,22 +17,26 @@
     top: 2rem;
     right: 0;
     list-style: none;
-    background: #ffffff;
-    border: 1px solid #ddd;
+    background: #0E2133;
+    border: 1px solid #0E2133;
     padding: 0.5rem 0;
     margin: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
 
     li {
       padding: 0.5rem 1rem;
       cursor: pointer;
+      opacity: 0.6;
 
       &:hover {
         background-color: #f5f5f5;
+        color: #0E2133;
       }
 
       &.active {
         font-weight: bold;
+        opacity: 1;
       }
     }
   }
