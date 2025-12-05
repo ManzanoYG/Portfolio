@@ -14,5 +14,13 @@
     "AGE" : "ans",
     "COUNTRY": "Belgique",
     "CV": "Télécharger le CV"
+  },
+  "EDUCATION": {
+    "TITLE": "Éducation",
+    "BACHELOR":{
+      "INSTITUTION" : "Haute École Louvain en Hainaut",
+      "DIPLOMA": "Bachelier en Informatique - Développement d'applications",
+      "DESCRIPTION" : "Études en informatique axées sur le développement d'applications web et logicielles, avec une solide formation en programmation, bases de données et gestion de projets."
+    }
   }
 }

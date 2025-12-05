@@ -14,5 +14,13 @@
     "AGE" : "years old",
     "COUNTRY": "Belgium",
     "CV": "Download CV"
+  },
+  "EDUCATION": {
+    "TITLE": "Education",
+    "BACHELOR":{
+      "INSTITUTION" : "High School Louvain in Hainaut",
+      "DIPLOMA": "Bachelor of Computer Science - Application Development",
+      "DESCRIPTION" : "Computer science studies focused on the development of web and software applications, with a solid background in programming, databases and project management."
+    }
   }
 }
