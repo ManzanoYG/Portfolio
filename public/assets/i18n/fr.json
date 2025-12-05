@@ -21,6 +21,11 @@
       "INSTITUTION" : "Haute École Louvain en Hainaut",
       "DIPLOMA": "Bachelier en Informatique - Développement d'applications",
       "DESCRIPTION" : "Études en informatique axées sur le développement d'applications web et logicielles, avec une solide formation en programmation, bases de données et gestion de projets."
+    },
+    "SECONDARY" : {
+      "INSTITUTION" : "Institut Provincial d'Enseignement Secondaire d'Ath",
+      "DIPLOMA": "Certificat d'Enseignement Secondaire Supérieur - Technicien en Informatique",
+      "DESCRIPTION" : "Une formation polyvalente en informatique couvrant les fondamentaux du matériel, des réseaux, du support technique et une initiation au développement."
     }
   }
 }
