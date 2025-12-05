@@ -27,5 +27,26 @@
       "DIPLOMA": "Certificat d'Enseignement Secondaire Supérieur - Technicien en Informatique",
       "DESCRIPTION" : "Une formation polyvalente en informatique couvrant les fondamentaux du matériel, des réseaux, du support technique et une initiation au développement."
     }
+  },
+  "EXPERIENCE": {
+    "TITLE": "Expérience",
+    "INTERNSHIP": {
+      "POSITION": "Stage de Développeur | BNP Paribas Fortis",
+      "DURATION": "Février 2025 - Juin 2025",
+      "ADDRESS": "Rue Montagne du Parc 3, 1000 Bruxelles, Belgique",
+      "DESCRIPTION": "Développement d'une application web pour la gestion des opérations liées aux dépôts à taux variable ou fixe, avec un suivi de la réévaluation mensuelle. Technologies utilisées : C#, ASP.NET, HTML, CSS, JavaScript, SQL Server, IIS, Microsoft Azure, jQuery, Ajax."
+    },
+    "HIGHSCHOOL": {
+      "POSITION": "Freelance | Loginfo",
+      "DURATION": "Avril 2021 - Décembre 2022",
+      "ADDRESS": "Chemin de la laiterie 28, 7812 Mainvault, Belgique",
+      "DESCRIPTION": "Développement de sites web en HTML, CSS et PHP, gestion de projets informatiques et configuration de réseaux. Interaction avec les clients pour comprendre leurs besoins et fournir un support technique. Optimisation des performances du système et maintien de la sécurité."
+    },
+    "HIGHSCHOOL_INTERNSHIP": {
+      "POSITION": "Stage de Technicien en Informatique | CDY",
+      "DURATION": "2020 - 2020",
+      "ADDRESS": "Chemin du Montquesnoy 5, 7803 Bouvignies, Belgique",
+      "DESCRIPTION": "Participation au développement de projets web et mobiles, ainsi qu'aux tests et au débogage."
+    }
   }
 }
