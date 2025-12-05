@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import {Store} from "@ngrx/store";
 
@@ -20,8 +20,9 @@ export class LanguageSwitcherComponent {
   ];
 
   currentLanguage = 'en';
+  isMenuOpen = false;
 
- constructor(private store: Store, private translate: TranslateService) {
+ constructor(private store: Store, private translate: TranslateService, private elementRef: ElementRef) {
     const savedLanguage = localStorage.getItem('language');
     if (savedLanguage) {
       this.currentLanguage = savedLanguage;
@@ -32,6 +33,18 @@ export class LanguageSwitcherComponent {
     this.currentLanguage = languageCode;
     this.translate.use(languageCode);
     localStorage.setItem('language', languageCode);
+    this.isMenuOpen = false;
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.isMenuOpen = false;
+    }
   }
 
   getFlag(languageCode: string): string {
