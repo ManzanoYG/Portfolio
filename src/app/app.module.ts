@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { StoreModule } from '@ngrx/store';
 import { ProfileComponent } from './sections/profile/profile.component';
 import { EducationComponent } from './sections/education/education.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
+import { ContactComponent } from './sections/contact/contact.component';
 
 // Factory loader pour charger les fichiers JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -35,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LanguageSwitcherComponent,
     ProfileComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
     StoreModule.forRoot({}, {})
   ],
   providers: [

@@ -48,5 +48,31 @@
       "ADDRESS": "Chemin du Montquesnoy 5, 7803 Bouvignies, Belgique",
       "DESCRIPTION": "Participation au développement de projets web et mobiles, ainsi qu'aux tests et au débogage."
     }
+  },
+  "CONTACT": {
+    "TITLE": "Contactez-moi",
+    "GET_IN_TOUCH": "Entrons en contact",
+    "DESCRIPTION": "N'hésitez pas à me contacter pour toute question ou opportunité.",
+    "EMAIL": "Adresse e-mail",
+    "LOCATION": "Localisation",
+    "COUNTRY": "Belgique",
+    "NAME": "Nom",
+    "NAME_PLACEHOLDER": "Votre nom",
+    "NAME_REQUIRED": "Le nom est requis.",
+    "NAME_MIN": "Le nom doit comporter au moins 2 caractères.",
+    "EMAIL_PLACEHOLDER": "Votre adresse e-mail",
+    "EMAIL_REQUIRED": "L'adresse e-mail est requise.",
+    "EMAIL_INVALID": "L'adresse e-mail n'est pas valide.",
+    "PHONE": "Numéro de téléphone",
+    "PHONE_PLACEHOLDER": "Votre numéro de téléphone",
+    "PHONE_INVALID": "Le numéro de téléphone n'est pas valide.",
+    "MESSAGE": "Message",
+    "MESSAGE_PLACEHOLDER": "Votre message",
+    "MESSAGE_REQUIRED": "Le message est requis.",
+    "MESSAGE_MIN": "Le message doit comporter au moins 10 caractères.",
+    "SUCCESS": "Votre message a été envoyé avec succès !",
+    "ERROR": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+    "SEND": "Envoyer le message",
+    "SENDING": "Envoi du message..."
   }
 }
