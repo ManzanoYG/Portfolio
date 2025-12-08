@@ -19,11 +19,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
+import { ModalComponent } from './components/modal/modal.component';
 import { StoreModule } from '@ngrx/store';
 import { ProfileComponent } from './sections/profile/profile.component';
 import { EducationComponent } from './sections/education/education.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
 import { ContactComponent } from './sections/contact/contact.component';
+import { SkillsComponent } from './sections/skills/skills.component';
 
 // Factory loader pour charger les fichiers JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -35,10 +37,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     NavbarComponent,
     LanguageSwitcherComponent,
+    ModalComponent,
     ProfileComponent,
     EducationComponent,
     ExperienceComponent,
-    ContactComponent
+    ContactComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
