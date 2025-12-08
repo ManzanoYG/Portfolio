@@ -2,6 +2,9 @@
   "TITLE": "Compétences",
   "SKILLS_COUNT": "compétences",
   "VIEW_DETAILS": "Voir les détails",
+  "SORT_BY_LEVEL": "Trier par niveau",
+  "SORT_ALPHABETICALLY": "Trier A-Z",
+  "RESET_SORT": "Réinitialiser",
   "CATEGORIES": {
     "LANGUAGES": "Langages",
     "FRONTEND": "Frontend",

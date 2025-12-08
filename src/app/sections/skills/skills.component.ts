@@ -22,7 +22,9 @@ export class SkillsComponent implements OnInit {
   isModalOpen = false;
   modalTitle = '';
   modalSkills: Skill[] = [];
+  displayedSkills: Skill[] = [];
   skillsData: any = {};
+  sortBy: 'level' | 'alphabetical' | 'none' | null = null;
 
   constructor(
     private http: HttpClient,
@@ -127,12 +129,44 @@ export class SkillsComponent implements OnInit {
 
   openModal(category: SkillCategory): void {
     this.modalTitle = category.title;
-    this.modalSkills = category.skills;
+    this.modalSkills = [...category.skills];
+    this.displayedSkills = [...category.skills];
+    this.sortBy = null;
     this.isModalOpen = true;
   }
 
   closeModal(): void {
     this.isModalOpen = false;
+  }
+
+  sortByLevel(): void {
+    this.sortBy = 'level';
+    const levelOrder: { [key: string]: number } = {
+      'LEVELS.EXPERT': 1,
+      'LEVELS.ADVANCED': 2,
+      'LEVELS.INTERMEDIATE': 3,
+      'LEVELS.BEGINNER': 4
+    };
+
+    this.displayedSkills = [...this.modalSkills].sort((a, b) => {
+      const levelA = a.level ? levelOrder[a.level] || 999 : 999;
+      const levelB = b.level ? levelOrder[b.level] || 999 : 999;
+      return levelA - levelB;
+    });
+  }
+
+  sortAlphabetically(): void {
+    this.sortBy = 'alphabetical';
+    this.displayedSkills = [...this.modalSkills].sort((a, b) => {
+      const nameA = this.getTranslation(a.name).toLowerCase();
+      const nameB = this.getTranslation(b.name).toLowerCase();
+      return nameA.localeCompare(nameB);
+    });
+  }
+
+  resetSort(): void {
+    this.sortBy = null;
+    this.displayedSkills = [...this.modalSkills];
   }
 
   getLevelClass(level: string): string {

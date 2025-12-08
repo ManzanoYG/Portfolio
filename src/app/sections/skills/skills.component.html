@@ -19,8 +19,29 @@
   [isOpen]="isModalOpen" 
   [title]="getTranslation(modalTitle)" 
   (closeModal)="closeModal()">
+  <div class="sort-buttons">
+    <button 
+      class="sort-btn" 
+      [class.active]="sortBy === 'level'"
+      (click)="sortByLevel()">
+      <i class="fa fa-sort-amount-down"></i> {{ skillsData.SORT_BY_LEVEL || 'Sort by Level' }}
+    </button>
+    <button 
+      class="sort-btn" 
+      [class.active]="sortBy === 'alphabetical'"
+      (click)="sortAlphabetically()">
+      <i class="fa fa-sort-alpha-down"></i> {{ skillsData.SORT_ALPHABETICALLY || 'Sort A-Z' }}
+    </button>
+    <button 
+      class="sort-btn" 
+      [class.active]="sortBy === null"
+      (click)="resetSort()"
+      *ngIf="sortBy !== null">
+      <i class="fa fa-undo"></i> {{ skillsData.RESET_SORT || 'Reset' }}
+    </button>
+  </div>
   <div class="skills-list">
-    <div class="skill-item" *ngFor="let skill of modalSkills">
+    <div class="skill-item" *ngFor="let skill of displayedSkills">
       <div class="skill-name">{{ getTranslation(skill.name) }}</div>
       <div class="skill-level" *ngIf="skill.level">
         <span class="level-badge" [ngClass]="getLevelClass(skill.level)">{{ getTranslation(skill.level) }}</span>

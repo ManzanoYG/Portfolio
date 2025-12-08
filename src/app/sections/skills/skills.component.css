@@ -88,6 +88,43 @@
 }
 
 /* Modal content styles */
+.sort-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.sort-btn {
+  padding: 0.6rem 1rem;
+  background: #f8f9fa;
+  color: #051D33;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-btn:hover {
+  background: #e9ecef;
+  border-color: #051D33;
+}
+
+.sort-btn.active {
+  background: #051D33;
+  color: white;
+  border-color: #051D33;
+}
+
+.sort-btn i {
+  font-size: 0.85rem;
+}
+
 .skills-list {
   display: grid;
   gap: 1rem;

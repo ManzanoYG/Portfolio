@@ -2,6 +2,9 @@
   "TITLE": "Skills",
   "SKILLS_COUNT": "skills",
   "VIEW_DETAILS": "View Details",
+  "SORT_BY_LEVEL": "Sort by Level",
+  "SORT_ALPHABETICALLY": "Sort A-Z",
+  "RESET_SORT": "Reset",
   "CATEGORIES": {
     "LANGUAGES": "Languages",
     "FRONTEND": "Frontend",
