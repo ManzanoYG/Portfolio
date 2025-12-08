@@ -24,6 +24,7 @@ import { ProfileComponent } from './sections/profile/profile.component';
 import { EducationComponent } from './sections/education/education.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
 import { ContactComponent } from './sections/contact/contact.component';
+import { SkillsComponent } from './sections/skills/skills.component';
 
 // Factory loader pour charger les fichiers JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProfileComponent,
     EducationComponent,
     ExperienceComponent,
-    ContactComponent
+    ContactComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
