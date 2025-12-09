@@ -189,3 +189,20 @@
     padding: 1.5rem;
   }
 }
+
+h2.dark-theme, h3.dark-theme, h4.dark-theme, label.dark-theme, i.dark-theme {
+  color: #D6D3CD;
+}
+
+.contact-info.dark-theme, .contact-form.dark-theme, .contact-info.dark-theme i.dark-theme,
+.contact-info.dark-theme h3.dark-theme, .contact-info.dark-theme h4.dark-theme,
+.contact-form.dark-theme label.dark-theme {
+  background: #181A1B;
+  color: #D6D3CD;
+}
+
+.contact-form.dark-theme input.dark-theme, .contact-form.dark-theme textarea.dark-theme{
+  background: #2B2A33;
+  color: #D6D3CD;
+  border-color: #333537;
+}

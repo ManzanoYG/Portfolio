@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   clickMenu(){
     this.lightTheme = !this.lightTheme;
 
-    Array.from(document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, i, li, div')).forEach(element => {
+    Array.from(document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, i, li, div, label, form, input, textarea')).forEach(element => {
         element.classList.toggle('dark-theme');
     });
   }
