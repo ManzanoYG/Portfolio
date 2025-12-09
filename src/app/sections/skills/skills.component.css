@@ -205,3 +205,11 @@
     font-size: 1.5rem;
   }
 }
+
+h2.dark-theme, .card-title.dark-theme {
+  color: #D6D3CD;
+}
+
+.skill-card.dark-theme {
+  background: #181A1B;
+}

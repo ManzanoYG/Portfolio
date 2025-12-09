@@ -29,27 +29,8 @@ export class AppComponent implements OnInit {
   clickMenu(){
     this.lightTheme = !this.lightTheme;
 
-
-    Array.from(document.getElementsByTagName('p')).forEach(element => {
+    Array.from(document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, i, li, div')).forEach(element => {
         element.classList.toggle('dark-theme');
-      });
-    Array.from(document.getElementsByTagName('h3')).forEach(element => {
-      element.classList.toggle('dark-theme');
-    });
-    Array.from(document.getElementsByTagName('a')).forEach(element => {
-      element.classList.toggle('dark-theme');
-    });
-    Array.from(document.getElementsByTagName('span')).forEach(element => {
-      element.classList.toggle('dark-theme');
-    });
-    Array.from(document.getElementsByTagName('i')).forEach(element => {
-      element.classList.toggle('dark-theme');
-    });
-    Array.from(document.getElementsByTagName('li')).forEach(element => {
-      element.classList.toggle('dark-theme');
-    });
-    Array.from(document.getElementsByTagName('div')).forEach(element => {
-      element.classList.toggle('dark-theme');
     });
   }
 }
