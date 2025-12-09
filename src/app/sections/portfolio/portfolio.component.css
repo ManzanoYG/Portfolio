@@ -381,3 +381,32 @@
     height: 180px;
   }
 }
+
+h2.dark-theme, .project-card h3.dark-theme, .project-card p.dark-theme {
+  color: #D6D3CD;
+}
+
+.category-btn.dark-theme {
+  background: #525252;
+  color: #D6D3CD;
+  border-color: #3A3D3E;
+}
+
+.category-btn.dark-theme.active {
+  background: #051D33;
+  color: white;
+  border-color: #051D33;
+}
+
+.category-btn.dark-theme .count {
+  background: #202325;
+  color: white;
+}
+
+.project-card.dark-theme {
+  background: #181A1B;
+}
+
+.project-card .tech-badge.dark-theme {
+  background:#202325;
+}
