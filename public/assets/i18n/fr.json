@@ -82,5 +82,9 @@
     "PORTFOLIO": "Portfolio",
     "EDUCATION": "Éducation",
     "CONTACT": "Contact"
+  },
+  "FOOTER": {
+    "QUICK_LINKS": "Liens rapides",
+    "COPYRIGHT": " Tous droits réservés par"
   }
 }
