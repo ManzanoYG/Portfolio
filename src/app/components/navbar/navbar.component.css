@@ -45,6 +45,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: lightslategrey;
 }
 
+::ng-deep .mdc-list-item.active {
+  background-color: #0a3050;
+  border-left: 4px solid #4a9eff;
+}
+
 ::ng-deep .mdc-list-item__primary-text {
   color: white !important;
 }

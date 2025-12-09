@@ -6,9 +6,12 @@
       >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item [class.active]="isActive('profile')" (click)="scrollToSection('profile', $event)">Profile</a>
+      <a mat-list-item [class.active]="isActive('skills')" (click)="scrollToSection('skills', $event)">Skills</a>
+      <a mat-list-item [class.active]="isActive('experience')" (click)="scrollToSection('experience', $event)">Experience</a>
+      <a mat-list-item [class.active]="isActive('portfolio')" (click)="scrollToSection('portfolio', $event)">Portfolio</a>
+      <a mat-list-item [class.active]="isActive('education')" (click)="scrollToSection('education', $event)">Education</a>
+      <a mat-list-item [class.active]="isActive('contact')" (click)="scrollToSection('contact', $event)">Contact</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -19,18 +22,18 @@
           aria-label="Toggle sidenav"
           mat-icon-button
           (click)="drawer.toggle()">
-          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          <mat-icon aria-label="Side nav toggle icon">Menu</mat-icon>
         </button>
       }
       <span class="app-title">Mathias Manzano Y Gonzalez</span>
       <app-language-switcher></app-language-switcher>
     </mat-toolbar>
-    <div class="container-fluid p-3 container-color-1"><div class="container"><app-profile></app-profile></div></div>
-    <div class="container-fluid p-3 container-color-2"><div class="container"><app-skills></app-skills></div></div>
-    <div class="container-fluid p-3 container-color-1"><div class="container"><app-experience></app-experience></div></div>
-    <div class="container-fluid p-3 container-color-2"><div class="container"><app-portfolio></app-portfolio> </div></div>
-    <div class="container-fluid p-3 container-color-1"><div class="container"><app-education></app-education></div></div>
-    <div class="container-fluid p-3 container-color-2"><div class="container"><app-contact></app-contact></div></div>
+    <div class="container-fluid p-3 container-color-1" id="profile"><div class="container"><app-profile></app-profile></div></div>
+    <div class="container-fluid p-3 container-color-2" id="skills"><div class="container"><app-skills></app-skills></div></div>
+    <div class="container-fluid p-3 container-color-1" id="experience"><div class="container"><app-experience></app-experience></div></div>
+    <div class="container-fluid p-3 container-color-2" id="portfolio"><div class="container"><app-portfolio></app-portfolio> </div></div>
+    <div class="container-fluid p-3 container-color-1" id="education"><div class="container"><app-education></app-education></div></div>
+    <div class="container-fluid p-3 container-color-2" id="contact"><div class="container"><app-contact></app-contact></div></div>
     <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>
