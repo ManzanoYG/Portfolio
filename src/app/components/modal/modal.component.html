@@ -1,12 +1,12 @@
 <div class="modal-backdrop" *ngIf="isOpen" (click)="onBackdropClick($event)">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>{{ title }}</h3>
+  <div class="modal-content" [class.dark-theme]="isDarkTheme">
+    <div class="modal-header" [class.dark-theme]="isDarkTheme">
+      <h3 [class.dark-theme]="isDarkTheme">{{ title }}</h3>
       <button class="close-btn" (click)="onClose()">
         <i class="fa fa-times"></i>
       </button>
     </div>
-    <div class="modal-body">
+    <div class="modal-body" [class.dark-theme]="isDarkTheme">
       <ng-content></ng-content>
     </div>
   </div>

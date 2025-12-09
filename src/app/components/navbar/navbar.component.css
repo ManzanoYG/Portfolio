@@ -67,3 +67,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .container-color-2 {
   background-color: #e6f2ff;
 }
+
+.container-color-1.dark-theme {
+  background-color: #1C1F20 !important;
+}
+
+.container-color-2.dark-theme {
+  background-color: #1F2223!important;
+}

@@ -181,6 +181,8 @@ export class PortfolioComponent implements OnInit {
     this.selectedProject = project;
     this.currentImageIndex = 0;
     this.isModalOpen = true;
+    
+    this.applyDarkThemeToModal();
   }
 
   closeModal(): void {
@@ -205,6 +207,17 @@ export class PortfolioComponent implements OnInit {
 
   goToImage(index: number): void {
     this.currentImageIndex = index;
+  }
+
+  private applyDarkThemeToModal(): void {
+    setTimeout(() => {
+      const isDarkMode = document.querySelector('.dark-theme') !== null;
+      if (isDarkMode) {
+        document.querySelectorAll('.modal-content .detail-section, .modal-content .detail-section h4, .modal-content .detail-section p, .modal-content .project-links, .modal-content .project-link, .modal-content .category-badge, .modal-content .tech-badge, .modal-content .gallery-nav').forEach(element => {
+          element.classList.add('dark-theme');
+        });
+      }
+    }, 10);
   }
 
   getCurrentImage(): string {

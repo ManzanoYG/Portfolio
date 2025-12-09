@@ -1,1 +1,5 @@
 <app-navbar></app-navbar>
+<button mat-fab (click)="clickMenu()" class="menu-button">
+  <i class="fa-solid fa-sun" *ngIf="!lightTheme"></i>
+  <i class="fa-solid fa-moon" *ngIf="lightTheme"></i>
+</button>
