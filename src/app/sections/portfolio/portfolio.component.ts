@@ -14,6 +14,7 @@ interface Project {
   liveUrl?: string;
   dateKey: string;
   detailsKey: string;
+  display: boolean;
 }
 
 @Component({
@@ -79,7 +80,8 @@ export class PortfolioComponent implements OnInit {
         githubUrl: 'https://github.com/example/project1',
         liveUrl: 'https://project1.com',
         dateKey: 'PROJECTS.PROJECT1.DATE',
-        detailsKey: 'PROJECTS.PROJECT1.DETAILS'
+        detailsKey: 'PROJECTS.PROJECT1.DETAILS',
+        display: true
       },
       {
         id: '2',
@@ -91,7 +93,8 @@ export class PortfolioComponent implements OnInit {
         githubUrl: 'https://github.com/example/project2',
         liveUrl: 'https://project2.com',
         dateKey: 'PROJECTS.PROJECT2.DATE',
-        detailsKey: 'PROJECTS.PROJECT2.DETAILS'
+        detailsKey: 'PROJECTS.PROJECT2.DETAILS',
+        display: true
       },
       {
         id: '3',
@@ -102,7 +105,8 @@ export class PortfolioComponent implements OnInit {
         technologies: ['React Native', 'Expo'],
         githubUrl: 'https://github.com/example/project3',
         dateKey: 'PROJECTS.PROJECT3.DATE',
-        detailsKey: 'PROJECTS.PROJECT3.DETAILS'
+        detailsKey: 'PROJECTS.PROJECT3.DETAILS',
+        display: true
       },
       {
         id: '4',
@@ -113,7 +117,8 @@ export class PortfolioComponent implements OnInit {
         technologies: ['Laravel', 'MySQL', 'Redis'],
         githubUrl: 'https://github.com/example/project4',
         dateKey: 'PROJECTS.PROJECT4.DATE',
-        detailsKey: 'PROJECTS.PROJECT4.DETAILS'
+        detailsKey: 'PROJECTS.PROJECT4.DETAILS',
+        display: false
       },
       {
         id: '5',
@@ -125,7 +130,8 @@ export class PortfolioComponent implements OnInit {
         githubUrl: 'https://github.com/example/project5',
         liveUrl: 'https://project5.com',
         dateKey: 'PROJECTS.PROJECT5.DATE',
-        detailsKey: 'PROJECTS.PROJECT5.DETAILS'
+        detailsKey: 'PROJECTS.PROJECT5.DETAILS',
+        display: true
       },
       {
         id: '6',
@@ -137,7 +143,8 @@ export class PortfolioComponent implements OnInit {
         githubUrl: 'https://github.com/example/project6',
         liveUrl: 'https://project6.com',
         dateKey: 'PROJECTS.PROJECT6.DATE',
-        detailsKey: 'PROJECTS.PROJECT6.DETAILS'
+        detailsKey: 'PROJECTS.PROJECT6.DETAILS',
+        display: true
       }
     ];
     this.filterProjects('all');
@@ -148,9 +155,9 @@ export class PortfolioComponent implements OnInit {
     this.currentPage = 1;
     
     if (category === 'all') {
-      this.filteredProjects = [...this.allProjects];
+      this.filteredProjects = this.allProjects.filter(p => p.display !== false);
     } else {
-      this.filteredProjects = this.allProjects.filter(p => p.category === category);
+      this.filteredProjects = this.allProjects.filter(p => p.category === category && p.display !== false);
     }
     
     this.updateDisplayedProjects();
@@ -222,7 +229,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   getCategoryCount(category: string): number {
-    if (category === 'all') return this.allProjects.length;
-    return this.allProjects.filter(p => p.category === category).length;
+    if (category === 'all') return this.allProjects.filter(p => p.display !== false).length;
+    return this.allProjects.filter(p => p.category === category && p.display !== false).length;
   }
 }
