@@ -18,7 +18,13 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
+}
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .hidden{
@@ -43,6 +49,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 ::ng-deep .mdc-list-item:hover {
   background-color: lightslategrey;
+}
+
+::ng-deep .mdc-list-item.active {
+  background-color: #0a3050;
+  border-left: 4px solid #4a9eff;
 }
 
 ::ng-deep .mdc-list-item__primary-text {
