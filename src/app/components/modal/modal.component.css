@@ -78,6 +78,28 @@
   padding: 1.5rem;
 }
 
+.modal-content.dark-theme {
+  background-color: #181A1B;
+}
+
+.modal-body.dark-theme {
+  background-color: #181A1B;
+}
+
+.modal-body.dark-theme p,
+.modal-body.dark-theme h1,
+.modal-body.dark-theme h2,
+.modal-body.dark-theme h3,
+.modal-body.dark-theme h4,
+.modal-body.dark-theme h5,
+.modal-body.dark-theme h6,
+.modal-body.dark-theme span,
+.modal-body.dark-theme a,
+.modal-body.dark-theme div,
+.modal-body.dark-theme i {
+  color: #D6D3CD !important;
+}
+
 @media (max-width: 768px) {
   .modal-content {
     width: 95%;
@@ -91,4 +113,13 @@
   .modal-body {
     padding: 1rem;
   }
+}
+
+h3.dark-theme {
+  color: #D6D3CD !important;
+}
+
+.modal-header.dark-theme {
+  background-color: #181A1B;
+  border-bottom: 2px solid #393D40;
 }

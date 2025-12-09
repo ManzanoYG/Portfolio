@@ -133,6 +133,7 @@ export class SkillsComponent implements OnInit {
     this.displayedSkills = [...category.skills];
     this.sortBy = null;
     this.isModalOpen = true;
+    this.setDark();
   }
 
   closeModal(): void {
@@ -153,6 +154,7 @@ export class SkillsComponent implements OnInit {
       const levelB = b.level ? levelOrder[b.level] || 999 : 999;
       return levelA - levelB;
     });
+    this.setDark();
   }
 
   sortAlphabetically(): void {
@@ -162,11 +164,13 @@ export class SkillsComponent implements OnInit {
       const nameB = this.getTranslation(b.name).toLowerCase();
       return nameA.localeCompare(nameB);
     });
+    this.setDark();
   }
 
   resetSort(): void {
     this.sortBy = null;
     this.displayedSkills = [...this.modalSkills];
+    this.setDark();
   }
 
   getLevelClass(level: string): string {
@@ -186,5 +190,16 @@ export class SkillsComponent implements OnInit {
       if (!value) return key;
     }
     return value;
+  }
+
+  setDark() {
+    setTimeout(() => {
+      const isDarkMode = document.querySelector('.dark-theme') !== null;
+      if (isDarkMode) {
+        document.querySelectorAll('.modal-content .skill-item, .modal-content .skill-name, .modal-content .sort-btn').forEach(element => {
+          element.classList.add('dark-theme');
+        });
+      }
+    }, 1);
   }
 }
