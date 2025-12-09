@@ -51,3 +51,16 @@ a {
 .basic-info {
     list-style-type: none;
 }
+
+/*.dark-theme[class*="card-title"], .dark-theme[class*="card-text"] {
+    color: white !important;
+}*/
+
+p.dark-theme, h3.dark-theme, a.dark-theme, span.dark-theme, i.dark-theme, li.dark-theme {
+  color: #E8E6E3;
+}
+
+.card.dark-theme {
+  background-color: #181A1B;
+}
+
