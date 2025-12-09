@@ -14,7 +14,7 @@
       <a mat-list-item [class.active]="isActive('contact')" (click)="scrollToSection('contact', $event)">{{'MENU.CONTACT' | translate}}</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content #sidenavContent>
     <mat-toolbar style="background-color:#0E2133; color: white;" >
       @if (isHandset$ | async) {
         <button
@@ -34,6 +34,7 @@
     <div class="container-fluid p-3 container-color-2" id="portfolio"><div class="container"><app-portfolio></app-portfolio> </div></div>
     <div class="container-fluid p-3 container-color-1" id="education"><div class="container"><app-education></app-education></div></div>
     <div class="container-fluid p-3 container-color-2" id="contact"><div class="container"><app-contact></app-contact></div></div>
+    <div class="container-fluid" style="background-color: #26272b;"><app-footer [sidenavContent]="sidenavContent"></app-footer></div>
     <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>
