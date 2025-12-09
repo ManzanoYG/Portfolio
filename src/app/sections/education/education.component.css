@@ -121,3 +121,36 @@
 .timeline-copy {
   color: black !important;
 }
+
+p.dark-theme[class*="timeline-copy"], li.dark-theme {
+  color: #E8E6E3 !important;
+}
+
+.timeline-content.dark-theme {
+  background-color: #181A1B !important;
+}
+
+.timeline-right.dark-theme::after, .timeline-left.dark-theme::after {
+  background-color: darkgray !important;
+  border: darkgray !important;
+}
+
+.timeline-left.dark-theme::before {
+  border: medium solid #181A1B;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #181A1B;
+}
+
+.timeline-right.dark-theme::before {
+  border: medium solid #181A1B;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #181A1B transparent transparent;
+}
+
+.timeline.dark-theme::after {
+  background-color: #181A1B !important;
+}
+
+h3.dark-theme {
+  color: #D6D3CD;
+}

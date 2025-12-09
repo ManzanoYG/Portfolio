@@ -130,7 +130,6 @@ p.dark-theme[class*="timeline-copy"], li.dark-theme {
   background-color: #181A1B !important;
 }
 
-
 .timeline-right.dark-theme::after, .timeline-left.dark-theme::after {
   background-color: darkgray !important;
   border: darkgray !important;
@@ -150,4 +149,8 @@ p.dark-theme[class*="timeline-copy"], li.dark-theme {
 
 .timeline.dark-theme::after {
   background-color: #181A1B !important;
+}
+
+h3.dark-theme {
+  color: #D6D3CD;
 }
