@@ -1,0 +1,22 @@
+.menu-button{
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+}
+
+.fa-moon {
+    color: lightslategrey;
+}
+
+.fa-sun {
+    color: goldenrod;
+}
+
+.menu-button:has(.fa-moon) {
+    background-color: #161720;
+}
+
+.menu-button:has(.fa-sun) {
+    background-color: rgb(230, 230, 230);
+}
