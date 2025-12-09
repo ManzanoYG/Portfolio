@@ -1,0 +1,117 @@
+<div class="portfolio-section">
+  <h2 class="section-title">{{ portfolioData.TITLE || 'Portfolio' }}</h2>
+  
+  <!-- Category filters -->
+  <div class="category-filters">
+    <button 
+      *ngFor="let cat of categories"
+      class="category-btn"
+      [class.active]="selectedCategory === cat.key"
+      (click)="filterProjects(cat.key)">
+      <i class="fa" [ngClass]="cat.icon"></i>
+      <span>{{ getTranslation('CATEGORIES.' + cat.key.toUpperCase()) }}</span>
+      <span class="count">{{ getCategoryCount(cat.key) }}</span>
+    </button>
+  </div>
+
+  <!-- Projects grid -->
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of displayedProjects" (click)="openProjectDetails(project)">
+      <div class="project-image">
+        <img [src]="project.image" [alt]="getTranslation(project.titleKey)" (error)="$any($event.target).src='assets/img/placeholder.jpg'">
+        <div class="project-overlay">
+          <i class="fa fa-eye"></i>
+          <span>{{ portfolioData.VIEW_DETAILS || 'View Details' }}</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3>{{ getTranslation(project.titleKey) }}</h3>
+        <p>{{ getTranslation(project.descriptionKey) }}</p>
+        <div class="technologies">
+          <span class="tech-badge" *ngFor="let tech of project.technologies">{{ tech }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load more button -->
+  <div class="load-more-container" *ngIf="hasMoreProjects()">
+    <button class="load-more-btn" (click)="loadMore()">
+      {{ portfolioData.LOAD_MORE || 'Load More' }} <i class="fa fa-chevron-down"></i>
+    </button>
+  </div>
+
+  <!-- No projects message -->
+  <div class="no-projects" *ngIf="displayedProjects.length === 0">
+    <i class="fa fa-folder-open"></i>
+    <p>{{ portfolioData.NO_PROJECTS || 'No projects found in this category' }}</p>
+  </div>
+</div>
+
+<!-- Project details modal -->
+<app-modal 
+  [isOpen]="isModalOpen" 
+  [title]="selectedProject ? getTranslation(selectedProject.titleKey) : ''" 
+  (closeModal)="closeModal()">
+  <div class="project-details" *ngIf="selectedProject">
+    <!-- Image gallery -->
+    <div class="image-gallery">
+      <div class="gallery-main">
+        <button class="gallery-nav prev" (click)="prevImage()" *ngIf="selectedProject.images && selectedProject.images.length > 1">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <img [src]="getCurrentImage()" [alt]="getTranslation(selectedProject.titleKey)" class="detail-image" (error)="$any($event).target.src='assets/img/placeholder.jpg'">
+        <button class="gallery-nav next" (click)="nextImage()" *ngIf="selectedProject.images && selectedProject.images.length > 1">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <!-- Thumbnails -->
+      <div class="gallery-thumbnails" *ngIf="selectedProject.images && selectedProject.images.length > 1">
+        <div 
+          *ngFor="let img of selectedProject.images; let i = index" 
+          class="thumbnail"
+          [class.active]="i === currentImageIndex"
+          (click)="goToImage(i)">
+          <img [src]="img" [alt]="'Image ' + (i + 1)" (error)="$any($event).target.src='assets/img/placeholder.jpg'">
+        </div>
+      </div>
+      
+      <!-- Image counter -->
+      <div class="image-counter" *ngIf="selectedProject.images && selectedProject.images.length > 1">
+        {{ currentImageIndex + 1 }} / {{ selectedProject.images.length }}
+      </div>
+    </div>
+    
+    <div class="detail-section">
+      <h4><i class="fa fa-info-circle"></i> {{ portfolioData.ABOUT || 'About' }}</h4>
+      <p>{{ getTranslation(selectedProject.detailsKey) }}</p>
+    </div>
+
+    <div class="detail-section">
+      <h4><i class="fa fa-calendar"></i> {{ portfolioData.DATE || 'Date' }}</h4>
+      <p>{{ getTranslation(selectedProject.dateKey) }}</p>
+    </div>
+
+    <div class="detail-section">
+      <h4><i class="fa fa-code"></i> {{ portfolioData.TECHNOLOGIES || 'Technologies' }}</h4>
+      <div class="technologies">
+        <span class="tech-badge" *ngFor="let tech of selectedProject.technologies">{{ tech }}</span>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h4><i class="fa fa-tag"></i> {{ portfolioData.CATEGORY || 'Category' }}</h4>
+      <span class="category-badge">{{ getTranslation('CATEGORIES.' + selectedProject.category.toUpperCase()) }}</span>
+    </div>
+
+    <div class="project-links">
+      <a *ngIf="selectedProject.githubUrl" [href]="selectedProject.githubUrl" target="_blank" class="project-link">
+        <i class="fa-brands fa-github"></i> {{ portfolioData.VIEW_CODE || 'View Code' }}
+      </a>
+      <a *ngIf="selectedProject.liveUrl" [href]="selectedProject.liveUrl" target="_blank" class="project-link primary">
+        <i class="fa fa-external-link-alt"></i> {{ portfolioData.VIEW_LIVE || 'View Live' }}
+      </a>
+    </div>
+  </div>
+</app-modal>

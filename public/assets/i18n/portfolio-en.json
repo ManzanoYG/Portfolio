@@ -1,0 +1,83 @@
+{
+  "TITLE": "Portfolio",
+  "VIEW_DETAILS": "View Details",
+  "LOAD_MORE": "Load More",
+  "NO_PROJECTS": "No projects found in this category",
+  "ABOUT": "About",
+  "DATE": "Date",
+  "TECHNOLOGIES": "Technologies",
+  "CATEGORY": "Category",
+  "VIEW_CODE": "View Code",
+  "VIEW_LIVE": "View Live",
+  
+  "CATEGORIES": {
+    "ALL": "All",
+    "WEB": "Web",
+    "MOBILE": "Mobile",
+    "BACKEND": "Backend",
+    "FULLSTACK": "Full Stack"
+  },
+
+  "PROJECTS": {
+    "PROJECT1": {
+      "TITLE": "E-Commerce Application",
+      "DESCRIPTION": "A complete e-commerce platform with cart management and secure payments.",
+      "DATE": "January 2025",
+      "DETAILS": "Full-stack application with user authentication, product catalog management, shopping cart system, Stripe payment integration, and admin panel to manage orders and inventory."
+    },
+    "PROJECT2": {
+      "TITLE": "Analytics Dashboard",
+      "DESCRIPTION": "Interactive dashboard for real-time data visualization.",
+      "DATE": "November 2024",
+      "DETAILS": "Responsive dashboard built with React and TypeScript, integrating Firebase for backend. Data visualizations with Chart.js, real-time updates, and PDF report exports."
+    },
+    "PROJECT3": {
+      "TITLE": "Fitness Mobile App",
+      "DESCRIPTION": "Mobile application to track workouts and nutrition.",
+      "DATE": "September 2024",
+      "DETAILS": "Cross-platform application developed with React Native and Expo. Workout tracking, calorie calculator, personalized exercise plans, and synchronization with fitness devices."
+    },
+    "PROJECT4": {
+      "TITLE": "RESTful API",
+      "DESCRIPTION": "Robust API for data management and authentication.",
+      "DATE": "August 2024",
+      "DETAILS": "API built with Laravel, using MySQL for persistence and Redis for caching. JWT authentication, Swagger documentation, rate limiting, and automated tests."
+    },
+    "PROJECT5": {
+      "TITLE": "Corporate Website",
+      "DESCRIPTION": "Modern and responsive website for a company.",
+      "DATE": "June 2024",
+      "DETAILS": "Showcase website developed with Vue.js and Vuetify. Responsive design, smooth animations, contact form, project gallery, and SEO optimization."
+    },
+    "PROJECT6": {
+      "TITLE": "SaaS Platform",
+      "DESCRIPTION": "Multi-tenant SaaS solution with subscription management.",
+      "DATE": "March 2024",
+      "DETAILS": "Complete platform with Next.js for frontend, PostgreSQL for database, and Docker for deployment. Multi-tenant management, subscription system, automated billing, and integrated analytics."
+    },
+    "PROJECT7": {
+      "TITLE": "Plateforme SaaS",
+      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
+      "DATE": "Mars 2024",
+      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+    },
+    "PROJECT8": {
+      "TITLE": "Plateforme SaaS",
+      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
+      "DATE": "Mars 2024",
+      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+    },
+    "PROJECT9": {
+      "TITLE": "Plateforme SaaS",
+      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
+      "DATE": "Mars 2024",
+      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+    },
+    "PROJECT10": {
+      "TITLE": "Plateforme SaaS",
+      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
+      "DATE": "Mars 2024",
+      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+    }
+  }
+}
