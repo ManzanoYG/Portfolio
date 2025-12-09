@@ -6,12 +6,12 @@
       >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [class.active]="isActive('profile')" (click)="scrollToSection('profile', $event)">Profile</a>
-      <a mat-list-item [class.active]="isActive('skills')" (click)="scrollToSection('skills', $event)">Skills</a>
-      <a mat-list-item [class.active]="isActive('experience')" (click)="scrollToSection('experience', $event)">Experience</a>
-      <a mat-list-item [class.active]="isActive('portfolio')" (click)="scrollToSection('portfolio', $event)">Portfolio</a>
-      <a mat-list-item [class.active]="isActive('education')" (click)="scrollToSection('education', $event)">Education</a>
-      <a mat-list-item [class.active]="isActive('contact')" (click)="scrollToSection('contact', $event)">Contact</a>
+      <a mat-list-item [class.active]="isActive('profile')" (click)="scrollToSection('profile', $event)">{{'MENU.PROFILE' | translate}}</a>
+      <a mat-list-item [class.active]="isActive('skills')" (click)="scrollToSection('skills', $event)">{{'MENU.SKILLS' | translate}}</a>
+      <a mat-list-item [class.active]="isActive('experience')" (click)="scrollToSection('experience', $event)">{{'MENU.EXPERIENCE' | translate}}</a>
+      <a mat-list-item [class.active]="isActive('portfolio')" (click)="scrollToSection('portfolio', $event)">{{'MENU.PORTFOLIO' | translate}}</a>
+      <a mat-list-item [class.active]="isActive('education')" (click)="scrollToSection('education', $event)">{{'MENU.EDUCATION' | translate}}</a>
+      <a mat-list-item [class.active]="isActive('contact')" (click)="scrollToSection('contact', $event)">{{'MENU.CONTACT' | translate}}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
