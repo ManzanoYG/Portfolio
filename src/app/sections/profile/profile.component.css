@@ -52,10 +52,6 @@ a {
     list-style-type: none;
 }
 
-/*.dark-theme[class*="card-title"], .dark-theme[class*="card-text"] {
-    color: white !important;
-}*/
-
 p.dark-theme, h3.dark-theme, a.dark-theme, span.dark-theme, i.dark-theme, li.dark-theme {
   color: #E8E6E3;
 }
@@ -113,3 +109,9 @@ p.dark-theme, h3.dark-theme, a.dark-theme, span.dark-theme, i.dark-theme, li.dar
   }
 }
 
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    color: #051D33;
+}
