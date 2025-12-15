@@ -13,7 +13,13 @@
     "BIO": "Jeune développeur Full-Stack passionné par les technologies Java et Angular. Curieux, adaptable et apprenant très vite, j’ai acquis une solide base en développement web, en conception d’API et en architecture applicative moderne grâce à mes projets et à mon stage dans un contexte bancaire. Motivé par l’innovation et la qualité logicielle, je souhaite intégrer une équipe stimulante pour monter en compétences et contribuer à des projets d’envergure.",
     "AGE" : "ans",
     "COUNTRY": "Belgique",
-    "CV": "Télécharger le CV"
+    "CV": "Télécharger le CV",
+    "LANGUAGES": {
+      "FRENCH": "Français | Langue maternelle",
+      "ENGLISH": "Anglais | B1",
+      "DUTCH": "Néerlandais | A1",
+      "SPANISH": "Espagnol | B1"
+    }
   },
   "EDUCATION": {
     "TITLE": "Éducation",
