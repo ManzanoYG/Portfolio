@@ -64,3 +64,52 @@ p.dark-theme, h3.dark-theme, a.dark-theme, span.dark-theme, i.dark-theme, li.dar
   background-color: #181A1B;
 }
 
+.flag {
+    font-size: 35px !important;
+    border-radius: 25px;
+    margin: 0 15px 15px 25px;
+}
+
+.language {
+  vertical-align: middle;
+}
+
+.languages-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .languages-container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .flag {
+    font-size: 28px !important;
+    margin: 0 10px 10px 15px;
+  }
+  
+  .language {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .flag {
+    font-size: 24px !important;
+    margin: 0 8px 8px 10px;
+  }
+  
+  .language {
+    font-size: 0.9rem;
+  }
+}
+
