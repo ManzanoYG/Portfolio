@@ -154,3 +154,16 @@ p.dark-theme[class*="timeline-copy"], li.dark-theme {
 h3.dark-theme {
   color: #D6D3CD;
 }
+
+.list-description {
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #051D33;
+}

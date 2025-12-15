@@ -27,6 +27,7 @@
       "INSTITUTION" : "Haute École Louvain en Hainaut",
       "DIPLOMA": "Bachelier en Informatique - Développement d'applications",
       "DESCRIPTION" : "Études en informatique axées sur le développement d'applications web et logicielles, avec une solide formation en programmation, bases de données et gestion de projets."
+
     },
     "SECONDARY" : {
       "INSTITUTION" : "Institut Provincial d'Enseignement Secondaire d'Ath",
@@ -40,19 +41,26 @@
       "POSITION": "Stage de Développeur | BNP Paribas Fortis",
       "DURATION": "Février 2025 - Juin 2025",
       "ADDRESS": "Rue Montagne du Parc 3, 1000 Bruxelles, Belgique",
-      "DESCRIPTION": "Développement d'une application web pour la gestion des opérations liées aux dépôts à taux variable ou fixe, avec un suivi de la réévaluation mensuelle. Technologies utilisées : C#, ASP.NET, HTML, CSS, JavaScript, SQL Server, IIS, Microsoft Azure, jQuery, Ajax."
+      "DESCRIPTION-1": "Développement d’une application web interne pour la gestion de deals liés aux dépôts à taux fixes et flottants.",
+      "DESCRIPTION-2" : "Implémentation d’un suivi mensuel de la réévaluation des dépôts.",
+      "DESCRIPTION-3" : "Participation aux phases d’analyse, de développement et de tests.",
+      "DESCRIPTION-4" : "Technologies : C#, ASP.NET, .NET Core, SQL Server, HTML, CSS, JavaScript, jQuery, Ajax, IIS."
     },
     "HIGHSCHOOL": {
       "POSITION": "Freelance | Loginfo",
       "DURATION": "Avril 2021 - Décembre 2022",
       "ADDRESS": "Chemin de la laiterie 28, 7812 Mainvault, Belgique",
-      "DESCRIPTION": "Développement de sites web en HTML, CSS et PHP, gestion de projets informatiques et configuration de réseaux. Interaction avec les clients pour comprendre leurs besoins et fournir un support technique. Optimisation des performances du système et maintien de la sécurité."
+      "DESCRIPTION-1": "Développement et maintenance de sites web",
+      "DESCRIPTION-2": "Gestion de projets informatiques de petite à moyenne taille",
+      "DESCRIPTION-3": "Configuration de réseaux et support technique client",
+      "DESCRIPTION-4": "Optimisation des performances et renforcement de la sécurité des systèmes"
     },
     "HIGHSCHOOL_INTERNSHIP": {
       "POSITION": "Stage de Technicien en Informatique | CDY",
       "DURATION": "2020 - 2020",
       "ADDRESS": "Chemin du Montquesnoy 5, 7803 Bouvignies, Belgique",
-      "DESCRIPTION": "Participation au développement de projets web et mobiles, ainsi qu'aux tests et au débogage."
+      "DESCRIPTION-1": "Participation au développement de projets web et mobiles.",
+      "DESCRIPTION-2": "Tests, débogage et amélioration des fonctionnalités existantes."
     }
   },
   "CONTACT": {
