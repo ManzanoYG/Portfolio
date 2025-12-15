@@ -81,7 +81,7 @@ export class PortfolioComponent implements OnInit {
         liveUrl: 'https://project1.com',
         dateKey: 'PROJECTS.PROJECT1.DATE',
         detailsKey: 'PROJECTS.PROJECT1.DETAILS',
-        display: true
+        display: false
       },
       {
         id: '2',
@@ -94,7 +94,7 @@ export class PortfolioComponent implements OnInit {
         liveUrl: 'https://project2.com',
         dateKey: 'PROJECTS.PROJECT2.DATE',
         detailsKey: 'PROJECTS.PROJECT2.DETAILS',
-        display: true
+        display: false
       },
       {
         id: '3',
@@ -106,7 +106,7 @@ export class PortfolioComponent implements OnInit {
         githubUrl: 'https://github.com/example/project3',
         dateKey: 'PROJECTS.PROJECT3.DATE',
         detailsKey: 'PROJECTS.PROJECT3.DETAILS',
-        display: true
+        display: false
       },
       {
         id: '4',
@@ -131,7 +131,7 @@ export class PortfolioComponent implements OnInit {
         liveUrl: 'https://project5.com',
         dateKey: 'PROJECTS.PROJECT5.DATE',
         detailsKey: 'PROJECTS.PROJECT5.DETAILS',
-        display: true
+        display: false
       },
       {
         id: '6',
@@ -144,7 +144,7 @@ export class PortfolioComponent implements OnInit {
         liveUrl: 'https://project6.com',
         dateKey: 'PROJECTS.PROJECT6.DATE',
         detailsKey: 'PROJECTS.PROJECT6.DETAILS',
-        display: true
+        display: false
       }
     ];
     this.filterProjects('all');

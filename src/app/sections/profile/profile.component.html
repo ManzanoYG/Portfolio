@@ -1,21 +1,34 @@
 <div class="card">
     <div class="row g-0">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <img  class="img-fluid rounded-start" src="../assets/img/mathias.jpg" alt="Profile Picture">
         </div>
-        <div class="col-md-9">
+        <div class="col-md-8">
             <div class="card-body">
-                <h3 class="card-title">{{ 'PROFILE.TITLE' | translate }}</h3>
+                <h2 class="card-title">{{ 'PROFILE.TITLE' | translate }}</h2>
                 <p class="card-text">{{ 'PROFILE.BIO' | translate }}</p>
-                <br>
                 <div class="row align-items-center">
                     <div class="col">
                         <ul class="basic-info">
                             <li><i class="fa-solid fa-user"></i> Mathias Manzano Y Gonzalez</li>
                             <li><i class="fa-solid fa-envelope"></i><a href="mailto:mathiasmanzano37@gmail.com" class="link"> mathiasmanzano37&#64;gmail.com</a></li>
                             <li><i class="fa-solid fa-cake-candles"></i> 21/04/2000 | {{ getAge() }} {{ 'PROFILE.AGE' | translate }}</li>
-                            <li><i class="fa-solid fa-map-location-dot"></i><a href="https://maps.app.goo.gl/HbgnDy7JnvrUAVmR9" target="_blank"> 7800 ATH <br>{{ 'PROFILE.COUNTRY' | translate }}</a></li>
+                            <li><i class="fa-solid fa-map-location-dot"></i><a href="https://maps.app.goo.gl/HbgnDy7JnvrUAVmR9" target="_blank"> 7800 ATH | {{ 'PROFILE.COUNTRY' | translate }}</a></li>
                         </ul>
+                    </div>
+                </div>
+                <div class="languages-container">
+                    <div class="language-item">
+                        <span class="fi fi-gf fis flag"></span><span class="language">{{ 'PROFILE.LANGUAGES.FRENCH' | translate }}</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="fi fi-es fis flag"></span><span class="language">{{ 'PROFILE.LANGUAGES.SPANISH' | translate }}</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="fi fi-sh fis flag"></span><span class="language">{{ 'PROFILE.LANGUAGES.ENGLISH' | translate }}</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="fi fi-bq fis flag"></span><span class="language">{{ 'PROFILE.LANGUAGES.DUTCH' | translate }}</span>
                     </div>
                 </div>
                 <br>

@@ -50,42 +50,60 @@ export class SkillsComponent implements OnInit {
       title: 'CATEGORIES.LANGUAGES',
       icon: 'fa-code',
       skills: [
+        { name: 'ITEMS.CSHARP', level: 'LEVELS.INTERMEDIATE' },
+        { name: 'ITEMS.JAVA', level: 'LEVELS.INTERMEDIATE' },
+        { name: 'ITEMS.PYTHON', level: 'LEVELS.ADVANCED' },
         { name: 'ITEMS.JAVASCRIPT', level: 'LEVELS.BEGINNER' },
         { name: 'ITEMS.TYPESCRIPT', level: 'LEVELS.EXPERT' },
-        { name: 'ITEMS.PYTHON', level: 'LEVELS.ADVANCED' },
         { name: 'ITEMS.PHP', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.JAVA', level: 'LEVELS.INTERMEDIATE' },
-        { name: 'ITEMS.CSHARP', level: 'LEVELS.INTERMEDIATE' },
-        { name: 'ITEMS.SQL', level: 'LEVELS.ADVANCED' }
+        { name: 'ITEMS.KOTLIN', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.SQL', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.VBA', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.BASH', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.JSON', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.XML', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.HTML5', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.CSS3', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.C', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.C++', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.REGEX', level: 'LEVELS.ADVANCED' }
       ]
     },
     {
       title: 'CATEGORIES.FRONTEND',
       icon: 'fa-laptop-code',
       skills: [
-        { name: 'ITEMS.ANGULAR', level: 'LEVELS.EXPERT' },
-        { name: 'ITEMS.REACT', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.VUE', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.HTML_CSS', level: 'LEVELS.EXPERT' },
-        { name: 'ITEMS.SASS', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.HTML5', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.CSS3', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.JAVASCRIPT', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.TYPESCRIPT', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.REACTIVEFORMS', level: 'LEVELS.EXPERT' },
         { name: 'ITEMS.BOOTSTRAP', level: 'LEVELS.EXPERT' },
-        { name: 'ITEMS.MATERIAL_DESIGN', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.RESPONSIVE_DESIGN', level: 'LEVELS.EXPERT' }
+        { name: 'ITEMS.RESPONSIVE_DESIGN', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.JQUERY', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.AJAX', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.DOM_MANIPULATION', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.API_INTEGRATION', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.ANGULAR', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.MATERIAL_DESIGN', level: 'LEVELS.ADVANCED' }
       ]
     },
     {
       title: 'CATEGORIES.BACKEND',
       icon: 'fa-server',
       skills: [
+        { name: 'ITEMS.NET', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.NETCORE', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.ASPNET', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.ASPNETCORE', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.MVC', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.REST_API', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.BLAZOR', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.ENTITYFRAMEWORK', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.JWT', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.LOGGING', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.DATAVALIDATION', level: 'LEVELS.ADVANCED' },
         { name: 'ITEMS.NODEJS', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.EXPRESS', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.LARAVEL', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.DJANGO', level: 'LEVELS.INTERMEDIATE' },
-        { name: 'ITEMS.REST_API', level: 'LEVELS.EXPERT' },
-        { name: 'ITEMS.GRAPHQL', level: 'LEVELS.INTERMEDIATE' },
-        { name: 'ITEMS.MONGODB', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.MYSQL', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.POSTGRESQL', level: 'LEVELS.ADVANCED' }
       ]
     },
     {
@@ -93,24 +111,40 @@ export class SkillsComponent implements OnInit {
       icon: 'fa-tools',
       skills: [
         { name: 'ITEMS.GIT', level: 'LEVELS.EXPERT' },
-        { name: 'ITEMS.DOCKER', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.VSCODE', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.GITHUB', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.GITLAB', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.GIT_FLOW', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.DOCKER', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.DOCKER_COMPOSE', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.IIS', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.LINUX', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.WINDOWS', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.BASH_SCRIPTING', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.POWERSHELL', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.VERSIONING', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.VISUAL_STUDIO', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.VISUAL_STUDIO_CODE', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.JETBRAINS', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.ECLIPSE', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.ANDROID_STUDIO', level: 'LEVELS.EXPERT' },
+        { name: 'ITEMS.SSMS', level: 'LEVELS.EXPERT' },
         { name: 'ITEMS.FIGMA', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.POSTMAN', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.JENKINS', level: 'LEVELS.INTERMEDIATE' },
-        { name: 'ITEMS.JIRA', level: 'LEVELS.ADVANCED' }
+        { name: 'ITEMS.JIRA', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.TRELLO', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.POSTMAN', level: 'LEVELS.ADVANCED' }
       ]
     },
     {
-      title: 'CATEGORIES.DEVOPS',
-      icon: 'fa-cloud',
+      title: 'CATEGORIES.DATABASES',
+      icon: 'fa-database',
       skills: [
-        { name: 'ITEMS.LINUX', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.CI_CD', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.AWS', level: 'LEVELS.INTERMEDIATE' },
-        { name: 'ITEMS.AZURE', level: 'LEVELS.INTERMEDIATE' },
-        { name: 'ITEMS.NGINX', level: 'LEVELS.ADVANCED' },
-        { name: 'ITEMS.APACHE', level: 'LEVELS.ADVANCED' }
+        { name: 'ITEMS.SQL_SERVER', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.MYSQL', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.SQLITE', level: 'LEVELS.INTERMEDIATE' },
+        { name: 'ITEMS.INDEXING', level: 'LEVELS.INTERMEDIATE' },
+        { name: 'ITEMS.TRIGGTERS', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.JSON_DATA_HANDLING', level: 'LEVELS.ADVANCED' },
+        { name: 'ITEMS.CONNECTIONS_POOLING', level: 'LEVELS.EXPERT' }
       ]
     },
     {
@@ -122,7 +156,18 @@ export class SkillsComponent implements OnInit {
         { name: 'ITEMS.TEAMWORK' },
         { name: 'ITEMS.ADAPTABILITY' },
         { name: 'ITEMS.TIME_MANAGEMENT' },
-        { name: 'ITEMS.CONTINUOUS_LEARNING' }
+        { name: 'ITEMS.CONTINUOUS_LEARNING' },
+        { name: 'ITEMS.AGILE' },
+        { name: 'ITEMS.SCRUM' },
+        { name: 'ITEMS.REQUIREMENTS_ANALYSIS' },
+        { name: 'ITEMS.AUTONOMY' },
+        { name: 'ITEMS.TECHNOLOGICAL_CURIOSITY' },
+        { name: 'ITEMS.CODE_REVIEW' },
+        { name: 'ITEMS.DEBUGGING' },
+        { name: 'ITEMS.PRIORITY_MANAGEMENT' },
+        { name: 'ITEMS.SOLUTION_ORIENTATION' },
+        { name: 'ITEMS.STRESS_MANAGEMENT' },
+        { name: 'ITEMS.DEADLINE_RESPECT' }
       ]
     }
   ];

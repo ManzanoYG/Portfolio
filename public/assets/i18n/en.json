@@ -10,10 +10,16 @@
   },
   "PROFILE": {
     "TITLE": "Profile",
-    "BIO": "Student in computer application development, currently in the final year of bachelor's degree. Passionate about new technologies and creating innovative solutions. Through my education and professional experiences, I have acquired skills in web development, project management, and technical support. Autonomous, motivated, and curious, I am looking for my first job to apply my skills and enrich my expertise in the field.",
+    "BIO": "Application developer with a bachelor's degree in computer science, specialized in web and application development. Passionate about modern technologies and creating reliable and high-performance solutions. Experience in professional and academic environments including full-stack development, project management, and agile teamwork. Motivated, autonomous, and curious, I am seeking a first job to consolidate my skills and grow within a technical team.",
     "AGE" : "years old",
     "COUNTRY": "Belgium",
-    "CV": "Download CV"
+    "CV": "Download CV",
+    "LANGUAGES": {
+      "FRENCH": "French | Native",
+      "ENGLISH": "English | B1",
+      "DUTCH": "Dutch | A1",
+      "SPANISH": "Spanish | B1"
+    }
   },
   "EDUCATION": {
     "TITLE": "Education",
@@ -34,19 +40,26 @@
       "POSITION": "Developer Internship | BNP Paribas Fortis",
       "DURATION": "February 2025 - June 2025",
       "ADDRESS": "Rue Montagne du Parc 3, 1000 Brussels, Belgium",
-      "DESCRIPTION": "Development of a web application for managing deals related to floating or fixed-rate deposits, with monthly revaluation monitoring. Technologies used: C#, ASP.NET, HTML, CSS, JavaScript, SQL Server, IIS, Microsoft Azure, jQuery, Ajax."
+      "DESCRIPTION-1": "Development of an internal web application for managing deals related to fixed and floating rate deposits.",
+      "DESCRIPTION-2": "Implementation of monthly monitoring for deposit revaluation.",
+      "DESCRIPTION-3": "Participation in analysis, development, and testing phases.",
+      "DESCRIPTION-4": "Technologies: C#, ASP.NET, .NET Core, SQL Server, HTML, CSS, JavaScript, jQuery, Ajax, IIS."
     },
     "HIGHSCHOOL": {
       "POSITION": "Freelance | Loginfo",
       "DURATION": "April 2021 - December 2022",
       "ADDRESS": "Chemin de la laiterie 28, 7812 Mainvault, Belgium",
-      "DESCRIPTION": "Website development in HTML, CSS, and PHP, IT project management, and network configuration. Interacting with clients to understand their needs and provide technical support. Optimizing system performance and maintaining security."
+      "DESCRIPTION-1": "Website development in HTML, CSS, and PHP.",
+      "DESCRIPTION-2": "IT project management.",
+      "DESCRIPTION-3": "Network configuration and technical support.",
+      "DESCRIPTION-4": "Interacting with clients to understand their needs and provide technical support. Optimizing system performance and maintaining security."
     },
     "HIGHSCHOOL_INTERNSHIP": {
       "POSITION": "Computer Technician Internship | CDY",
       "DURATION": "2020 - 2020",
       "ADDRESS": "Chemin du Montquesnoy 5, 7803 Bouvignies, Belgium",
-      "DESCRIPTION": "Participated in the development of web and mobile projects, as well as testing and debugging."
+      "DESCRIPTION-1": "Participation in the development of web and mobile projects.",
+      "DESCRIPTION-2": "Testing, debugging, and improving existing features."
     }
   },
   "CONTACT": {
