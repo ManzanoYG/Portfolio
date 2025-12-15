@@ -52,7 +52,7 @@ a {
     list-style-type: none;
 }
 
-p.dark-theme, h3.dark-theme, a.dark-theme, span.dark-theme, i.dark-theme, li.dark-theme {
+p.dark-theme, h2.dark-theme, a.dark-theme, span.dark-theme, i.dark-theme, li.dark-theme {
   color: #E8E6E3;
 }
 
