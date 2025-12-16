@@ -40,7 +40,8 @@ export class PortfolioComponent implements OnInit {
     { key: 'web', icon: 'fa-globe' },
     { key: 'mobile', icon: 'fa-mobile-alt' },
     { key: 'backend', icon: 'fa-server' },
-    { key: 'fullstack', icon: 'fa-layer-group' }
+    { key: 'desktop', icon: 'fa-layer-group' },
+    { key: 'game_dev', icon: 'fa-gamepad' }
   ];
 
   constructor(
@@ -69,82 +70,47 @@ export class PortfolioComponent implements OnInit {
         id: '1',
         titleKey: 'PROJECTS.PROJECT1.TITLE',
         descriptionKey: 'PROJECTS.PROJECT1.DESCRIPTION',
-        category: 'fullstack',
-        image: 'assets/img/projects/project1.jpg',
+        category: 'desktop',
+        image: 'assets/img/projects/pos/pos_table.png',
         images: [
-          'assets/img/projects/project1-1.jpg',
-          'assets/img/projects/project1-2.jpg',
-          'assets/img/projects/project1-3.jpg'
+          'assets/img/projects/pos/pos_table.png'
         ],
-        technologies: ['Angular', 'Node.js', 'MongoDB'],
-        githubUrl: 'https://github.com/example/project1',
-        liveUrl: 'https://project1.com',
+        technologies: ['Java', 'JavaFX', 'JSON', 'CSS'],
         dateKey: 'PROJECTS.PROJECT1.DATE',
         detailsKey: 'PROJECTS.PROJECT1.DETAILS',
-        display: false
+        display: true
       },
       {
         id: '2',
         titleKey: 'PROJECTS.PROJECT2.TITLE',
         descriptionKey: 'PROJECTS.PROJECT2.DESCRIPTION',
         category: 'web',
-        image: 'assets/img/projects/project2.jpg',
-        technologies: ['React', 'TypeScript', 'Firebase'],
-        githubUrl: 'https://github.com/example/project2',
-        liveUrl: 'https://project2.com',
+        image: 'assets/img/projects/portfolio/portfolio_main.png',
+        technologies: ['Angular', 'Node.js', 'BOOT', 'TypeScript', 'Material'],
+        githubUrl: 'https://github.com/ManzanoYG/Portfolio',
+        liveUrl: 'https://mathiasmanzanoygonzalez.be/',
         dateKey: 'PROJECTS.PROJECT2.DATE',
         detailsKey: 'PROJECTS.PROJECT2.DETAILS',
-        display: false
+        display: true
       },
       {
         id: '3',
         titleKey: 'PROJECTS.PROJECT3.TITLE',
         descriptionKey: 'PROJECTS.PROJECT3.DESCRIPTION',
-        category: 'mobile',
-        image: 'assets/img/projects/project3.jpg',
-        technologies: ['React Native', 'Expo'],
-        githubUrl: 'https://github.com/example/project3',
+        category: 'desktop',
+        image: 'assets/img/projects/password_generator/password_empty.png',
+        images: [
+          'assets/img/projects/password_generator/password_empty.png',
+          'assets/img/projects/password_generator/password_generate.png',
+          'assets/img/projects/password_generator/password_copied.png',
+          'assets/img/projects/password_generator/password_error1.png',
+          'assets/img/projects/password_generator/password_error2.png',
+        ],
+        technologies: ['Python', 'Tkinter'],
+        githubUrl: 'https://github.com/ManzanoYG/Password-Generator',
         dateKey: 'PROJECTS.PROJECT3.DATE',
         detailsKey: 'PROJECTS.PROJECT3.DETAILS',
-        display: false
-      },
-      {
-        id: '4',
-        titleKey: 'PROJECTS.PROJECT4.TITLE',
-        descriptionKey: 'PROJECTS.PROJECT4.DESCRIPTION',
-        category: 'backend',
-        image: 'assets/img/projects/project4.jpg',
-        technologies: ['Laravel', 'MySQL', 'Redis'],
-        githubUrl: 'https://github.com/example/project4',
-        dateKey: 'PROJECTS.PROJECT4.DATE',
-        detailsKey: 'PROJECTS.PROJECT4.DETAILS',
-        display: false
-      },
-      {
-        id: '5',
-        titleKey: 'PROJECTS.PROJECT5.TITLE',
-        descriptionKey: 'PROJECTS.PROJECT5.DESCRIPTION',
-        category: 'web',
-        image: 'assets/img/projects/project5.jpg',
-        technologies: ['Vue.js', 'Vuetify'],
-        githubUrl: 'https://github.com/example/project5',
-        liveUrl: 'https://project5.com',
-        dateKey: 'PROJECTS.PROJECT5.DATE',
-        detailsKey: 'PROJECTS.PROJECT5.DETAILS',
-        display: false
-      },
-      {
-        id: '6',
-        titleKey: 'PROJECTS.PROJECT6.TITLE',
-        descriptionKey: 'PROJECTS.PROJECT6.DESCRIPTION',
-        category: 'fullstack',
-        image: 'assets/img/projects/project6.jpg',
-        technologies: ['Next.js', 'PostgreSQL', 'Docker'],
-        githubUrl: 'https://github.com/example/project6',
-        liveUrl: 'https://project6.com',
-        dateKey: 'PROJECTS.PROJECT6.DATE',
-        detailsKey: 'PROJECTS.PROJECT6.DETAILS',
-        display: false
+        display: true
       }
     ];
     this.filterProjects('all');
