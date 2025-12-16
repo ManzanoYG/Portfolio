@@ -111,6 +111,23 @@ export class PortfolioComponent implements OnInit {
         dateKey: 'PROJECTS.PROJECT3.DATE',
         detailsKey: 'PROJECTS.PROJECT3.DETAILS',
         display: true
+      },
+      {
+        id: '4',
+        titleKey: 'PROJECTS.PROJECT4.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT4.DESCRIPTION',
+        category: 'web',
+        image: 'assets/img/projects/ibsi/ibsi_home.png',
+        images: [
+          'assets/img/projects/ibsi/ibsi_home.png',
+          'assets/img/projects/ibsi/ibsi_room.png'
+        ],
+        technologies: ['PHP', 'JavaScript', 'MySQL', 'jQuery', 'Ajax'],
+        githubUrl: 'https://github.com/ManzanoYG/IBSI-Hotel',
+        liveUrl: 'https://mathiasmanzanoygonzalez.be/projects/ibsi/index.php',
+        dateKey: 'PROJECTS.PROJECT4.DATE',
+        detailsKey: 'PROJECTS.PROJECT4.DETAILS',
+        display: true
       }
     ];
     this.filterProjects('all');

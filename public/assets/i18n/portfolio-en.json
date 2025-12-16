@@ -37,6 +37,12 @@
       "DESCRIPTION": "Desktop application to generate secure passwords.",
       "DATE": " March 2024",
       "DETAILS": "Desktop application developed with Python and Tkinter. Customizable password generation, options to include uppercase, lowercase, numbers, and symbols, and clipboard copy functionality."
+    },
+    "PROJECT4": {
+      "TITLE": "IBSI Hotel",
+      "DESCRIPTION": "Fictional hotel website for a school project.",
+      "DATE": "May 2022",
+      "DETAILS": "Website developed with PHP, Ajax, jQuery, and JavaScript. Features include room presentation, services, image gallery, and booking form."
     }
   }
 }
