@@ -1,0 +1,51 @@
+<div class="skills-section">
+  <h2 class="section-title">{{ skillsData.TITLE || 'Skills' }}</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card" *ngFor="let category of skillCategories">
+      <div class="card-icon">
+        <i class="fa" [ngClass]="category.icon"></i>
+      </div>
+      <h3 class="card-title">{{ getTranslation(category.title) }}</h3>
+      <p class="card-description">{{ category.skills.length }} {{ skillsData.SKILLS_COUNT || 'skills' }}</p>
+      <button class="view-btn" (click)="openModal(category)">
+        {{ skillsData.VIEW_DETAILS || 'View Details' }} <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<app-modal 
+  [isOpen]="isModalOpen" 
+  [title]="getTranslation(modalTitle)" 
+  (closeModal)="closeModal()">
+  <div class="sort-buttons">
+    <button 
+      class="sort-btn" 
+      [class.active]="sortBy === 'level'"
+      (click)="sortByLevel()">
+      <i class="fa fa-sort-amount-down"></i> {{ skillsData.SORT_BY_LEVEL || 'Sort by Level' }}
+    </button>
+    <button 
+      class="sort-btn" 
+      [class.active]="sortBy === 'alphabetical'"
+      (click)="sortAlphabetically()">
+      <i class="fa fa-sort-alpha-down"></i> {{ skillsData.SORT_ALPHABETICALLY || 'Sort A-Z' }}
+    </button>
+    <button 
+      class="sort-btn" 
+      [class.active]="sortBy === null"
+      (click)="resetSort()"
+      *ngIf="sortBy !== null">
+      <i class="fa fa-undo"></i> {{ skillsData.RESET_SORT || 'Reset' }}
+    </button>
+  </div>
+  <div class="skills-list">
+    <div class="skill-item" *ngFor="let skill of displayedSkills">
+      <div class="skill-name">{{ getTranslation(skill.name) }}</div>
+      <div class="skill-level" *ngIf="skill.level">
+        <span class="level-badge" [ngClass]="getLevelClass(skill.level)">{{ getTranslation(skill.level) }}</span>
+      </div>
+    </div>
+  </div>
+</app-modal>

@@ -1,0 +1,117 @@
+.rounded-button {
+    width: 60px;
+    height: 60px;
+    background: #051D33;
+    color : white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.rounded-button:hover {
+    background-color: #0e3457;
+}
+
+.button-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button-text {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    white-space: nowrap;
+    background: #051D33;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.button-text.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+a {
+    color: black;
+    text-decoration: none !important;
+}
+
+.basic-info {
+    list-style-type: none;
+}
+
+p.dark-theme, h2.dark-theme, a.dark-theme, span.dark-theme, i.dark-theme, li.dark-theme {
+  color: #E8E6E3;
+}
+
+.card.dark-theme {
+  background-color: #181A1B;
+}
+
+.flag {
+    font-size: 35px !important;
+    border-radius: 25px;
+    margin: 0 15px 15px 25px;
+}
+
+.language {
+  vertical-align: middle;
+}
+
+.languages-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .languages-container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .flag {
+    font-size: 28px !important;
+    margin: 0 10px 10px 15px;
+  }
+  
+  .language {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .flag {
+    font-size: 24px !important;
+    margin: 0 8px 8px 10px;
+  }
+  
+  .language {
+    font-size: 0.9rem;
+  }
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    color: #051D33;
+}

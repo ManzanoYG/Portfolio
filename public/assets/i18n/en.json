@@ -1,0 +1,103 @@
+{
+  "HOME": {
+    "TITLE": "Welcome to my portfolio",
+    "DESCRIPTION": "I am a developer passionate about Angular."
+  },
+  "NAVBAR": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "CONTACT": "Contact en"
+  },
+  "PROFILE": {
+    "TITLE": "Profile",
+    "BIO": "Application developer with a bachelor's degree in computer science, specialized in web and application development. Passionate about modern technologies and creating reliable and high-performance solutions. Experience in professional and academic environments including full-stack development, project management, and agile teamwork. Motivated, autonomous, and curious, I am seeking a first job to consolidate my skills and grow within a technical team.",
+    "AGE" : "years old",
+    "COUNTRY": "Belgium",
+    "CV": "Download CV",
+    "LANGUAGES": {
+      "FRENCH": "French | Native",
+      "ENGLISH": "English | B1",
+      "DUTCH": "Dutch | A1",
+      "SPANISH": "Spanish | B1"
+    }
+  },
+  "EDUCATION": {
+    "TITLE": "Education",
+    "BACHELOR":{
+      "INSTITUTION" : "High School Louvain in Hainaut",
+      "DIPLOMA": "Bachelor of Computer Science - Application Development",
+      "DESCRIPTION" : "Computer science studies focused on the development of web and software applications, with a solid background in programming, databases and project management."
+    },
+    "SECONDARY" : {
+      "INSTITUTION" : "Ath Provincial Institute of Secondary Education",
+      "DIPLOMA": "Higher Secondary Education Certificate - Computer Technician",
+      "DESCRIPTION" : "A versatile IT training course covering the fundamentals of hardware, networks, technical support and an introduction to development."
+    }
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experience",
+    "INTERNSHIP": {
+      "POSITION": "Developer Internship | BNP Paribas Fortis",
+      "DURATION": "February 2025 - June 2025",
+      "ADDRESS": "Rue Montagne du Parc 3, 1000 Brussels, Belgium",
+      "DESCRIPTION-1": "Development of an internal web application for managing deals related to fixed and floating rate deposits.",
+      "DESCRIPTION-2": "Implementation of monthly monitoring for deposit revaluation.",
+      "DESCRIPTION-3": "Participation in analysis, development, and testing phases.",
+      "DESCRIPTION-4": "Technologies: C#, ASP.NET, .NET Core, SQL Server, HTML, CSS, JavaScript, jQuery, Ajax, IIS."
+    },
+    "HIGHSCHOOL": {
+      "POSITION": "Freelance | Loginfo",
+      "DURATION": "April 2021 - December 2022",
+      "ADDRESS": "Chemin de la laiterie 28, 7812 Mainvault, Belgium",
+      "DESCRIPTION-1": "Website development in HTML, CSS, and PHP.",
+      "DESCRIPTION-2": "IT project management.",
+      "DESCRIPTION-3": "Network configuration and technical support.",
+      "DESCRIPTION-4": "Interacting with clients to understand their needs and provide technical support. Optimizing system performance and maintaining security."
+    },
+    "HIGHSCHOOL_INTERNSHIP": {
+      "POSITION": "Computer Technician Internship | CDY",
+      "DURATION": "2020 - 2020",
+      "ADDRESS": "Chemin du Montquesnoy 5, 7803 Bouvignies, Belgium",
+      "DESCRIPTION-1": "Participation in the development of web and mobile projects.",
+      "DESCRIPTION-2": "Testing, debugging, and improving existing features."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact Me",
+    "GET_IN_TOUCH": "Let's get in touch",
+    "DESCRIPTION": "Feel free to reach out to me for any questions or opportunities.",
+    "EMAIL": "Email Address",
+    "LOCATION": "Location",
+    "COUNTRY": "Belgium",
+    "NAME": "Name",
+    "NAME_PLACEHOLDER": "Your name",
+    "NAME_REQUIRED": "Name is required.",
+    "NAME_MIN": "Name must be at least 2 characters long.",
+    "EMAIL_PLACEHOLDER": "Your email",
+    "EMAIL_REQUIRED": "Email address is required.",
+    "EMAIL_INVALID": "Please enter a valid email address.",
+    "PHONE": "Phone Number",
+    "PHONE_PLACEHOLDER": "Your phone number",
+    "PHONE_INVALID": "Please enter a valid phone number.",
+    "MESSAGE": "Message",
+    "MESSAGE_PLACEHOLDER": "Your message",
+    "MESSAGE_REQUIRED": "Message is required.",
+    "MESSAGE_MIN": "Message must be at least 10 characters long.",
+    "SUCCESS": "Your message has been sent successfully!",
+    "ERROR": "An error occurred while sending your message. Please try again later.",
+    "SEND": "Send Message",
+    "SENDING": "Sending Message..."
+  },
+  "MENU": {
+    "PROFILE": "Profile",
+    "SKILLS": "Skills",
+    "EXPERIENCE": "Experience",
+    "PORTFOLIO": "Portfolio",
+    "EDUCATION": "Education",
+    "CONTACT": "Contact"
+  },
+  "FOOTER": {
+    "QUICK_LINKS": "Quick Links",
+    "COPYRIGHT": " All Rights Reserved by"
+  }
+}

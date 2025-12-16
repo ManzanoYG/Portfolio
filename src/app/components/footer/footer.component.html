@@ -1,0 +1,38 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-9">
+                <h6>{{ 'PROFILE.TITLE' | translate }}</h6>
+                <p class="text-justify">{{ 'PROFILE.BIO' | translate }}</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h6>{{ 'FOOTER.QUICK_LINKS' | translate }}</h6>
+                <ul class="footer-links">
+                    <li><a (click)="scrollToSection('profile', $event)">{{'MENU.PROFILE' | translate}}</a></li>
+                    <li><a (click)="scrollToSection('skills', $event)">{{'MENU.SKILLS' | translate}}</a></li>
+                    <li><a (click)="scrollToSection('experience', $event)">{{'MENU.EXPERIENCE' | translate}}</a></li>
+                    <li><a (click)="scrollToSection('portfolio', $event)">{{'MENU.PORTFOLIO' | translate}}</a></li>
+                    <li><a (click)="scrollToSection('education', $event)">{{'MENU.EDUCATION' | translate}}</a></li>
+                    <li><a (click)="scrollToSection('contact', $event)">{{'MENU.CONTACT' | translate}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="small">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-12">
+                <p class="copyright-text">Copyright © {{ currentYear }} {{ 'FOOTER.COPYRIGHT' | translate }}
+                    <a (click)="scrollToSection('profile', $event)"><span class="logo">Mathias Manzano Y Gonzalez</span></a>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <ul class="social-icons">
+                    <li><a class="github" href="https://github.com/ManzanoYG" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/mathias-manzano-y-gonzalez-b2464b20b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a class="download" (click)="downloadCV()"><i class="fa fa-download"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

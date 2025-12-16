@@ -1,0 +1,99 @@
+<div class="contact-section">
+  <h2 class="section-title">{{ 'CONTACT.TITLE' | translate }}</h2>
+  
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>{{ 'CONTACT.GET_IN_TOUCH' | translate }}</h3>
+      <p>{{ 'CONTACT.DESCRIPTION' | translate }}</p>
+      
+      <div class="info-item">
+        <i class="fa fa-envelope"></i>
+        <div>
+          <h4>{{ 'CONTACT.EMAIL' | translate }}</h4>
+          <a href="mailto:mathiasmanzano37@gmail.com">mathiasmanzano37gmail.com</a>
+        </div>
+      </div>
+      
+      <div class="info-item">
+        <i class="fa fa-map-marker-alt"></i>
+        <div>
+          <h4>{{ 'CONTACT.LOCATION' | translate }}</h4>
+          <p>7800 ATH, {{ 'PROFILE.COUNTRY' | translate }}</p>
+        </div>
+      </div>
+    </div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+      <div class="form-group">
+        <label for="name">{{ 'CONTACT.NAME' | translate }} *</label>
+        <input 
+          type="text" 
+          id="name" 
+          formControlName="name"
+          [class.error]="f['name'].invalid && f['name'].touched"
+          placeholder="{{ 'CONTACT.NAME_PLACEHOLDER' | translate }}">
+        <span class="error-message" *ngIf="f['name'].invalid && f['name'].touched">
+          <span *ngIf="f['name'].errors?.['required']">{{ 'CONTACT.NAME_REQUIRED' | translate }}</span>
+          <span *ngIf="f['name'].errors?.['minlength']">{{ 'CONTACT.NAME_MIN' | translate }}</span>
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">{{ 'CONTACT.EMAIL' | translate }} *</label>
+        <input 
+          type="email" 
+          id="email" 
+          formControlName="email"
+          [class.error]="f['email'].invalid && f['email'].touched"
+          placeholder="{{ 'CONTACT.EMAIL_PLACEHOLDER' | translate }}">
+        <span class="error-message" *ngIf="f['email'].invalid && f['email'].touched">
+          <span *ngIf="f['email'].errors?.['required']">{{ 'CONTACT.EMAIL_REQUIRED' | translate }}</span>
+          <span *ngIf="f['email'].errors?.['email']">{{ 'CONTACT.EMAIL_INVALID' | translate }}</span>
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">{{ 'CONTACT.PHONE' | translate }}</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          formControlName="phone"
+          [class.error]="f['phone'].invalid && f['phone'].touched"
+          placeholder="{{ 'CONTACT.PHONE_PLACEHOLDER' | translate }}">
+        <span class="error-message" *ngIf="f['phone'].invalid && f['phone'].touched">
+          <span *ngIf="f['phone'].errors?.['pattern']">{{ 'CONTACT.PHONE_INVALID' | translate }}</span>
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">{{ 'CONTACT.MESSAGE' | translate }} *</label>
+        <textarea 
+          id="message" 
+          formControlName="message"
+          rows="5"
+          [class.error]="f['message'].invalid && f['message'].touched"
+          placeholder="{{ 'CONTACT.MESSAGE_PLACEHOLDER' | translate }}"></textarea>
+        <span class="error-message" *ngIf="f['message'].invalid && f['message'].touched">
+          <span *ngIf="f['message'].errors?.['required']">{{ 'CONTACT.MESSAGE_REQUIRED' | translate }}</span>
+          <span *ngIf="f['message'].errors?.['minlength']">{{ 'CONTACT.MESSAGE_MIN' | translate }}</span>
+        </span>
+      </div>
+
+      <div class="alert alert-success" *ngIf="submitSuccess">
+        <i class="fa fa-check-circle"></i> {{ 'CONTACT.SUCCESS' | translate }}
+      </div>
+
+      <div class="alert alert-error" *ngIf="submitError">
+        <i class="fa fa-exclamation-circle"></i> {{ 'CONTACT.ERROR' | translate }}
+      </div>
+
+      <button 
+        type="submit" 
+        class="submit-btn"
+        [disabled]="isSubmitting">
+        <span *ngIf="!isSubmitting">{{ 'CONTACT.SEND' | translate }} <i class="fa fa-paper-plane"></i></span>
+        <span *ngIf="isSubmitting"><i class="fa fa-spinner fa-spin"></i> {{ 'CONTACT.SENDING' | translate }}</span>
+      </button>
+    </form>
+  </div>
+</div>
