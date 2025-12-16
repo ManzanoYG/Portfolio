@@ -43,6 +43,12 @@
       "DESCRIPTION": "Site web d'un hôtel fictif pour un projet scolaire.",
       "DATE": "Mai 2022",
       "DETAILS": "Site web développé avec PHP, Ajax, jQuery et JavaScript. Présentation des chambres, services, galerie d'images, formulaire de réservation."
+    },
+    "PROJECT5": {
+      "TITLE": "Waymate Frontend",
+      "DESCRIPTION": "Frontend pour une application de planification de voyages en covoiturage.",
+      "DATE": "Décembre 2023",
+      "DETAILS": "Site web développé avec Angular, TypeScript, SQL Server et Bootstrap. Interface utilisateur intuitive, gestion des trajets, intégration de cartes et système de réservation."
     }
   }
 }

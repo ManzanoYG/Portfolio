@@ -128,6 +128,24 @@ export class PortfolioComponent implements OnInit {
         dateKey: 'PROJECTS.PROJECT4.DATE',
         detailsKey: 'PROJECTS.PROJECT4.DETAILS',
         display: true
+      },
+      {
+        id: '5',
+        titleKey: 'PROJECTS.PROJECT5.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT5.DESCRIPTION',
+        category: 'web',
+        image: 'assets/img/projects/waymate_F/waymate_home.png',
+        images: [
+          'assets/img/projects/waymate_F/waymate_home.png',
+          'assets/img/projects/waymate_F/waymate_signup.png',
+          'assets/img/projects/waymate_F/waymate_signin.png'
+        ],
+        technologies: ['Angular', 'TypeScript', 'SQL Server', 'Bootstrap'],
+        githubUrl: 'https://github.com/ManzanoYG/Waymate_Frontend',
+        liveUrl: 'https://mathiasmanzanoygonzalez.be/projects/waymate_front/index.html',
+        dateKey: 'PROJECTS.PROJECT5.DATE',
+        detailsKey: 'PROJECTS.PROJECT5.DETAILS',
+        display: true
       }
     ];
     this.filterProjects('all');
