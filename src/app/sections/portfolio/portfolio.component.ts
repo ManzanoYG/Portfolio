@@ -140,11 +140,29 @@ export class PortfolioComponent implements OnInit {
           'assets/img/projects/waymate_F/waymate_signup.png',
           'assets/img/projects/waymate_F/waymate_signin.png'
         ],
-        technologies: ['Angular', 'TypeScript', 'SQL Server', 'Bootstrap'],
+        technologies: ['Angular', 'TypeScript', 'SQL Server', 'Bootstrap', 'Cypress'],
         githubUrl: 'https://github.com/ManzanoYG/Waymate_Frontend',
         liveUrl: 'https://mathiasmanzanoygonzalez.be/projects/waymate_front/index.html',
         dateKey: 'PROJECTS.PROJECT5.DATE',
         detailsKey: 'PROJECTS.PROJECT5.DETAILS',
+        display: true
+      },
+      {
+        id: '6',
+        titleKey: 'PROJECTS.PROJECT6.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT6.DESCRIPTION',
+        category: 'backend',
+        image: 'assets/img/projects/waymate_api/waymate_api_1.png',
+        images: [
+          'assets/img/projects/waymate_api/waymate_api_1.png',
+          'assets/img/projects/waymate_api/waymate_api_2.png',
+          'assets/img/projects/waymate_api/waymate_api_3.png',
+          'assets/img/projects/waymate_api/waymate_api_4.png'
+        ],
+        technologies: ['C#', 'Docker', 'SQL Server', 'ASP.NET', 'Swagger'],
+        githubUrl: 'https://github.com/ManzanoYG/Waymate_API',
+        dateKey: 'PROJECTS.PROJECT6.DATE',
+        detailsKey: 'PROJECTS.PROJECT6.DETAILS',
         display: true
       }
     ];

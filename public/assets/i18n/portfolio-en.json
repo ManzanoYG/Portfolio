@@ -49,6 +49,12 @@
       "DESCRIPTION": "Frontend for a carpooling trip planning application.",
       "DATE": "December 2023",
       "DETAILS": "Website developed with Angular, TypeScript, SQL Server, and Bootstrap. Intuitive user interface, trip management, map integration, and booking system."
+    },
+    "PROJECT6": {
+      "TITLE": "Waymate API",
+      "DESCRIPTION": "API for a carpooling trip planning application.",
+      "DATE": "DDecember 2023",
+      "DETAILS": "API developed with C# and ASP.NET. Management of users, trips, bookings, and payments, with a SQL Server database."
     }
   }
 }
