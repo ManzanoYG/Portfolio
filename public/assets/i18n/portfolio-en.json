@@ -55,6 +55,30 @@
       "DESCRIPTION": "API for a carpooling trip planning application.",
       "DATE": "DDecember 2023",
       "DETAILS": "API developed with C# and ASP.NET. Management of users, trips, bookings, and payments, with a SQL Server database."
+    },
+    "PROJECT7": {
+      "TITLE": "AI Video Upscaler",
+      "DESCRIPTION": "Desktop application to enhance video quality using AI.",
+      "DATE": "January 2026",
+      "DETAILS": "Application developed with Python and PySide6. Uses Real-ESRGAN NCNN Vulkan for video enhancement, integrates FFmpeg for file processing."
+    },
+    "PROJECT8": {
+      "TITLE": "Family Tree",
+      "DESCRIPTION": "Desktop application to create and visualize family trees.",
+      "DATE": "February 2026",
+      "DETAILS": "Application developed with Python. Intuitive user interface, management of individuals and family relationships, export of tree as png."
+    },
+    "PROJECT9": {
+      "TITLE": "My Management Hub [In Progress]",
+      "DESCRIPTION": "Desktop application to manage various aspects of personal life.",
+      "DATE": " March 2026",
+      "DETAILS": "Application developed with C#, Angular, SQL Server and ASP.NET. Features include task management, calendar, note-taking, contact management, etc."
+    },
+    "PROJECT10": {
+      "TITLE": "My Management Hub API [In Progress]",
+      "DESCRIPTION": "Backend API for managing various aspects of personal life.",
+      "DATE": " March 2026",
+      "DETAILS": "API developed with C#, Angular, SQL Server and ASP.NET. Features include task management, calendar, note-taking, contact management, etc."
     }
   }
 }

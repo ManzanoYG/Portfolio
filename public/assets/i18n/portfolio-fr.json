@@ -55,6 +55,30 @@
       "DESCRIPTION": "API pour une application de planification de voyages en covoiturage.",
       "DATE": "Décembre 2023",
       "DETAILS": "API développée avec C# et ASP.NET. Gestion des utilisateurs, des trajets, des réservations et des paiements, avec une base de données SQL Server."
+    },
+    "PROJECT7": {
+      "TITLE": "AI Video Upscaler",
+      "DESCRIPTION": "Application de bureau pour améliorer la qualité des vidéos à l'aide de l'IA.",
+      "DATE": "Janvier 2026",
+      "DETAILS": "Application développée avec Python et PySide6. Utilise Real-ESRGAN NCNN Vulkan pour l'amélioration vidéo, intégration de FFmpeg pour le traitement des fichiers."
+    },
+    "PROJECT8": {
+      "TITLE": "Arbre généalogique",
+      "DESCRIPTION": "Application de bureau pour créer et visualiser des arbres généalogiques.",
+      "DATE": "Février 2026",
+      "DETAILS": "Application développée avec Python. Interface utilisateur intuitive, gestion des individus et des relations familiales, exportation de l'arbre en png."
+    },
+    "PROJECT9": {
+      "TITLE": "My Management Hub [En cours]",
+      "DESCRIPTION": "Application de bureau pour gérer divers aspects de la vie personnelle.",
+      "DATE": " Mars 2026",
+      "DETAILS": "Application développée avec C#, Angular, SQL Server et ASP.NET. Fonctionnalités incluent la gestion des tâches, le calendrier, la prise de notes, la gestion des contacts, etc."
+    },
+    "PROJECT10": {
+      "TITLE": "My Management Hub API [En cours]",
+      "DESCRIPTION": "API backend pour gérer divers aspects de la vie personnelle.",
+      "DATE": " March 2026",
+      "DETAILS": "API développée avec C#, Angular, SQL Server et ASP.NET. Ses fonctionnalités incluent la gestion des tâches, le calendrier, la prise de notes, la gestion des contacts, etc."
     }
   }
 }

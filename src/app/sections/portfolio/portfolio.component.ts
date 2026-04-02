@@ -68,6 +68,42 @@ export class PortfolioComponent implements OnInit {
     this.allProjects = [
       {
         id: '1',
+        titleKey: 'PROJECTS.PROJECT9.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT9.DESCRIPTION',
+        category: 'web',
+        image: 'assets/img/projects/my_management_hub/myManagementHub_Home_logged.png',
+        images: [
+          'assets/img/projects/my_management_hub/myManagementHub_Home.png',
+          'assets/img/projects/my_management_hub/myManagementHub_SignUp.png',
+          'assets/img/projects/my_management_hub/myManagementHub_SignIn.png',
+          'assets/img/projects/my_management_hub/myManagementHub_Home_logged.png',
+          'assets/img/projects/my_management_hub/myManagementHub_NotesHome.png',
+          'assets/img/projects/my_management_hub/myManagementHub_Settings.png',
+          'assets/img/projects/my_management_hub/myManagementHub_SettingsTheme.png',
+        ],
+        technologies: ['Angular','ASP.NET','SQL Server','C#'],
+        githubUrl: 'https://github.com/ManzanoYG/My-Management-Hub-Frontend',
+        dateKey: 'PROJECTS.PROJECT9.DATE',
+        detailsKey: 'PROJECTS.PROJECT9.DETAILS',
+        display: true
+      },
+      {
+        id: '2',
+        titleKey: 'PROJECTS.PROJECT10.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT10.DESCRIPTION',
+        category: 'backend',
+        image: 'assets/img/projects/my_management_hub_api/myManagementHub_API.png',
+        images: [
+          'assets/img/projects/my_management_hub_api/myManagementHub_API.png'
+        ],
+        technologies: ['ASP.NET','SQL Server','C#','Swagger','Docker'],
+        githubUrl: 'https://github.com/ManzanoYG/My-Management-Hub-Backend',
+        dateKey: 'PROJECTS.PROJECT10.DATE',
+        detailsKey: 'PROJECTS.PROJECT10.DETAILS',
+        display: true
+      },
+      {
+        id: '3',
         titleKey: 'PROJECTS.PROJECT1.TITLE',
         descriptionKey: 'PROJECTS.PROJECT1.DESCRIPTION',
         category: 'desktop',
@@ -81,7 +117,7 @@ export class PortfolioComponent implements OnInit {
         display: true
       },
       {
-        id: '2',
+        id: '4',
         titleKey: 'PROJECTS.PROJECT2.TITLE',
         descriptionKey: 'PROJECTS.PROJECT2.DESCRIPTION',
         category: 'web',
@@ -94,7 +130,7 @@ export class PortfolioComponent implements OnInit {
         display: true
       },
       {
-        id: '3',
+        id: '5',
         titleKey: 'PROJECTS.PROJECT3.TITLE',
         descriptionKey: 'PROJECTS.PROJECT3.DESCRIPTION',
         category: 'desktop',
@@ -113,7 +149,7 @@ export class PortfolioComponent implements OnInit {
         display: true
       },
       {
-        id: '4',
+        id: '6',
         titleKey: 'PROJECTS.PROJECT4.TITLE',
         descriptionKey: 'PROJECTS.PROJECT4.DESCRIPTION',
         category: 'web',
@@ -130,7 +166,7 @@ export class PortfolioComponent implements OnInit {
         display: true
       },
       {
-        id: '5',
+        id: '7',
         titleKey: 'PROJECTS.PROJECT5.TITLE',
         descriptionKey: 'PROJECTS.PROJECT5.DESCRIPTION',
         category: 'web',
@@ -148,7 +184,7 @@ export class PortfolioComponent implements OnInit {
         display: true
       },
       {
-        id: '6',
+        id: '8',
         titleKey: 'PROJECTS.PROJECT6.TITLE',
         descriptionKey: 'PROJECTS.PROJECT6.DESCRIPTION',
         category: 'backend',
@@ -163,6 +199,42 @@ export class PortfolioComponent implements OnInit {
         githubUrl: 'https://github.com/ManzanoYG/Waymate_API',
         dateKey: 'PROJECTS.PROJECT6.DATE',
         detailsKey: 'PROJECTS.PROJECT6.DETAILS',
+        display: true
+      },
+      {
+        id: '9',
+        titleKey: 'PROJECTS.PROJECT7.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT7.DESCRIPTION',
+        category: 'desktop',
+        image: 'assets/img/projects/ai_upscaler/ai_upscaler.png',
+        images: [
+          'assets/img/projects/ai_upscaler/ai_upscaler.png',
+          'assets/img/projects/ai_upscaler/ai_upscaler_2.png',
+          'assets/img/projects/ai_upscaler/ai_upscaler_3.png'
+        ],
+        technologies: ['Python','Real-ESRGAN NCNN Vulkan','FFmpeg','PySide6'],
+        githubUrl: 'https://github.com/ManzanoYG/AI-Video-Upscaler',
+        dateKey: 'PROJECTS.PROJECT7.DATE',
+        detailsKey: 'PROJECTS.PROJECT7.DETAILS',
+        display: true
+      },
+      {
+        id: '10',
+        titleKey: 'PROJECTS.PROJECT8.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT8.DESCRIPTION',
+        category: 'desktop',
+        image: 'assets/img/projects/family_tree/family_tree.png',
+        images: [
+          'assets/img/projects/family_tree/family_tree.png',
+          'assets/img/projects/family_tree/family_tree_example.png',
+          'assets/img/projects/family_tree/family_tree_person_data.png',
+          'assets/img/projects/family_tree/family_tree_person_data_edit.png',
+          'assets/img/projects/family_tree/family_tree_dark_mode.png'
+        ],
+        technologies: ['Python','tkinter','Pillow'],
+        githubUrl: 'https://github.com/ManzanoYG/Family-Tree',
+        dateKey: 'PROJECTS.PROJECT8.DATE',
+        detailsKey: 'PROJECTS.PROJECT8.DETAILS',
         display: true
       }
     ];
