@@ -60,7 +60,7 @@
         <button class="gallery-nav prev" (click)="prevImage()" *ngIf="selectedProject.images && selectedProject.images.length > 1">
           <i class="fa fa-chevron-left"></i>
         </button>
-        <img [src]="getCurrentImage()" [alt]="getTranslation(selectedProject.titleKey)" class="detail-image" (error)="$any($event).target.src='assets/img/placeholder.jpg'">
+        <img [src]="getCurrentImage()" [alt]="getTranslation(selectedProject.titleKey)" class="detail-image" (click)="openImageViewer()" (error)="$any($event).target.src='assets/img/placeholder.jpg'">
         <button class="gallery-nav next" (click)="nextImage()" *ngIf="selectedProject.images && selectedProject.images.length > 1">
           <i class="fa fa-chevron-right"></i>
         </button>
@@ -73,7 +73,7 @@
           class="thumbnail"
           [class.active]="i === currentImageIndex"
           (click)="goToImage(i)">
-          <img [src]="img" [alt]="'Image ' + (i + 1)" (error)="$any($event).target.src='assets/img/placeholder.jpg'">
+          <img [src]="img" [alt]="'Image ' + (i + 1)" (click)="openImageViewer(i); $event.stopPropagation()" (error)="$any($event).target.src='assets/img/placeholder.jpg'">
         </div>
       </div>
       
@@ -115,3 +115,26 @@
     </div>
   </div>
 </app-modal>
+
+<!-- Fullscreen image viewer -->
+<div class="image-viewer-backdrop" *ngIf="isImageViewerOpen && selectedProject" (click)="closeImageViewer()">
+  <div class="image-viewer-content" (click)="$event.stopPropagation()">
+    <button class="image-viewer-close" (click)="closeImageViewer()" aria-label="Close image viewer">
+      <i class="fa fa-times"></i>
+    </button>
+
+    <button class="image-viewer-nav prev" (click)="prevImage()" *ngIf="selectedProject.images && selectedProject.images.length > 1" aria-label="Previous image">
+      <i class="fa fa-chevron-left"></i>
+    </button>
+
+    <img [src]="getCurrentImage()" [alt]="getTranslation(selectedProject.titleKey)" class="image-viewer-image" (error)="$any($event).target.src='assets/img/placeholder.jpg'">
+
+    <button class="image-viewer-nav next" (click)="nextImage()" *ngIf="selectedProject.images && selectedProject.images.length > 1" aria-label="Next image">
+      <i class="fa fa-chevron-right"></i>
+    </button>
+
+    <div class="image-viewer-counter" *ngIf="selectedProject.images && selectedProject.images.length > 1">
+      {{ currentImageIndex + 1 }} / {{ selectedProject.images.length }}
+    </div>
+  </div>
+</div>

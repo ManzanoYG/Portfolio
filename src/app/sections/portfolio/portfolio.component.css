@@ -222,6 +222,7 @@
   border-radius: 8px;
   max-height: 400px;
   object-fit: cover;
+  cursor: zoom-in;
 }
 
 .gallery-nav {
@@ -397,6 +398,93 @@
   color: white;
 }
 
+.image-viewer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.image-viewer-content {
+  position: relative;
+  width: min(1200px, 100%);
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-viewer-image {
+  width: auto;
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.image-viewer-close,
+.image-viewer-nav {
+  position: absolute;
+  border: none;
+  color: white;
+  background: rgba(5, 29, 51, 0.8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.image-viewer-close:hover,
+.image-viewer-nav:hover {
+  background: rgba(5, 29, 51, 1);
+}
+
+.image-viewer-close {
+  top: -50px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.image-viewer-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.image-viewer-nav.prev {
+  left: 14px;
+}
+
+.image-viewer-nav.next {
+  right: 14px;
+}
+
+.image-viewer-counter {
+  position: absolute;
+  bottom: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(5, 29, 51, 0.8);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .portfolio-section {
@@ -419,6 +507,32 @@
 
   .project-image {
     height: 180px;
+  }
+
+  .image-viewer-backdrop {
+    padding: 1rem;
+  }
+
+  .image-viewer-close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .image-viewer-nav {
+    width: 38px;
+    height: 38px;
+  }
+
+  .image-viewer-nav.prev {
+    left: 8px;
+  }
+
+  .image-viewer-nav.next {
+    right: 8px;
+  }
+
+  .image-viewer-counter {
+    bottom: 10px;
   }
 }
 

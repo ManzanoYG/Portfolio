@@ -34,6 +34,7 @@ export class PortfolioComponent implements OnInit {
   selectedProject: Project | null = null;
   isModalOpen = false;
   currentImageIndex = 0;
+  isImageViewerOpen = false;
 
   categories = [
     { key: 'all', icon: 'fa-th' },
@@ -277,6 +278,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   closeModal(): void {
+    this.closeImageViewer();
     this.isModalOpen = false;
     this.selectedProject = null;
     this.currentImageIndex = 0;
@@ -298,6 +300,22 @@ export class PortfolioComponent implements OnInit {
 
   goToImage(index: number): void {
     this.currentImageIndex = index;
+  }
+
+  openImageViewer(index?: number): void {
+    if (!this.selectedProject) {
+      return;
+    }
+
+    if (typeof index === 'number') {
+      this.currentImageIndex = index;
+    }
+
+    this.isImageViewerOpen = true;
+  }
+
+  closeImageViewer(): void {
+    this.isImageViewerOpen = false;
   }
 
   private applyDarkThemeToModal(): void {
