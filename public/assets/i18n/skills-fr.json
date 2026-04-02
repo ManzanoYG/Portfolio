@@ -121,7 +121,9 @@
     "PRIORITY_MANAGEMENT": "Gestion des priorités",
     "SOLUTION_ORIENTATION": "Orientation solution",
     "STRESS_MANAGEMENT": "Gestion du stress",
-    "DEADLINE_RESPECT": "Respect des délais"
-
+    "DEADLINE_RESPECT": "Respect des délais",
+    "N8N": "n8n",
+    "LM_STUDIO": "LM Studio",
+    "HUGGINGFACE": "Hugging Face"
   }
 }

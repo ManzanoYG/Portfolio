@@ -14,70 +14,71 @@
     "ALL": "Tous",
     "WEB": "Web",
     "MOBILE": "Mobile",
-    "BACKEND": "Backend",
-    "FULLSTACK": "Full Stack"
+    "BACKEND": "Backend / APIs",
+    "DESKTOP": "Application de bureau",
+    "GAME_DEV": "Jeux"
   },
 
   "PROJECTS": {
     "PROJECT1": {
-      "TITLE": "Application E-Commerce",
-      "DESCRIPTION": "Une plateforme e-commerce complète avec gestion de panier et paiements sécurisés.",
-      "DATE": "Janvier 2025",
-      "DETAILS": "Application full-stack avec authentification utilisateur, gestion de catalogue de produits, système de panier d'achat, intégration de paiement Stripe, et panel d'administration pour gérer les commandes et les stocks."
+      "TITLE": "Point de Vente",
+      "DESCRIPTION": "Système de point de vente complet pour un restaurant.",
+      "DATE": "Novembre 2023",
+      "DETAILS": "Application de point de vente développée avec Java et JavaFX pour le frontend, et un stockage de données en JSON local. Fonctionnalités incluent la gestion des commandes, le traitement des paiements, la génération de rapports de ventes."
     },
     "PROJECT2": {
-      "TITLE": "Dashboard Analytics",
-      "DESCRIPTION": "Dashboard interactif pour visualiser des données en temps réel.",
-      "DATE": "Novembre 2024",
-      "DETAILS": "Dashboard responsive construit avec React et TypeScript, intégrant Firebase pour le backend. Visualisations de données avec Chart.js, mises à jour en temps réel, et exports de rapports en PDF."
+      "TITLE": "Portfolio",
+      "DESCRIPTION": "Site web personnel pour présenter des projets et compétences.",
+      "DATE": "Novembre 2025",
+      "DETAILS": "Site web développé avec Angular et Node.js. Design responsive, animations fluides, intégration de formulaires de contact, galerie de projets."
     },
     "PROJECT3": {
-      "TITLE": "App Mobile Fitness",
-      "DESCRIPTION": "Application mobile pour suivre les entraînements et la nutrition.",
-      "DATE": "Septembre 2024",
-      "DETAILS": "Application cross-platform développée avec React Native et Expo. Suivi d'entraînements, calculateur de calories, plans d'exercices personnalisés, et synchronisation avec appareils de fitness."
+      "TITLE": "Générateur de Mots de Passe",
+      "DESCRIPTION": "Application de bureau pour générer des mots de passe sécurisés.",
+      "DATE": "Mars 2024",
+      "DETAILS": "Application de bureau développée avec Python et Tkinter. Génération de mots de passe personnalisables, options pour inclure des majuscules, minuscules, chiffres et symboles, et fonctionnalité de copie dans le presse-papiers."
     },
     "PROJECT4": {
-      "TITLE": "API RESTful",
-      "DESCRIPTION": "API robuste pour gestion de données et authentification.",
-      "DATE": "Août 2024",
-      "DETAILS": "API construite avec Laravel, utilisant MySQL pour la persistence et Redis pour le caching. Authentification JWT, documentation Swagger, rate limiting, et tests automatisés."
+      "TITLE": "IBSI Hotel",
+      "DESCRIPTION": "Site web d'un hôtel fictif pour un projet scolaire.",
+      "DATE": "Mai 2022",
+      "DETAILS": "Site web développé avec PHP, Ajax, jQuery et JavaScript. Présentation des chambres, services, galerie d'images, formulaire de réservation."
     },
     "PROJECT5": {
-      "TITLE": "Site Web Corporatif",
-      "DESCRIPTION": "Site web moderne et responsive pour une entreprise.",
-      "DATE": "Juin 2024",
-      "DETAILS": "Site vitrine développé avec Vue.js et Vuetify. Design responsive, animations fluides, formulaire de contact, galerie de projets, et optimisation SEO."
+      "TITLE": "Waymate Frontend",
+      "DESCRIPTION": "Frontend pour une application de planification de voyages en covoiturage.",
+      "DATE": "Décembre 2023",
+      "DETAILS": "Site web développé avec Angular, TypeScript, SQL Server et Bootstrap. Interface utilisateur intuitive, gestion des trajets, intégration de cartes et système de réservation."
     },
     "PROJECT6": {
-      "TITLE": "Plateforme SaaS",
-      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
-      "DATE": "Mars 2024",
-      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+      "TITLE": "Waymate API",
+      "DESCRIPTION": "API pour une application de planification de voyages en covoiturage.",
+      "DATE": "Décembre 2023",
+      "DETAILS": "API développée avec C# et ASP.NET. Gestion des utilisateurs, des trajets, des réservations et des paiements, avec une base de données SQL Server."
     },
     "PROJECT7": {
-      "TITLE": "Plateforme SaaS",
-      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
-      "DATE": "Mars 2024",
-      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+      "TITLE": "AI Video Upscaler",
+      "DESCRIPTION": "Application de bureau pour améliorer la qualité des vidéos à l'aide de l'IA.",
+      "DATE": "Janvier 2026",
+      "DETAILS": "Application développée avec Python et PySide6. Utilise Real-ESRGAN NCNN Vulkan pour l'amélioration vidéo, intégration de FFmpeg pour le traitement des fichiers."
     },
     "PROJECT8": {
-      "TITLE": "Plateforme SaaS",
-      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
-      "DATE": "Mars 2024",
-      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+      "TITLE": "Arbre généalogique",
+      "DESCRIPTION": "Application de bureau pour créer et visualiser des arbres généalogiques.",
+      "DATE": "Février 2026",
+      "DETAILS": "Application développée avec Python. Interface utilisateur intuitive, gestion des individus et des relations familiales, exportation de l'arbre en png."
     },
     "PROJECT9": {
-      "TITLE": "Plateforme SaaS",
-      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
-      "DATE": "Mars 2024",
-      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+      "TITLE": "My Management Hub [En cours]",
+      "DESCRIPTION": "Application de bureau pour gérer divers aspects de la vie personnelle.",
+      "DATE": " Mars 2026",
+      "DETAILS": "Application développée avec C#, Angular, SQL Server et ASP.NET. Fonctionnalités incluent la gestion des tâches, le calendrier, la prise de notes, la gestion des contacts, etc."
     },
     "PROJECT10": {
-      "TITLE": "Plateforme SaaS",
-      "DESCRIPTION": "Solution SaaS multi-tenant avec gestion d'abonnements.",
-      "DATE": "Mars 2024",
-      "DETAILS": "Plateforme complète avec Next.js pour le frontend, PostgreSQL pour la base de données, et Docker pour le déploiement. Gestion multi-tenant, système d'abonnements, facturation automatique, et analytics intégrés."
+      "TITLE": "My Management Hub API [En cours]",
+      "DESCRIPTION": "API backend pour gérer divers aspects de la vie personnelle.",
+      "DATE": " March 2026",
+      "DETAILS": "API développée avec C#, Angular, SQL Server et ASP.NET. Ses fonctionnalités incluent la gestion des tâches, le calendrier, la prise de notes, la gestion des contacts, etc."
     }
   }
 }

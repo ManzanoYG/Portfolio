@@ -40,7 +40,8 @@ export class PortfolioComponent implements OnInit {
     { key: 'web', icon: 'fa-globe' },
     { key: 'mobile', icon: 'fa-mobile-alt' },
     { key: 'backend', icon: 'fa-server' },
-    { key: 'fullstack', icon: 'fa-layer-group' }
+    { key: 'desktop', icon: 'fa-layer-group' },
+    { key: 'game_dev', icon: 'fa-gamepad' }
   ];
 
   constructor(
@@ -67,84 +68,174 @@ export class PortfolioComponent implements OnInit {
     this.allProjects = [
       {
         id: '1',
-        titleKey: 'PROJECTS.PROJECT1.TITLE',
-        descriptionKey: 'PROJECTS.PROJECT1.DESCRIPTION',
-        category: 'fullstack',
-        image: 'assets/img/projects/project1.jpg',
+        titleKey: 'PROJECTS.PROJECT9.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT9.DESCRIPTION',
+        category: 'web',
+        image: 'assets/img/projects/my_management_hub/myManagementHub_Home_logged.png',
         images: [
-          'assets/img/projects/project1-1.jpg',
-          'assets/img/projects/project1-2.jpg',
-          'assets/img/projects/project1-3.jpg'
+          'assets/img/projects/my_management_hub/myManagementHub_Home.png',
+          'assets/img/projects/my_management_hub/myManagementHub_SignUp.png',
+          'assets/img/projects/my_management_hub/myManagementHub_SignIn.png',
+          'assets/img/projects/my_management_hub/myManagementHub_Home_logged.png',
+          'assets/img/projects/my_management_hub/myManagementHub_NotesHome.png',
+          'assets/img/projects/my_management_hub/myManagementHub_Settings.png',
+          'assets/img/projects/my_management_hub/myManagementHub_SettingsTheme.png',
         ],
-        technologies: ['Angular', 'Node.js', 'MongoDB'],
-        githubUrl: 'https://github.com/example/project1',
-        liveUrl: 'https://project1.com',
-        dateKey: 'PROJECTS.PROJECT1.DATE',
-        detailsKey: 'PROJECTS.PROJECT1.DETAILS',
-        display: false
+        technologies: ['Angular','ASP.NET','SQL Server','C#'],
+        githubUrl: 'https://github.com/ManzanoYG/My-Management-Hub-Frontend',
+        dateKey: 'PROJECTS.PROJECT9.DATE',
+        detailsKey: 'PROJECTS.PROJECT9.DETAILS',
+        display: true
       },
       {
         id: '2',
-        titleKey: 'PROJECTS.PROJECT2.TITLE',
-        descriptionKey: 'PROJECTS.PROJECT2.DESCRIPTION',
-        category: 'web',
-        image: 'assets/img/projects/project2.jpg',
-        technologies: ['React', 'TypeScript', 'Firebase'],
-        githubUrl: 'https://github.com/example/project2',
-        liveUrl: 'https://project2.com',
-        dateKey: 'PROJECTS.PROJECT2.DATE',
-        detailsKey: 'PROJECTS.PROJECT2.DETAILS',
-        display: false
+        titleKey: 'PROJECTS.PROJECT10.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT10.DESCRIPTION',
+        category: 'backend',
+        image: 'assets/img/projects/my_management_hub_api/myManagementHub_API.png',
+        images: [
+          'assets/img/projects/my_management_hub_api/myManagementHub_API.png'
+        ],
+        technologies: ['ASP.NET','SQL Server','C#','Swagger','Docker'],
+        githubUrl: 'https://github.com/ManzanoYG/My-Management-Hub-Backend',
+        dateKey: 'PROJECTS.PROJECT10.DATE',
+        detailsKey: 'PROJECTS.PROJECT10.DETAILS',
+        display: true
       },
       {
         id: '3',
-        titleKey: 'PROJECTS.PROJECT3.TITLE',
-        descriptionKey: 'PROJECTS.PROJECT3.DESCRIPTION',
-        category: 'mobile',
-        image: 'assets/img/projects/project3.jpg',
-        technologies: ['React Native', 'Expo'],
-        githubUrl: 'https://github.com/example/project3',
-        dateKey: 'PROJECTS.PROJECT3.DATE',
-        detailsKey: 'PROJECTS.PROJECT3.DETAILS',
-        display: false
+        titleKey: 'PROJECTS.PROJECT1.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT1.DESCRIPTION',
+        category: 'desktop',
+        image: 'assets/img/projects/pos/pos_table.png',
+        images: [
+          'assets/img/projects/pos/pos_table.png'
+        ],
+        technologies: ['Java', 'JavaFX', 'JSON', 'CSS'],
+        dateKey: 'PROJECTS.PROJECT1.DATE',
+        detailsKey: 'PROJECTS.PROJECT1.DETAILS',
+        display: true
       },
       {
         id: '4',
-        titleKey: 'PROJECTS.PROJECT4.TITLE',
-        descriptionKey: 'PROJECTS.PROJECT4.DESCRIPTION',
-        category: 'backend',
-        image: 'assets/img/projects/project4.jpg',
-        technologies: ['Laravel', 'MySQL', 'Redis'],
-        githubUrl: 'https://github.com/example/project4',
-        dateKey: 'PROJECTS.PROJECT4.DATE',
-        detailsKey: 'PROJECTS.PROJECT4.DETAILS',
-        display: false
+        titleKey: 'PROJECTS.PROJECT2.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT2.DESCRIPTION',
+        category: 'web',
+        image: 'assets/img/projects/portfolio/portfolio_main.png',
+        technologies: ['Angular', 'Node.js', 'BOOT', 'TypeScript', 'Material'],
+        githubUrl: 'https://github.com/ManzanoYG/Portfolio',
+        liveUrl: 'https://mathiasmanzanoygonzalez.be/',
+        dateKey: 'PROJECTS.PROJECT2.DATE',
+        detailsKey: 'PROJECTS.PROJECT2.DETAILS',
+        display: true
       },
       {
         id: '5',
-        titleKey: 'PROJECTS.PROJECT5.TITLE',
-        descriptionKey: 'PROJECTS.PROJECT5.DESCRIPTION',
-        category: 'web',
-        image: 'assets/img/projects/project5.jpg',
-        technologies: ['Vue.js', 'Vuetify'],
-        githubUrl: 'https://github.com/example/project5',
-        liveUrl: 'https://project5.com',
-        dateKey: 'PROJECTS.PROJECT5.DATE',
-        detailsKey: 'PROJECTS.PROJECT5.DETAILS',
-        display: false
+        titleKey: 'PROJECTS.PROJECT3.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT3.DESCRIPTION',
+        category: 'desktop',
+        image: 'assets/img/projects/password_generator/password_empty.png',
+        images: [
+          'assets/img/projects/password_generator/password_empty.png',
+          'assets/img/projects/password_generator/password_generate.png',
+          'assets/img/projects/password_generator/password_copied.png',
+          'assets/img/projects/password_generator/password_error1.png',
+          'assets/img/projects/password_generator/password_error2.png',
+        ],
+        technologies: ['Python', 'Tkinter'],
+        githubUrl: 'https://github.com/ManzanoYG/Password-Generator',
+        dateKey: 'PROJECTS.PROJECT3.DATE',
+        detailsKey: 'PROJECTS.PROJECT3.DETAILS',
+        display: true
       },
       {
         id: '6',
+        titleKey: 'PROJECTS.PROJECT4.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT4.DESCRIPTION',
+        category: 'web',
+        image: 'assets/img/projects/ibsi/ibsi_home.png',
+        images: [
+          'assets/img/projects/ibsi/ibsi_home.png',
+          'assets/img/projects/ibsi/ibsi_room.png'
+        ],
+        technologies: ['PHP', 'JavaScript', 'MySQL', 'jQuery', 'Ajax'],
+        githubUrl: 'https://github.com/ManzanoYG/IBSI-Hotel',
+        liveUrl: 'https://mathiasmanzanoygonzalez.be/projects/ibsi/index.php',
+        dateKey: 'PROJECTS.PROJECT4.DATE',
+        detailsKey: 'PROJECTS.PROJECT4.DETAILS',
+        display: true
+      },
+      {
+        id: '7',
+        titleKey: 'PROJECTS.PROJECT5.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT5.DESCRIPTION',
+        category: 'web',
+        image: 'assets/img/projects/waymate_F/waymate_home.png',
+        images: [
+          'assets/img/projects/waymate_F/waymate_home.png',
+          'assets/img/projects/waymate_F/waymate_signup.png',
+          'assets/img/projects/waymate_F/waymate_signin.png'
+        ],
+        technologies: ['Angular', 'TypeScript', 'SQL Server', 'Bootstrap', 'Cypress'],
+        githubUrl: 'https://github.com/ManzanoYG/Waymate_Frontend',
+        liveUrl: 'https://mathiasmanzanoygonzalez.be/projects/waymate_front/index.html',
+        dateKey: 'PROJECTS.PROJECT5.DATE',
+        detailsKey: 'PROJECTS.PROJECT5.DETAILS',
+        display: true
+      },
+      {
+        id: '8',
         titleKey: 'PROJECTS.PROJECT6.TITLE',
         descriptionKey: 'PROJECTS.PROJECT6.DESCRIPTION',
-        category: 'fullstack',
-        image: 'assets/img/projects/project6.jpg',
-        technologies: ['Next.js', 'PostgreSQL', 'Docker'],
-        githubUrl: 'https://github.com/example/project6',
-        liveUrl: 'https://project6.com',
+        category: 'backend',
+        image: 'assets/img/projects/waymate_api/waymate_api_1.png',
+        images: [
+          'assets/img/projects/waymate_api/waymate_api_1.png',
+          'assets/img/projects/waymate_api/waymate_api_2.png',
+          'assets/img/projects/waymate_api/waymate_api_3.png',
+          'assets/img/projects/waymate_api/waymate_api_4.png'
+        ],
+        technologies: ['C#', 'Docker', 'SQL Server', 'ASP.NET', 'Swagger'],
+        githubUrl: 'https://github.com/ManzanoYG/Waymate_API',
         dateKey: 'PROJECTS.PROJECT6.DATE',
         detailsKey: 'PROJECTS.PROJECT6.DETAILS',
-        display: false
+        display: true
+      },
+      {
+        id: '9',
+        titleKey: 'PROJECTS.PROJECT7.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT7.DESCRIPTION',
+        category: 'desktop',
+        image: 'assets/img/projects/ai_upscaler/ai_upscaler.png',
+        images: [
+          'assets/img/projects/ai_upscaler/ai_upscaler.png',
+          'assets/img/projects/ai_upscaler/ai_upscaler_2.png',
+          'assets/img/projects/ai_upscaler/ai_upscaler_3.png'
+        ],
+        technologies: ['Python','Real-ESRGAN NCNN Vulkan','FFmpeg','PySide6'],
+        githubUrl: 'https://github.com/ManzanoYG/AI-Video-Upscaler',
+        dateKey: 'PROJECTS.PROJECT7.DATE',
+        detailsKey: 'PROJECTS.PROJECT7.DETAILS',
+        display: true
+      },
+      {
+        id: '10',
+        titleKey: 'PROJECTS.PROJECT8.TITLE',
+        descriptionKey: 'PROJECTS.PROJECT8.DESCRIPTION',
+        category: 'desktop',
+        image: 'assets/img/projects/family_tree/family_tree.png',
+        images: [
+          'assets/img/projects/family_tree/family_tree.png',
+          'assets/img/projects/family_tree/family_tree_example.png',
+          'assets/img/projects/family_tree/family_tree_person_data.png',
+          'assets/img/projects/family_tree/family_tree_person_data_edit.png',
+          'assets/img/projects/family_tree/family_tree_dark_mode.png'
+        ],
+        technologies: ['Python','tkinter','Pillow'],
+        githubUrl: 'https://github.com/ManzanoYG/Family-Tree',
+        dateKey: 'PROJECTS.PROJECT8.DATE',
+        detailsKey: 'PROJECTS.PROJECT8.DETAILS',
+        display: true
       }
     ];
     this.filterProjects('all');
